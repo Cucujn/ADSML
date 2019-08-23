@@ -85,6 +85,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.super_("VSCE.structure.Element", 0xdff00f176c3e4647L, 0xae8bee0827edcb59L, 0x27668734315270cdL);
     b.origin("r:b52b1c3e-522c-4fa5-a07d-0c84fb53ae83(VSCE.structure)/2839105273339212082");
     b.version(2);
+    b.property("color", 0x1650368a38235eb4L).type(PrimitiveTypeId.STRING).origin("1607845034246495924").done();
     b.aggregate("cloudiness", 0x1bbc25780c2cc05dL).target(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x102cb19a434L).optional(false).ordered(true).multiple(false).origin("1998513532176220253").done();
     b.aggregate("precipitation", 0x1bbc25780c2d5809L).target(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x102cb19a434L).optional(false).ordered(true).multiple(false).origin("1998513532176259081").done();
     b.aggregate("precipitation_deposits", 0x1bbc25780c2d580eL).target(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x102cb19a434L).optional(false).ordered(true).multiple(false).origin("1998513532176259086").done();
@@ -98,10 +99,11 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("VSCE", "World", 0xdff00f176c3e4647L, 0xae8bee0827edcb59L, 0x276687343152713cL);
     b.class_(false, false, true);
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
+    b.parent(0x4caf0310491e41f5L, 0x8a9b2006b3a94898L, 0x40c1a7cb987d20d5L);
     b.origin("r:b52b1c3e-522c-4fa5-a07d-0c84fb53ae83(VSCE.structure)/2839105273339212092");
     b.version(2);
     b.aggregate("map", 0x1bbc25780c2d9d00L).target(0xdff00f176c3e4647L, 0xae8bee0827edcb59L, 0x1bbc25780c2d9d03L).optional(false).ordered(true).multiple(false).origin("1998513532176276736").done();
-    b.aggregate("elements", 0x2766873431527c90L).target(0xdff00f176c3e4647L, 0xae8bee0827edcb59L, 0x27668734315270cdL).optional(false).ordered(true).multiple(true).origin("2839105273339214992").done();
+    b.aggregate("weather", 0x2766873431527c90L).target(0xdff00f176c3e4647L, 0xae8bee0827edcb59L, 0x2766873431527132L).optional(false).ordered(true).multiple(false).origin("2839105273339214992").done();
     return b.create();
   }
 }

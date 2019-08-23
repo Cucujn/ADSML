@@ -26,10 +26,6 @@ import jetbrains.mps.openapi.editor.cells.DefaultSubstituteInfo;
 import jetbrains.mps.nodeEditor.cellMenu.SEmptyContainmentSubstituteInfo;
 import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
 import jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation;
-import jetbrains.mps.nodeEditor.cellProviders.AbstractCellListHandler;
-import jetbrains.mps.lang.editor.cellProviders.RefNodeListHandler;
-import org.jetbrains.mps.openapi.language.SAbstractConcept;
-import jetbrains.mps.nodeEditor.cellActions.CellAction_DeleteNode;
 
 /*package*/ class World_EditorBuilder_a extends AbstractEditorBuilder {
   @NotNull
@@ -118,7 +114,7 @@ import jetbrains.mps.nodeEditor.cellActions.CellAction_DeleteNode;
     EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Vertical());
     editorCell.setCellId("Collection_72g5fh_b1a");
     editorCell.addEditorCell(createRefNode_0());
-    editorCell.addEditorCell(createRefNodeList_0());
+    editorCell.addEditorCell(createRefNode_1());
     return editorCell;
   }
   private EditorCell createRefNode_0() {
@@ -176,62 +172,59 @@ import jetbrains.mps.nodeEditor.cellActions.CellAction_DeleteNode;
       return "<no map>";
     }
   }
-  private EditorCell createRefNodeList_0() {
-    AbstractCellListHandler handler = new World_EditorBuilder_a.elementsListHandler_72g5fh_b1b0(myNode, getEditorContext());
-    EditorCell_Collection editorCell = handler.createCells(new CellLayout_Horizontal(), false);
-    editorCell.setCellId("refNodeList_elements");
-    editorCell.setSRole(handler.getElementSRole());
-    return editorCell;
+  private EditorCell createRefNode_1() {
+    SingleRoleCellProvider provider = new World_EditorBuilder_a.weatherSingleRoleHandler_72g5fh_b1b0(myNode, MetaAdapterFactory.getContainmentLink(0xdff00f176c3e4647L, 0xae8bee0827edcb59L, 0x276687343152713cL, 0x2766873431527c90L, "weather"), getEditorContext());
+    return provider.createCell();
   }
-  private static class elementsListHandler_72g5fh_b1b0 extends RefNodeListHandler {
+  private static class weatherSingleRoleHandler_72g5fh_b1b0 extends SingleRoleCellProvider {
     @NotNull
     private SNode myNode;
 
-    public elementsListHandler_72g5fh_b1b0(SNode ownerNode, EditorContext context) {
-      super(context, false);
+    public weatherSingleRoleHandler_72g5fh_b1b0(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
+      super(containmentLink, context);
       myNode = ownerNode;
     }
 
+    @Override
     @NotNull
     public SNode getNode() {
       return myNode;
     }
-    public SContainmentLink getSLink() {
-      return MetaAdapterFactory.getContainmentLink(0xdff00f176c3e4647L, 0xae8bee0827edcb59L, 0x276687343152713cL, 0x2766873431527c90L, "elements");
-    }
-    public SAbstractConcept getChildSConcept() {
-      return MetaAdapterFactory.getConcept(0xdff00f176c3e4647L, 0xae8bee0827edcb59L, 0x27668734315270cdL, "VSCE.structure.Element");
+
+    protected EditorCell createChildCell(SNode child) {
+      EditorCell editorCell = getUpdateSession().updateChildNodeCell(child);
+      editorCell.setAction(CellActionType.DELETE, new CellAction_DeleteSmart(getNode(), MetaAdapterFactory.getContainmentLink(0xdff00f176c3e4647L, 0xae8bee0827edcb59L, 0x276687343152713cL, 0x2766873431527c90L, "weather"), child));
+      editorCell.setAction(CellActionType.BACKSPACE, new CellAction_DeleteSmart(getNode(), MetaAdapterFactory.getContainmentLink(0xdff00f176c3e4647L, 0xae8bee0827edcb59L, 0x276687343152713cL, 0x2766873431527c90L, "weather"), child));
+      installCellInfo(child, editorCell, false);
+      return editorCell;
     }
 
-    public EditorCell createNodeCell(SNode elementNode) {
-      EditorCell elementCell = getUpdateSession().updateChildNodeCell(elementNode);
-      installElementCellActions(elementNode, elementCell, false);
-      return elementCell;
+
+
+    private void installCellInfo(SNode child, EditorCell editorCell, boolean isEmpty) {
+      if (editorCell.getSubstituteInfo() == null || editorCell.getSubstituteInfo() instanceof DefaultSubstituteInfo) {
+        editorCell.setSubstituteInfo((isEmpty ? new SEmptyContainmentSubstituteInfo(editorCell) : new SChildSubstituteInfo(editorCell)));
+      }
+      if (editorCell.getSRole() == null) {
+        editorCell.setSRole(MetaAdapterFactory.getContainmentLink(0xdff00f176c3e4647L, 0xae8bee0827edcb59L, 0x276687343152713cL, 0x2766873431527c90L, "weather"));
+      }
     }
-    public EditorCell createEmptyCell() {
+    @Override
+    protected EditorCell createEmptyCell() {
       getCellFactory().pushCellContext();
-      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(elementsListHandler_72g5fh_b1b0.this.getNode(), MetaAdapterFactory.getContainmentLink(0xdff00f176c3e4647L, 0xae8bee0827edcb59L, 0x276687343152713cL, 0x2766873431527c90L, "elements")));
+      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(getNode(), MetaAdapterFactory.getContainmentLink(0xdff00f176c3e4647L, 0xae8bee0827edcb59L, 0x276687343152713cL, 0x2766873431527c90L, "weather")));
       try {
-        EditorCell emptyCell = null;
-        emptyCell = super.createEmptyCell();
-        installElementCellActions(null, emptyCell, true);
-        setCellContext(emptyCell);
-        return emptyCell;
+        EditorCell editorCell = super.createEmptyCell();
+        editorCell.setCellId("empty_weather");
+        installCellInfo(null, editorCell, true);
+        setCellContext(editorCell);
+        return editorCell;
       } finally {
         getCellFactory().popCellContext();
       }
     }
-    public void installElementCellActions(SNode elementNode, EditorCell elementCell, boolean isEmptyCell) {
-      if (elementCell.getUserObject(AbstractCellListHandler.ELEMENT_CELL_ACTIONS_SET) == null) {
-        elementCell.putUserObject(AbstractCellListHandler.ELEMENT_CELL_ACTIONS_SET, AbstractCellListHandler.ELEMENT_CELL_ACTIONS_SET);
-        if (elementNode != null) {
-          elementCell.setAction(CellActionType.DELETE, new CellAction_DeleteNode(elementNode, CellAction_DeleteNode.DeleteDirection.FORWARD));
-          elementCell.setAction(CellActionType.BACKSPACE, new CellAction_DeleteNode(elementNode, CellAction_DeleteNode.DeleteDirection.BACKWARD));
-        }
-        if (elementCell.getSubstituteInfo() == null || elementCell.getSubstituteInfo() instanceof DefaultSubstituteInfo) {
-          elementCell.setSubstituteInfo((isEmptyCell ? new SEmptyContainmentSubstituteInfo(elementCell) : new SChildSubstituteInfo(elementCell)));
-        }
-      }
+    protected String getNoTargetText() {
+      return "<no weather>";
     }
   }
   private EditorCell createConstant_2() {

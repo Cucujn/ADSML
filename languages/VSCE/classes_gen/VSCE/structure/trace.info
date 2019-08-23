@@ -15,7 +15,7 @@
       <unit at="10,0,34,0" name="VSCE.structure.LanguageConceptSwitch" />
     </file>
     <file name="StructureAspectDescriptor.java">
-      <unit at="16,0,108,0" name="VSCE.structure.StructureAspectDescriptor" />
+      <unit at="16,0,110,0" name="VSCE.structure.StructureAspectDescriptor" />
     </file>
   </root>
   <root nodeRef="r:b52b1c3e-522c-4fa5-a07d-0c84fb53ae83(VSCE.structure)/1998513532176276739">
@@ -111,20 +111,21 @@
       <node id="2839105273339212082" at="84,34,85,102" concept="0" />
       <node id="2839105273339212082" at="85,102,86,91" concept="0" />
       <node id="2839105273339212082" at="86,91,87,17" concept="0" />
-      <node id="1998513532176220253" at="87,17,88,199" concept="0" />
-      <node id="1998513532176259081" at="88,199,89,202" concept="0" />
-      <node id="1998513532176259086" at="89,202,90,211" concept="0" />
-      <node id="1998513532176259093" at="90,211,91,203" concept="0" />
-      <node id="1998513532176259102" at="91,203,92,206" concept="0" />
-      <node id="1998513532176259113" at="92,206,93,207" concept="0" />
-      <node id="2839105273339212082" at="93,207,94,23" concept="0" />
-      <node id="2839105273339212082" at="94,23,95,22" concept="4" />
-      <node id="2839105273339212082" at="82,0,97,0" concept="6" trace="createDescriptorForWeather#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <node id="1607845034246495924" at="87,17,88,111" concept="0" />
+      <node id="1998513532176220253" at="88,111,89,199" concept="0" />
+      <node id="1998513532176259081" at="89,199,90,202" concept="0" />
+      <node id="1998513532176259086" at="90,202,91,211" concept="0" />
+      <node id="1998513532176259093" at="91,211,92,203" concept="0" />
+      <node id="1998513532176259102" at="92,203,93,206" concept="0" />
+      <node id="1998513532176259113" at="93,206,94,207" concept="0" />
+      <node id="2839105273339212082" at="94,207,95,23" concept="0" />
+      <node id="2839105273339212082" at="95,23,96,22" concept="4" />
+      <node id="2839105273339212082" at="82,0,98,0" concept="6" trace="createDescriptorForWeather#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
       <scope id="2839105273339212082" at="47,41,48,32" />
-      <scope id="2839105273339212082" at="82,65,95,22">
+      <scope id="2839105273339212082" at="82,65,96,22">
         <var name="b" id="2839105273339212082" />
       </scope>
-      <scope id="2839105273339212082" at="82,0,97,0" />
+      <scope id="2839105273339212082" at="82,0,98,0" />
     </file>
   </root>
   <root nodeRef="r:b52b1c3e-522c-4fa5-a07d-0c84fb53ae83(VSCE.structure)/2839105273339212092">
@@ -147,20 +148,21 @@
     <file name="StructureAspectDescriptor.java">
       <node id="2839105273339212092" at="20,0,21,0" concept="1" trace="myConceptWorld" />
       <node id="2839105273339212092" at="49,39,50,30" concept="4" />
-      <node id="2839105273339212092" at="97,63,98,144" concept="3" />
-      <node id="2839105273339212092" at="98,144,99,33" concept="0" />
-      <node id="2839105273339212092" at="99,33,100,71" concept="0" />
-      <node id="2839105273339212092" at="100,71,101,91" concept="0" />
-      <node id="2839105273339212092" at="101,91,102,17" concept="0" />
-      <node id="1998513532176276736" at="102,17,103,197" concept="0" />
-      <node id="2839105273339214992" at="103,197,104,201" concept="0" />
-      <node id="2839105273339212092" at="104,201,105,22" concept="4" />
-      <node id="2839105273339212092" at="97,0,107,0" concept="6" trace="createDescriptorForWorld#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <node id="2839105273339212092" at="98,63,99,144" concept="3" />
+      <node id="2839105273339212092" at="99,144,100,33" concept="0" />
+      <node id="2839105273339212092" at="100,33,101,71" concept="0" />
+      <node id="2839105273339212092" at="101,71,102,76" concept="0" />
+      <node id="2839105273339212092" at="102,76,103,91" concept="0" />
+      <node id="2839105273339212092" at="103,91,104,17" concept="0" />
+      <node id="1998513532176276736" at="104,17,105,197" concept="0" />
+      <node id="2839105273339214992" at="105,197,106,201" concept="0" />
+      <node id="2839105273339212092" at="106,201,107,22" concept="4" />
+      <node id="2839105273339212092" at="98,0,109,0" concept="6" trace="createDescriptorForWorld#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
       <scope id="2839105273339212092" at="49,39,50,30" />
-      <scope id="2839105273339212092" at="97,63,105,22">
+      <scope id="2839105273339212092" at="98,63,107,22">
         <var name="b" id="2839105273339212092" />
       </scope>
-      <scope id="2839105273339212092" at="97,0,107,0" />
+      <scope id="2839105273339212092" at="98,0,109,0" />
     </file>
   </root>
 </debug-info>

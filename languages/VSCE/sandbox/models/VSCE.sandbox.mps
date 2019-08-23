@@ -13,6 +13,7 @@
     </language>
     <language id="dff00f17-6c3e-4647-ae8b-ee0827edcb59" name="VSCE">
       <concept id="2839105273339212082" name="VSCE.structure.Weather" flags="ng" index="mdfo6">
+        <property id="1607845034246495924" name="color" index="IsQwY" />
         <child id="1998513532176220253" name="cloudiness" index="n$ek_" />
         <child id="1998513532176259113" name="sun_altitude_angle" index="n$nPh" />
         <child id="1998513532176259102" name="sun_azimuth_angle" index="n$nPA" />
@@ -21,7 +22,7 @@
         <child id="1998513532176259086" name="precipitation_deposits" index="n$nPQ" />
       </concept>
       <concept id="2839105273339212092" name="VSCE.structure.World" flags="ng" index="mdfo8">
-        <child id="2839105273339214992" name="elements" index="mdfI$" />
+        <child id="2839105273339214992" name="weather" index="mdfI$" />
         <child id="1998513532176276736" name="map" index="n$rxS" />
       </concept>
       <concept id="1998513532176276739" name="VSCE.structure.Map" flags="ng" index="n$rxV">
@@ -29,29 +30,36 @@
         <property id="1998513532176276742" name="id" index="n$rxY" />
       </concept>
     </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
   </registry>
-  <node concept="mdfo8" id="1IW9nwcbrWQ">
-    <node concept="n$rxV" id="1IW9nwcbrWR" role="n$rxS">
-      <property role="n$rxY" value="map1" />
-      <property role="n$rxK" value="D:\map1" />
+  <node concept="mdfo8" id="1pgdCCSfiJw">
+    <property role="TrG5h" value="World" />
+    <node concept="n$rxV" id="1pgdCCSfiJx" role="n$rxS">
+      <property role="n$rxY" value="1" />
+      <property role="n$rxK" value="1" />
     </node>
-    <node concept="mdfo6" id="1IW9nwcbrX9" role="mdfI$">
-      <node concept="3b6qkQ" id="1IW9nwcbrXb" role="n$ek_">
+    <node concept="mdfo6" id="1pgdCCSfiJy" role="mdfI$">
+      <property role="IsQwY" value="1.0" />
+      <node concept="3b6qkQ" id="1pgdCCSfiJz" role="n$ek_">
         <property role="$nhwW" value="1.0" />
       </node>
-      <node concept="3b6qkQ" id="1IW9nwcbrXd" role="n$nPL">
+      <node concept="3b6qkQ" id="1pgdCCSfiJ$" role="n$nPL">
         <property role="$nhwW" value="1.0" />
       </node>
-      <node concept="3b6qkQ" id="1IW9nwcbrXf" role="n$nPQ">
+      <node concept="3b6qkQ" id="1pgdCCSfiJ_" role="n$nPQ">
         <property role="$nhwW" value="1.0" />
       </node>
-      <node concept="3b6qkQ" id="1IW9nwcbrXh" role="n$nPH">
+      <node concept="3b6qkQ" id="1pgdCCSfiJA" role="n$nPH">
         <property role="$nhwW" value="1.0" />
       </node>
-      <node concept="3b6qkQ" id="1IW9nwcbrXj" role="n$nPA">
-        <property role="$nhwW" value="1.01" />
+      <node concept="3b6qkQ" id="1pgdCCSfiJB" role="n$nPA">
+        <property role="$nhwW" value="1.0" />
       </node>
-      <node concept="3b6qkQ" id="1IW9nwcbrXl" role="n$nPh">
+      <node concept="3b6qkQ" id="1pgdCCSfiJC" role="n$nPh">
         <property role="$nhwW" value="1.0" />
       </node>
     </node>
