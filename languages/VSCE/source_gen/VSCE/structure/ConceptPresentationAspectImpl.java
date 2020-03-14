@@ -9,8 +9,11 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.runtime.ConceptPresentationBuilder;
 
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
-  private ConceptPresentation props_Element;
+  private ConceptPresentation props_Location;
   private ConceptPresentation props_Map;
+  private ConceptPresentation props_Object;
+  private ConceptPresentation props_Pedestrian;
+  private ConceptPresentation props_Vehicle;
   private ConceptPresentation props_Weather;
   private ConceptPresentation props_World;
 
@@ -19,12 +22,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   public ConceptPresentation getDescriptor(SAbstractConcept c) {
     StructureAspectDescriptor structureDescriptor = (StructureAspectDescriptor) myLanguageRuntime.getAspect(jetbrains.mps.smodel.runtime.StructureAspectDescriptor.class);
     switch (structureDescriptor.internalIndex(c)) {
-      case LanguageConceptSwitch.Element:
-        if (props_Element == null) {
+      case LanguageConceptSwitch.Location:
+        if (props_Location == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          props_Element = cpb.create();
+          cpb.rawPresentation("Location");
+          props_Location = cpb.create();
         }
-        return props_Element;
+        return props_Location;
       case LanguageConceptSwitch.Map:
         if (props_Map == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -32,6 +36,27 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Map = cpb.create();
         }
         return props_Map;
+      case LanguageConceptSwitch.Object:
+        if (props_Object == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_Object = cpb.create();
+        }
+        return props_Object;
+      case LanguageConceptSwitch.Pedestrian:
+        if (props_Pedestrian == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_Pedestrian = cpb.create();
+        }
+        return props_Pedestrian;
+      case LanguageConceptSwitch.Vehicle:
+        if (props_Vehicle == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_Vehicle = cpb.create();
+        }
+        return props_Vehicle;
       case LanguageConceptSwitch.Weather:
         if (props_Weather == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

@@ -9,15 +9,21 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 
 public final class LanguageConceptSwitch {
   private final LanguageConceptIndex myIndex;
-  public static final int Element = 0;
+  public static final int Location = 0;
   public static final int Map = 1;
-  public static final int Weather = 2;
-  public static final int World = 3;
+  public static final int Object = 2;
+  public static final int Pedestrian = 3;
+  public static final int Vehicle = 4;
+  public static final int Weather = 5;
+  public static final int World = 6;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0xdff00f176c3e4647L, 0xae8bee0827edcb59L);
-    builder.put(0x27668734315270cdL, Element);
+    builder.put(0x31f1ee35b6e22565L, Location);
     builder.put(0x1bbc25780c2d9d03L, Map);
+    builder.put(0x31f1ee35b6e22561L, Object);
+    builder.put(0x31f1ee35b6e22563L, Pedestrian);
+    builder.put(0x31f1ee35b6e22562L, Vehicle);
     builder.put(0x2766873431527132L, Weather);
     builder.put(0x276687343152713cL, World);
     myIndex = builder.seal();

@@ -4,6 +4,7 @@
     <projectModules>
       <modulePath path="$PROJECT_DIR$/languages/VSCE/VSCE.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/VSCE/sandbox/VSCE.sandbox.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/VSCE.build/VSCE.build.msd" folder="" />
     </projectModules>
   </component>
 </project>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <root nodeRef="r:e089d824-caf7-4756-801f-8ce3c3fbbd61(VSCE.build)/2698554890240106355">
+    <file name="VSCE.xml">
+      <unit id="2698554890240106355" at="1,0,339,10" name="VSCE.build.VSCE" />
+    </file>
+  </root>
+</debug-info>
+

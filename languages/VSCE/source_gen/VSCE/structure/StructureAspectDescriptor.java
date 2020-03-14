@@ -14,8 +14,11 @@ import jetbrains.mps.smodel.runtime.impl.ConceptDescriptorBuilder2;
 import jetbrains.mps.smodel.adapter.ids.PrimitiveTypeId;
 
 public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
-  /*package*/ final ConceptDescriptor myConceptElement = createDescriptorForElement();
+  /*package*/ final ConceptDescriptor myConceptLocation = createDescriptorForLocation();
   /*package*/ final ConceptDescriptor myConceptMap = createDescriptorForMap();
+  /*package*/ final ConceptDescriptor myConceptObject = createDescriptorForObject();
+  /*package*/ final ConceptDescriptor myConceptPedestrian = createDescriptorForPedestrian();
+  /*package*/ final ConceptDescriptor myConceptVehicle = createDescriptorForVehicle();
   /*package*/ final ConceptDescriptor myConceptWeather = createDescriptorForWeather();
   /*package*/ final ConceptDescriptor myConceptWorld = createDescriptorForWorld();
   private final LanguageConceptSwitch myIndexSwitch;
@@ -33,17 +36,23 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptElement, myConceptMap, myConceptWeather, myConceptWorld);
+    return Arrays.asList(myConceptLocation, myConceptMap, myConceptObject, myConceptPedestrian, myConceptVehicle, myConceptWeather, myConceptWorld);
   }
 
   @Override
   @Nullable
   public ConceptDescriptor getDescriptor(SConceptId id) {
     switch (myIndexSwitch.index(id)) {
-      case LanguageConceptSwitch.Element:
-        return myConceptElement;
+      case LanguageConceptSwitch.Location:
+        return myConceptLocation;
       case LanguageConceptSwitch.Map:
         return myConceptMap;
+      case LanguageConceptSwitch.Object:
+        return myConceptObject;
+      case LanguageConceptSwitch.Pedestrian:
+        return myConceptPedestrian;
+      case LanguageConceptSwitch.Vehicle:
+        return myConceptVehicle;
       case LanguageConceptSwitch.Weather:
         return myConceptWeather;
       case LanguageConceptSwitch.World:
@@ -62,11 +71,13 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     return myIndexSwitch.index(c);
   }
 
-  private static ConceptDescriptor createDescriptorForElement() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("VSCE", "Element", 0xdff00f176c3e4647L, 0xae8bee0827edcb59L, 0x27668734315270cdL);
-    b.class_(false, true, false);
-    b.origin("r:b52b1c3e-522c-4fa5-a07d-0c84fb53ae83(VSCE.structure)/2839105273339211981");
+  private static ConceptDescriptor createDescriptorForLocation() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("VSCE", "Location", 0xdff00f176c3e4647L, 0xae8bee0827edcb59L, 0x31f1ee35b6e22565L);
+    b.class_(false, false, false);
+    b.origin("r:b52b1c3e-522c-4fa5-a07d-0c84fb53ae83(VSCE.structure)/3598919491714688357");
     b.version(2);
+    b.aggregate("longitude", 0x31f1ee35b6e22597L).target(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x102cb19a434L).optional(false).ordered(true).multiple(false).origin("3598919491714688407").done();
+    b.aggregate("latitude", 0x31f1ee35b6e2259aL).target(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x102cb19a434L).optional(false).ordered(true).multiple(false).origin("3598919491714688410").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForMap() {
@@ -75,17 +86,41 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:b52b1c3e-522c-4fa5-a07d-0c84fb53ae83(VSCE.structure)/1998513532176276739");
     b.version(2);
     b.property("id", 0x1bbc25780c2d9d06L).type(PrimitiveTypeId.STRING).origin("1998513532176276742").done();
-    b.property("uri", 0x1bbc25780c2d9d08L).type(PrimitiveTypeId.STRING).origin("1998513532176276744").done();
+    b.property("path", 0x1bbc25780c2d9d08L).type(PrimitiveTypeId.STRING).origin("1998513532176276744").done();
     b.alias("map");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForObject() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("VSCE", "Object", 0xdff00f176c3e4647L, 0xae8bee0827edcb59L, 0x31f1ee35b6e22561L);
+    b.class_(false, false, false);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
+    b.origin("r:b52b1c3e-522c-4fa5-a07d-0c84fb53ae83(VSCE.structure)/3598919491714688353");
+    b.version(2);
+    b.aggregate("location", 0x31f1ee35b6e276d1L).target(0xdff00f176c3e4647L, 0xae8bee0827edcb59L, 0x31f1ee35b6e22565L).optional(true).ordered(true).multiple(false).origin("3598919491714709201").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForPedestrian() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("VSCE", "Pedestrian", 0xdff00f176c3e4647L, 0xae8bee0827edcb59L, 0x31f1ee35b6e22563L);
+    b.class_(false, false, false);
+    b.super_("VSCE.structure.Object", 0xdff00f176c3e4647L, 0xae8bee0827edcb59L, 0x31f1ee35b6e22561L);
+    b.origin("r:b52b1c3e-522c-4fa5-a07d-0c84fb53ae83(VSCE.structure)/3598919491714688355");
+    b.version(2);
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForVehicle() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("VSCE", "Vehicle", 0xdff00f176c3e4647L, 0xae8bee0827edcb59L, 0x31f1ee35b6e22562L);
+    b.class_(false, false, false);
+    b.super_("VSCE.structure.Object", 0xdff00f176c3e4647L, 0xae8bee0827edcb59L, 0x31f1ee35b6e22561L);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
+    b.origin("r:b52b1c3e-522c-4fa5-a07d-0c84fb53ae83(VSCE.structure)/3598919491714688354");
+    b.version(2);
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForWeather() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("VSCE", "Weather", 0xdff00f176c3e4647L, 0xae8bee0827edcb59L, 0x2766873431527132L);
     b.class_(false, false, false);
-    b.super_("VSCE.structure.Element", 0xdff00f176c3e4647L, 0xae8bee0827edcb59L, 0x27668734315270cdL);
     b.origin("r:b52b1c3e-522c-4fa5-a07d-0c84fb53ae83(VSCE.structure)/2839105273339212082");
     b.version(2);
-    b.property("color", 0x1650368a38235eb4L).type(PrimitiveTypeId.STRING).origin("1607845034246495924").done();
     b.aggregate("cloudiness", 0x1bbc25780c2cc05dL).target(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x102cb19a434L).optional(false).ordered(true).multiple(false).origin("1998513532176220253").done();
     b.aggregate("precipitation", 0x1bbc25780c2d5809L).target(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x102cb19a434L).optional(false).ordered(true).multiple(false).origin("1998513532176259081").done();
     b.aggregate("precipitation_deposits", 0x1bbc25780c2d580eL).target(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x102cb19a434L).optional(false).ordered(true).multiple(false).origin("1998513532176259086").done();
@@ -104,6 +139,9 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.version(2);
     b.aggregate("map", 0x1bbc25780c2d9d00L).target(0xdff00f176c3e4647L, 0xae8bee0827edcb59L, 0x1bbc25780c2d9d03L).optional(false).ordered(true).multiple(false).origin("1998513532176276736").done();
     b.aggregate("weather", 0x2766873431527c90L).target(0xdff00f176c3e4647L, 0xae8bee0827edcb59L, 0x2766873431527132L).optional(false).ordered(true).multiple(false).origin("2839105273339214992").done();
+    b.aggregate("ego", 0x31f1ee35b6e2257cL).target(0xdff00f176c3e4647L, 0xae8bee0827edcb59L, 0x31f1ee35b6e22562L).optional(false).ordered(true).multiple(false).origin("3598919491714688380").done();
+    b.aggregate("vehicles", 0x31f1ee35b6e22583L).target(0xdff00f176c3e4647L, 0xae8bee0827edcb59L, 0x31f1ee35b6e22562L).optional(true).ordered(true).multiple(true).origin("3598919491714688387").done();
+    b.aggregate("pedestrains", 0x31f1ee35b6e2258cL).target(0xdff00f176c3e4647L, 0xae8bee0827edcb59L, 0x31f1ee35b6e22563L).optional(true).ordered(true).multiple(true).origin("3598919491714688396").done();
     return b.create();
   }
 }

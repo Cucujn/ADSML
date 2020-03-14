@@ -7,58 +7,69 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="78865cb4-fe4e-47ef-ba84-f35fdbdeae1f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/languages/VSCE/classes_gen/VSCE/textGen/trace.info" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/languages/VSCE/generator/classes_gen/main/trace.info" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/languages/VSCE/generator/source_gen.caches/main/dependencies" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/languages/VSCE/generator/source_gen.caches/main/generated" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/languages/VSCE/generator/source_gen/main/QueriesGenerated.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/languages/VSCE/generator/source_gen/main/trace.info" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/languages/VSCE/models/VSCE.textGen.mps" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/languages/VSCE/sandbox/source_gen/VSCE/sandbox/world.python" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/languages/VSCE/source_gen.caches/VSCE/textGen/dependencies" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/languages/VSCE/source_gen.caches/VSCE/textGen/generated" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/languages/VSCE/source_gen/VSCE/textGen/TextGenAspectDescriptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/languages/VSCE/source_gen/VSCE/textGen/Weather_TextGen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/languages/VSCE/source_gen/VSCE/textGen/World_TextGen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/languages/VSCE/source_gen/VSCE/textGen/aspectcps-descriptorclasses.mps" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/languages/VSCE/source_gen/VSCE/textGen/checkpoints" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/languages/VSCE/source_gen/VSCE/textGen/trace.info" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/languages/VSCE/source_gen/VSCE/editor/Location_Editor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/languages/VSCE/source_gen/VSCE/editor/Location_EditorBuilder_a.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/languages/VSCE/source_gen/VSCE/editor/Map_Editor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/languages/VSCE/source_gen/VSCE/editor/Map_EditorBuilder_a.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/languages/VSCE/source_gen/VSCE/editor/ObjectLocation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/languages/VSCE/source_gen/VSCE/editor/ObjectLocation_ComponentBuilder_a.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/languages/VSCE/source_gen/VSCE/editor/Pedestrian_Editor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/languages/VSCE/source_gen/VSCE/editor/Pedestrian_EditorBuilder_a.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/languages/VSCE/source_gen/VSCE/editor/Vehicle_Editor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/languages/VSCE/source_gen/VSCE/editor/Vehicle_EditorBuilder_a.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solutions/VSCE.build/VSCE.build.msd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solutions/VSCE.build/models/VSCE.build.mps" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solutions/VSCE.build/source_gen.caches/VSCE/build/dependencies" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solutions/VSCE.build/source_gen.caches/VSCE/build/generated" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solutions/VSCE.build/source_gen/VSCE/build/VSCE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solutions/VSCE.build/source_gen/VSCE/build/trace.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mps/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.mps/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.mps/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.mps/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/VSCE/VSCE.mpl" beforeDir="false" afterPath="$PROJECT_DIR$/languages/VSCE/VSCE.mpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/VSCE/classes_gen/VSCE/Language.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/VSCE/classes_gen/VSCE/Language.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/VSCE/classes_gen/VSCE/editor/Weather_EditorBuilder_a$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/VSCE/classes_gen/VSCE/editor/Weather_EditorBuilder_a$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/VSCE/classes_gen/VSCE/editor/EditorAspectDescriptorImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/VSCE/classes_gen/VSCE/editor/EditorAspectDescriptorImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/VSCE/classes_gen/VSCE/editor/Weather_EditorBuilder_a.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/VSCE/classes_gen/VSCE/editor/Weather_EditorBuilder_a.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/VSCE/classes_gen/VSCE/editor/World_EditorBuilder_a$mapSingleRoleHandler_72g5fh_a1b0.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/VSCE/classes_gen/VSCE/editor/World_EditorBuilder_a$mapSingleRoleHandler_72g5fh_a1b0.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/VSCE/classes_gen/VSCE/editor/World_EditorBuilder_a$weatherSingleRoleHandler_72g5fh_b1b0.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/VSCE/classes_gen/VSCE/editor/World_EditorBuilder_a$weatherSingleRoleHandler_72g5fh_b1b0.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/VSCE/classes_gen/VSCE/editor/World_EditorBuilder_a.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/VSCE/classes_gen/VSCE/editor/World_EditorBuilder_a.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/VSCE/classes_gen/VSCE/editor/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/VSCE/classes_gen/VSCE/editor/trace.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/VSCE/classes_gen/VSCE/structure/ConceptPresentationAspectImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/VSCE/classes_gen/VSCE/structure/ConceptPresentationAspectImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/VSCE/classes_gen/VSCE/structure/LanguageConceptSwitch.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/VSCE/classes_gen/VSCE/structure/LanguageConceptSwitch.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/VSCE/classes_gen/VSCE/structure/StructureAspectDescriptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/VSCE/classes_gen/VSCE/structure/StructureAspectDescriptor.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/VSCE/classes_gen/VSCE/structure/aspectcps-descriptorclasses.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/VSCE/classes_gen/VSCE/structure/aspectcps-descriptorclasses.mps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/VSCE/classes_gen/VSCE/structure/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/VSCE/classes_gen/VSCE/structure/trace.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/VSCE/classes_gen/VSCE/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/VSCE/classes_gen/VSCE/trace.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/VSCE/classes_gen/VSCE/textGen/TextGenAspectDescriptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/VSCE/classes_gen/VSCE/textGen/TextGenAspectDescriptor.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/VSCE/generator/classes_gen/VSCE/Generator.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/VSCE/generator/classes_gen/VSCE/Generator.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/VSCE/generator/classes_gen/VSCE/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/VSCE/generator/classes_gen/VSCE/trace.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/VSCE/generator/classes_gen/main/QueriesGenerated.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/VSCE/generator/classes_gen/main/QueriesGenerated.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/VSCE/generator/classes_gen/main/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/VSCE/generator/classes_gen/main/trace.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/VSCE/generator/source_gen.caches/VSCE/dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/languages/VSCE/generator/source_gen.caches/VSCE/dependencies" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/VSCE/generator/source_gen.caches/VSCE/generated" beforeDir="false" afterPath="$PROJECT_DIR$/languages/VSCE/generator/source_gen.caches/VSCE/generated" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/VSCE/generator/source_gen.caches/main/dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/languages/VSCE/generator/source_gen.caches/main/dependencies" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/VSCE/generator/source_gen.caches/main/generated" beforeDir="false" afterPath="$PROJECT_DIR$/languages/VSCE/generator/source_gen.caches/main/generated" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/VSCE/generator/source_gen/VSCE/Generator.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/VSCE/generator/source_gen/VSCE/Generator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/VSCE/generator/source_gen/VSCE/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/VSCE/generator/source_gen/VSCE/trace.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/VSCE/generator/source_gen/main/QueriesGenerated.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/VSCE/generator/source_gen/main/QueriesGenerated.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/VSCE/generator/source_gen/main/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/VSCE/generator/source_gen/main/trace.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/VSCE/generator/template/main@generator.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/VSCE/generator/template/main@generator.mps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/VSCE/models/VSCE.editor.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/VSCE/models/VSCE.editor.mps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/VSCE/models/VSCE.structure.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/VSCE/models/VSCE.structure.mps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/VSCE/sandbox/models/VSCE.sandbox.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/VSCE/sandbox/models/VSCE.sandbox.mps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/VSCE/sandbox/source_gen.caches/VSCE/sandbox/generated" beforeDir="false" afterPath="$PROJECT_DIR$/languages/VSCE/sandbox/source_gen.caches/VSCE/sandbox/generated" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/VSCE/source_gen.caches/VSCE/dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/languages/VSCE/source_gen.caches/VSCE/dependencies" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/VSCE/source_gen.caches/VSCE/editor/dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/languages/VSCE/source_gen.caches/VSCE/editor/dependencies" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/VSCE/source_gen.caches/VSCE/editor/generated" beforeDir="false" afterPath="$PROJECT_DIR$/languages/VSCE/source_gen.caches/VSCE/editor/generated" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/VSCE/source_gen.caches/VSCE/generated" beforeDir="false" afterPath="$PROJECT_DIR$/languages/VSCE/source_gen.caches/VSCE/generated" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/VSCE/source_gen.caches/VSCE/structure/generated" beforeDir="false" afterPath="$PROJECT_DIR$/languages/VSCE/source_gen.caches/VSCE/structure/generated" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/VSCE/source_gen/VSCE/Language.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/VSCE/source_gen/VSCE/Language.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/VSCE/source_gen/VSCE/editor/EditorAspectDescriptorImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/VSCE/source_gen/VSCE/editor/EditorAspectDescriptorImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/VSCE/source_gen/VSCE/editor/Weather_EditorBuilder_a.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/VSCE/source_gen/VSCE/editor/Weather_EditorBuilder_a.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/VSCE/source_gen/VSCE/editor/World_EditorBuilder_a.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/VSCE/source_gen/VSCE/editor/World_EditorBuilder_a.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/VSCE/source_gen/VSCE/editor/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/VSCE/source_gen/VSCE/editor/trace.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/VSCE/source_gen/VSCE/structure/ConceptPresentationAspectImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/VSCE/source_gen/VSCE/structure/ConceptPresentationAspectImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/VSCE/source_gen/VSCE/structure/LanguageConceptSwitch.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/VSCE/source_gen/VSCE/structure/LanguageConceptSwitch.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/VSCE/source_gen/VSCE/structure/StructureAspectDescriptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/VSCE/source_gen/VSCE/structure/StructureAspectDescriptor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/VSCE/source_gen/VSCE/structure/aspectcps-descriptorclasses.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/VSCE/source_gen/VSCE/structure/aspectcps-descriptorclasses.mps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/VSCE/source_gen/VSCE/structure/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/VSCE/source_gen/VSCE/structure/trace.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/VSCE/source_gen/VSCE/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/VSCE/source_gen/VSCE/trace.info" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -72,7 +83,7 @@
         <TabState>
           <option name="title" value="Console" />
           <tab>
-            <model ref="1d9ed134-5a83-4604-876a-a059022f5a49/r:afa76f32-3b1c-4419-9aa2-79faa8f0266f(TempModule1d9ed134-5a83-4604-876a-a059022f5a49/TempModel_220383041600)">
+            <model ref="850dbe80-3e80-4336-96a1-81c3e7245bc2/r:21933d5b-31da-4eb9-a049-168308b546d6(TempModule850dbe80-3e80-4336-96a1-81c3e7245bc2/TempModel_38319995626000)">
               <persistence version="9" />
               <languages>
                 <devkit ref="70d3d6da-af63-483d-a75f-9c8acf8de332(jetbrains.mps.console.devkit)" />
@@ -92,11 +103,11 @@
                   <concept id="757553790980850366" name="jetbrains.mps.console.base.structure.History" flags="ng" index="3balQm" />
                 </language>
               </registry>
-              <node concept="aymSD" id="1pgdCCS7KCg">
-                <node concept="3balQm" id="1pgdCCS7KCh" role="aymYE" />
-                <node concept="2Clz$F" id="1pgdCCS7KCi" role="aymYO" />
-                <node concept="2_V_lH" id="1pgdCCS7KCj" role="1PhJh3">
-                  <ref role="2_V_lI" node="1pgdCCS7KCi" resolve="CommandHolder" />
+              <node concept="aymSD" id="6I8tzR4hDyK">
+                <node concept="3balQm" id="6I8tzR4hDyL" role="aymYE" />
+                <node concept="2Clz$F" id="6I8tzR4hDyM" role="aymYO" />
+                <node concept="2_V_lH" id="6I8tzR4hDyN" role="1PhJh3">
+                  <ref role="2_V_lI" node="6I8tzR4hDyM" resolve="CommandHolder" />
                 </node>
               </node>
             </model>
@@ -121,108 +132,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="false">
-        <entry file="mps://node://VSCE/VSCE.structure/Weather">
-          <provider selected="true" editor-type-id="MPSFileEditor">
-            <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
-              <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-                <selectionStack>
-                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                    <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretX" value="135" />
-                    <property name="caretXRelative" value="0" />
-                    <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="property_value">
-                      <node node_reference="r:c3af0207-1a1f-43d5-ac20-1983480a0336(VSCE.textGen)/1607845034247826045" />
-                    </cellInfo>
-                  </stackElement>
-                </selectionStack>
-                <errorMarkers />
-                <transactionalProperties />
-                <foldable>
-                  <collapsedElement isCollapsed="false">
-                    <cellIdElement cellId="Collection_trik0f_b0">
-                      <node node_reference="r:c3af0207-1a1f-43d5-ac20-1983480a0336(VSCE.textGen)/1607845034247782888" />
-                    </cellIdElement>
-                  </collapsedElement>
-                </foldable>
-                <restoreAlways>
-                  <collapsedElement isCollapsed="false">
-                    <cellIdElement cellId="Collection_trik0f_b0">
-                      <node node_reference="r:c3af0207-1a1f-43d5-ac20-1983480a0336(VSCE.textGen)/1607845034247782888" />
-                    </cellIdElement>
-                  </collapsedElement>
-                </restoreAlways>
-              </memento>
-              <inspectorMemento currentlyEditedNode="r:c3af0207-1a1f-43d5-ac20-1983480a0336(VSCE.textGen)/1607845034248121771" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-                <selectionStack />
-                <errorMarkers />
-                <transactionalProperties />
-                <foldable />
-                <restoreAlways />
-                <enabledHints />
-              </inspectorMemento>
-              <node node_ref="r:c3af0207-1a1f-43d5-ac20-1983480a0336(VSCE.textGen)/1607845034247782887" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="mps://node://VSCE/VSCE.structure/World">
-          <provider selected="true" editor-type-id="MPSFileEditor">
-            <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState" editorFocused="true">
-              <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-                <selectionStack>
-                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                    <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretX" value="65" />
-                    <property name="caretXRelative" value="20" />
-                    <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="property_value">
-                      <node node_reference="r:c3af0207-1a1f-43d5-ac20-1983480a0336(VSCE.textGen)/1607845034248121771" />
-                    </cellInfo>
-                  </stackElement>
-                </selectionStack>
-                <errorMarkers />
-                <transactionalProperties />
-                <foldable>
-                  <collapsedElement isCollapsed="false">
-                    <cellIdElement cellId="Collection_trik0f_b0">
-                      <node node_reference="r:c3af0207-1a1f-43d5-ac20-1983480a0336(VSCE.textGen)/1607845034248120891" />
-                    </cellIdElement>
-                  </collapsedElement>
-                  <collapsedElement isCollapsed="false">
-                    <cellIdElement cellId="Collection_trik0f_b0">
-                      <node node_reference="r:c3af0207-1a1f-43d5-ac20-1983480a0336(VSCE.textGen)/1607845034248187297" />
-                    </cellIdElement>
-                  </collapsedElement>
-                  <collapsedElement isCollapsed="false">
-                    <cellIdElement cellId="Collection_trik0f_b0">
-                      <node node_reference="r:c3af0207-1a1f-43d5-ac20-1983480a0336(VSCE.textGen)/1607845034247712439" />
-                    </cellIdElement>
-                  </collapsedElement>
-                </foldable>
-                <restoreAlways>
-                  <collapsedElement isCollapsed="false">
-                    <cellIdElement cellId="Collection_trik0f_b0">
-                      <node node_reference="r:c3af0207-1a1f-43d5-ac20-1983480a0336(VSCE.textGen)/1607845034248120891" />
-                    </cellIdElement>
-                  </collapsedElement>
-                </restoreAlways>
-              </memento>
-              <inspectorMemento currentlyEditedNode="r:c3af0207-1a1f-43d5-ac20-1983480a0336(VSCE.textGen)/1607845034248121771" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-                <selectionStack />
-                <errorMarkers />
-                <transactionalProperties />
-                <foldable />
-                <restoreAlways />
-                <enabledHints />
-              </inspectorMemento>
-              <node node_ref="r:c3af0207-1a1f-43d5-ac20-1983480a0336(VSCE.textGen)/1607845034247711296" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="mps://node://VSCE.sandbox/VSCE.sandbox/World">
           <provider selected="true" editor-type-id="MPSFileEditor">
             <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
@@ -230,11 +139,11 @@
                 <selectionStack>
                   <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                     <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretX" value="45" />
-                    <property name="caretXRelative" value="10" />
+                    <property name="caretX" value="515" />
+                    <property name="caretXRelative" value="40" />
                     <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="constant_7">
-                      <node node_reference="r:fb24075f-fe05-4fab-b0d2-7e357a66f8e6(VSCE.sandbox)/1607845034248186849" />
+                    <cellInfo cellId="property_value">
+                      <node node_reference="r:fb24075f-fe05-4fab-b0d2-7e357a66f8e6(VSCE.sandbox)/3837924719050797440" />
                     </cellInfo>
                   </stackElement>
                 </selectionStack>
@@ -242,8 +151,52 @@
                 <transactionalProperties />
                 <foldable />
                 <restoreAlways />
+                <enabledHints>
+                  <enabledHintsElement enabledHintsAttribute="jetbrains.mps.baseLanguage.editor.BLHints.VisibleExpressionBoundaries" />
+                  <enabledHintsElement enabledHintsAttribute="jetbrains.mps.lang.core.editor.SuppressedHints.ShowSuppressedErrors" />
+                  <enabledHintsElement enabledHintsAttribute="jetbrains.mps.samples.componentDependencies.editor.views.diagram" />
+                </enabledHints>
               </memento>
-              <inspectorMemento currentlyEditedNode="r:c3af0207-1a1f-43d5-ac20-1983480a0336(VSCE.textGen)/1607845034248121771" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:e089d824-caf7-4756-801f-8ce3c3fbbd61(VSCE.build)/2698554890240106377" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+                <selectionStack />
+                <errorMarkers />
+                <transactionalProperties />
+                <foldable />
+                <restoreAlways />
+                <enabledHints />
+              </inspectorMemento>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="mps://node://VSCE.build/VSCE.build/VSCE">
+          <provider selected="true" editor-type-id="MPSFileEditor">
+            <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+              <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+                <selectionStack>
+                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                    <property name="hasNonTrivialSelection" value="false" />
+                    <property name="caretX" value="165" />
+                    <property name="caretXRelative" value="30" />
+                    <property name="sideSelectDirection" value="NONE" />
+                    <cellInfo cellId="property_text3">
+                      <node node_reference="r:e089d824-caf7-4756-801f-8ce3c3fbbd61(VSCE.build)/2698554890240106377" />
+                    </cellInfo>
+                  </stackElement>
+                </selectionStack>
+                <errorMarkers />
+                <transactionalProperties />
+                <foldable>
+                  <collapsedElement isCollapsed="false">
+                    <cellIdElement cellId="Collection_pilq2t_c0">
+                      <node node_reference="r:e089d824-caf7-4756-801f-8ce3c3fbbd61(VSCE.build)/2698554890240106372" />
+                    </cellIdElement>
+                  </collapsedElement>
+                </foldable>
+                <restoreAlways />
+              </memento>
+              <inspectorMemento currentlyEditedNode="r:e089d824-caf7-4756-801f-8ce3c3fbbd61(VSCE.build)/2698554890240106377" saveSessionState="false" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorMarkers />
                 <transactionalProperties />
@@ -256,31 +209,17 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="previewVSCE.sandbox@6_4/world.python">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="5" column="23" lean-forward="true" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="previewVSCE.textGen@14_14/TextGenAspectDescriptor.java">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="mps://node://VSCE#2395800094991877645/main@generator/main">
           <provider selected="true" editor-type-id="MPSFileEditor">
             <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-              <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+              <memento saveSessionState="false" viewPositionX="0" viewPositionY="141">
                 <selectionStack>
                   <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                     <property name="hasNonTrivialSelection" value="false" />
                     <property name="caretX" value="35" />
                     <property name="caretXRelative" value="0" />
                     <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="empty_mappingLabel">
+                    <cellInfo cellId="empty_createRootRule">
                       <node node_reference="r:f8d6f752-8147-4d0e-820b-085416018051(main@generator)/2395800094991877646" />
                     </cellInfo>
                   </stackElement>
@@ -296,7 +235,7 @@
                 </foldable>
                 <restoreAlways />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:c3af0207-1a1f-43d5-ac20-1983480a0336(VSCE.textGen)/1607845034248121771" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:e089d824-caf7-4756-801f-8ce3c3fbbd61(VSCE.build)/2698554890240106377" saveSessionState="false" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorMarkers />
                 <transactionalProperties />
@@ -309,23 +248,213 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="previewVSCE.textGen@14_14/World_TextGen.java">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="mps://node://VSCE/VSCE.structure/Map">
+          <provider selected="true" editor-type-id="MPSFileEditor">
+            <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+              <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+                <selectionStack>
+                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                    <property name="hasNonTrivialSelection" value="false" />
+                    <property name="caretX" value="85" />
+                    <property name="caretXRelative" value="70" />
+                    <property name="sideSelectDirection" value="NONE" />
+                    <cellInfo cellId="Constant_ueqr71_c0a">
+                      <node node_reference="r:b52b1c3e-522c-4fa5-a07d-0c84fb53ae83(VSCE.structure)/1998513532176276739" />
+                    </cellInfo>
+                  </stackElement>
+                </selectionStack>
+                <errorMarkers />
+                <transactionalProperties />
+                <foldable />
+                <restoreAlways />
+              </memento>
+              <inspectorMemento currentlyEditedNode="r:e089d824-caf7-4756-801f-8ce3c3fbbd61(VSCE.build)/2698554890240106377" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+                <selectionStack />
+                <errorMarkers />
+                <transactionalProperties />
+                <foldable />
+                <restoreAlways />
+                <enabledHints />
+              </inspectorMemento>
+              <node node_ref="r:b52b1c3e-522c-4fa5-a07d-0c84fb53ae83(VSCE.structure)/1998513532176276739" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="previewVSCE.sandbox@6_6/World1.java">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="mps://node://VSCE/VSCE.structure/Weather">
+          <provider selected="true" editor-type-id="MPSFileEditor">
+            <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+              <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+                <selectionStack>
+                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                    <property name="hasNonTrivialSelection" value="false" />
+                    <property name="caretX" value="25" />
+                    <property name="caretXRelative" value="10" />
+                    <property name="sideSelectDirection" value="NONE" />
+                    <cellInfo cellId="Constant_9mcqjq_j0">
+                      <node node_reference="r:c3af0207-1a1f-43d5-ac20-1983480a0336(VSCE.textGen)/1607845034247782887" />
+                    </cellInfo>
+                  </stackElement>
+                </selectionStack>
+                <errorMarkers />
+                <transactionalProperties />
+                <foldable>
+                  <collapsedElement isCollapsed="false">
+                    <cellIdElement cellId="Collection_trik0f_b0">
+                      <node node_reference="r:c3af0207-1a1f-43d5-ac20-1983480a0336(VSCE.textGen)/1607845034247782888" />
+                    </cellIdElement>
+                  </collapsedElement>
+                </foldable>
+                <restoreAlways />
+              </memento>
+              <inspectorMemento currentlyEditedNode="r:e089d824-caf7-4756-801f-8ce3c3fbbd61(VSCE.build)/2698554890240106377" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+                <selectionStack />
+                <errorMarkers />
+                <transactionalProperties />
+                <foldable />
+                <restoreAlways />
+                <enabledHints />
+              </inspectorMemento>
+              <node node_ref="r:c3af0207-1a1f-43d5-ac20-1983480a0336(VSCE.textGen)/1607845034247782887" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="previewVSCE.textGen@14_14/TextGenAspectDescriptor.java">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="mps://node://VSCE/VSCE.structure/Object">
+          <provider selected="true" editor-type-id="MPSFileEditor">
+            <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+              <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+                <selectionStack>
+                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                    <property name="hasNonTrivialSelection" value="false" />
+                    <property name="caretX" value="325" />
+                    <property name="caretXRelative" value="140" />
+                    <property name="sideSelectDirection" value="NONE" />
+                    <cellInfo cellId="property_name">
+                      <node node_reference="r:f2b40cea-54a9-4809-a863-a9a89f06e540(VSCE.editor)/3598919491714709351" />
+                    </cellInfo>
+                  </stackElement>
+                </selectionStack>
+                <errorMarkers />
+                <transactionalProperties />
+                <foldable />
+                <restoreAlways />
+              </memento>
+              <inspectorMemento currentlyEditedNode="r:e089d824-caf7-4756-801f-8ce3c3fbbd61(VSCE.build)/2698554890240106377" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+                <selectionStack />
+                <errorMarkers />
+                <transactionalProperties />
+                <foldable />
+                <restoreAlways />
+                <enabledHints />
+              </inspectorMemento>
+              <node node_ref="r:f2b40cea-54a9-4809-a863-a9a89f06e540(VSCE.editor)/3598919491714709351" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="previewVSCE.textGen@14_14/Weather_TextGen.java">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="mps://node://VSCE/VSCE.structure/Pedestrian">
+          <provider selected="true" editor-type-id="MPSFileEditor">
+            <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+              <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+                <selectionStack>
+                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                    <property name="hasNonTrivialSelection" value="false" />
+                    <property name="caretX" value="260" />
+                    <property name="caretXRelative" value="40" />
+                    <property name="sideSelectDirection" value="NONE" />
+                    <cellInfo cellId="property_name">
+                      <node node_reference="r:f2b40cea-54a9-4809-a863-a9a89f06e540(VSCE.editor)/3598919491714782025" />
+                    </cellInfo>
+                  </stackElement>
+                </selectionStack>
+                <errorMarkers />
+                <transactionalProperties />
+                <foldable />
+                <restoreAlways />
+              </memento>
+              <inspectorMemento currentlyEditedNode="r:e089d824-caf7-4756-801f-8ce3c3fbbd61(VSCE.build)/2698554890240106377" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+                <selectionStack />
+                <errorMarkers />
+                <transactionalProperties />
+                <foldable />
+                <restoreAlways />
+                <enabledHints />
+              </inspectorMemento>
+              <node node_ref="r:f2b40cea-54a9-4809-a863-a9a89f06e540(VSCE.editor)/3598919491714717400" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="mps://node://VSCE/VSCE.structure/Vehicle">
+          <provider selected="true" editor-type-id="MPSFileEditor">
+            <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+              <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+                <selectionStack>
+                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                    <property name="hasNonTrivialSelection" value="false" />
+                    <property name="caretX" value="90" />
+                    <property name="caretXRelative" value="0" />
+                    <property name="sideSelectDirection" value="NONE" />
+                    <cellInfo cellId="ReadOnlyModelAccessor_mtiojs_a">
+                      <node node_reference="r:f2b40cea-54a9-4809-a863-a9a89f06e540(VSCE.editor)/3598919491714799721" />
+                    </cellInfo>
+                  </stackElement>
+                </selectionStack>
+                <errorMarkers />
+                <transactionalProperties />
+                <foldable />
+                <restoreAlways />
+              </memento>
+              <inspectorMemento currentlyEditedNode="r:e089d824-caf7-4756-801f-8ce3c3fbbd61(VSCE.build)/2698554890240106377" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+                <selectionStack />
+                <errorMarkers />
+                <transactionalProperties />
+                <foldable />
+                <restoreAlways />
+                <enabledHints />
+              </inspectorMemento>
+              <node node_ref="r:f2b40cea-54a9-4809-a863-a9a89f06e540(VSCE.editor)/3598919491714717623" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="mps://node://VSCE/VSCE.structure/Location">
+          <provider selected="true" editor-type-id="MPSFileEditor">
+            <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+              <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+                <selectionStack>
+                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                    <property name="hasNonTrivialSelection" value="false" />
+                    <property name="caretX" value="85" />
+                    <property name="caretXRelative" value="70" />
+                    <property name="sideSelectDirection" value="NONE" />
+                    <cellInfo cellId="Constant_ueqr71_c0a">
+                      <node node_reference="r:b52b1c3e-522c-4fa5-a07d-0c84fb53ae83(VSCE.structure)/3598919491714688357" />
+                    </cellInfo>
+                  </stackElement>
+                </selectionStack>
+                <errorMarkers />
+                <transactionalProperties />
+                <foldable />
+                <restoreAlways />
+              </memento>
+              <inspectorMemento currentlyEditedNode="r:e089d824-caf7-4756-801f-8ce3c3fbbd61(VSCE.build)/2698554890240106377" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+                <selectionStack />
+                <errorMarkers />
+                <transactionalProperties />
+                <foldable />
+                <restoreAlways />
+                <enabledHints />
+              </inspectorMemento>
+              <node node_ref="r:b52b1c3e-522c-4fa5-a07d-0c84fb53ae83(VSCE.structure)/3598919491714688357" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -359,10 +488,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-9" />
-    <option name="y" value="-9" />
-    <option name="width" value="1328" />
-    <option name="height" value="866" />
+    <option name="x" value="726" />
+    <option name="y" value="171" />
+    <option name="width" value="978" />
+    <option name="height" value="1060" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectPluginManager">
@@ -430,7 +559,16 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="FileSystem" />
+      <pane id="FileSystem">
+        <subPane>
+          <expand>
+            <path>
+              <item name="" type="" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -438,10 +576,6 @@
               <option name="myItemId" value="Project" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="876abf3c-34ea-43b9-9d48-1c7389357780" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -449,135 +583,7 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="dff00f17-6c3e-4647-ae8b-ee0827edcb59(VSCE)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:c3af0207-1a1f-43d5-ac20-1983480a0336(VSCE.textGen) in IdeaFile[file://D:/Workspace/MPS/VSCE/languages/VSCE/models/VSCE.textGen.mps]" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="1607845034247782887" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dff00f17-6c3e-4647-ae8b-ee0827edcb59(VSCE)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:b52b1c3e-522c-4fa5-a07d-0c84fb53ae83(VSCE.structure) in IdeaFile[file://D:/Workspace/MPS/VSCE/languages/VSCE/models/VSCE.structure.mps]" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dff00f17-6c3e-4647-ae8b-ee0827edcb59(VSCE)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:8991a210-ebc1-4f86-84f4-91e7a5cd508b(VSCE.constraints) in IdeaFile[file://D:/Workspace/MPS/VSCE/languages/VSCE/models/VSCE.constraints.mps]" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="876abf3c-34ea-43b9-9d48-1c7389357780" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="VSCE" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dff00f17-6c3e-4647-ae8b-ee0827edcb59(VSCE)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="VSCE#2395800094991877645" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Modules Pool" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dff00f17-6c3e-4647-ae8b-ee0827edcb59(VSCE)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dff00f17-6c3e-4647-ae8b-ee0827edcb59(VSCE)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:c3af0207-1a1f-43d5-ac20-1983480a0336(VSCE.textGen) in IdeaFile[file://D:/Workspace/MPS/VSCE/languages/VSCE/models/VSCE.textGen.mps]" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dff00f17-6c3e-4647-ae8b-ee0827edcb59(VSCE)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="VSCE#2395800094991877645" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:f8d6f752-8147-4d0e-820b-085416018051(main@generator) in IdeaFile[file://D:/Workspace/MPS/VSCE/languages/VSCE/generator/template/main@generator.mps]" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="876abf3c-34ea-43b9-9d48-1c7389357780" />
+              <option name="myItemId" value="4c200811-b91c-464a-9cca-d281c331a23a" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -585,7 +591,31 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="r:fb24075f-fe05-4fab-b0d2-7e357a66f8e6(VSCE.sandbox) in IdeaFile[file://D:/Workspace/MPS/VSCE/languages/VSCE/sandbox/models/VSCE.sandbox.mps]" />
+              <option name="myItemId" value="r:e089d824-caf7-4756-801f-8ce3c3fbbd61(VSCE.build) in IdeaFile[file://D:/Workspace/MPS/VSCE/solutions/VSCE.build/models/VSCE.build.mps]" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="4c200811-b91c-464a-9cca-d281c331a23a" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="4c200811-b91c-464a-9cca-d281c331a23a" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="VSCE" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -595,15 +625,19 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="dff00f17-6c3e-4647-ae8b-ee0827edcb59(VSCE)" />
+              <option name="myItemId" value="4c200811-b91c-464a-9cca-d281c331a23a" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="r:c3af0207-1a1f-43d5-ac20-1983480a0336(VSCE.textGen) in IdeaFile[file://D:/Workspace/MPS/VSCE/languages/VSCE/models/VSCE.textGen.mps]" />
+              <option name="myItemId" value="VSCE" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="1607845034247711296" />
+              <option name="myItemId" value="r:e089d824-caf7-4756-801f-8ce3c3fbbd61(VSCE.build) in IdeaFile[file://D:/Workspace/MPS/VSCE/solutions/VSCE.build/models/VSCE.build.mps]" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="2698554890240106355" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </SELECTED>
@@ -614,7 +648,8 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../stateChart" />
+    <property name="settings.editor.selected.configurable" value="reference.idesettings.quicklists" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -628,74 +663,42 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Java Application.Node null (1)">
-    <configuration name="Node null (1)" type="Java Application" factoryName="Java" temporary="true">
-      <myNode>
+  <component name="RunManager">
+    <configuration name="VSCE" type="Build Script" factoryName="Build Script" temporary="true">
+      <myNodePointer>
         <MyState>
-          <option name="myNodePointer" value="r:fb24075f-fe05-4fab-b0d2-7e357a66f8e6(VSCE.sandbox)/1607845034246726224" />
-          <option name="myNodeText" value="VSCE.sandbox.null" />
+          <option name="myNodePointer" value="r:e089d824-caf7-4756-801f-8ce3c3fbbd61(VSCE.build)/2698554890240106355" />
+          <option name="myNodeText" value="VSCE.build.VSCE" />
         </MyState>
-      </myNode>
-      <myRunParameters>
+      </myNodePointer>
+      <mySettings>
         <MyState>
-          <option name="myJavaParameters">
-            <JavaRunParameters>
-              <option name="jrePath" />
-              <option name="programParameters" />
-              <option name="useAlternativeJre" value="false" />
-              <option name="vmOptions" />
-              <option name="workingDirectory" value="D:\Program Files\JetBrains\MPS 2019.1" />
-            </JavaRunParameters>
-          </option>
+          <option name="myUseOtherAntLocation" value="false" />
+          <option name="myOtherAntLocation" />
+          <option name="myAntOptions" />
         </MyState>
-      </myRunParameters>
-      <method v="2">
-        <option name="jetbrains.mps.execution.configurations.pluginSolution.plugin.MakeNodePointers_BeforeTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Node null" type="Java Application" factoryName="Java" temporary="true">
-      <myNode>
-        <MyState>
-          <option name="myNodePointer" value="r:fb24075f-fe05-4fab-b0d2-7e357a66f8e6(VSCE.sandbox)/1607845034246606775" />
-          <option name="myNodeText" value="VSCE.sandbox.null" />
-        </MyState>
-      </myNode>
-      <myRunParameters>
-        <MyState>
-          <option name="myJavaParameters">
-            <JavaRunParameters>
-              <option name="jrePath" />
-              <option name="programParameters" />
-              <option name="useAlternativeJre" value="false" />
-              <option name="vmOptions" />
-              <option name="workingDirectory" value="D:\Program Files\JetBrains\MPS 2019.1" />
-            </JavaRunParameters>
-          </option>
-        </MyState>
-      </myRunParameters>
+      </mySettings>
       <method v="2">
         <option name="jetbrains.mps.execution.configurations.pluginSolution.plugin.MakeNodePointers_BeforeTask" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Java Application.Node null (1)" />
-        <item itemvalue="Java Application.Node null" />
+        <item itemvalue="Build Script.VSCE" />
       </list>
     </recent_temporary>
   </component>
   <component name="SvnConfiguration">
-    <configuration />
+    <configuration>C:\Users\10090\AppData\Roaming\Subversion</configuration>
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1060" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2274678" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14806867" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.6502146" weight="0.32936078" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.66201717" weight="0.32919955" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49946353" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -704,19 +707,19 @@
       <window_info anchor="bottom" id="Bookmarks" order="8" />
       <window_info anchor="bottom" id="Migration" order="9" />
       <window_info anchor="bottom" id="Menu Trace" order="10" />
-      <window_info anchor="bottom" id="Terminal" order="11" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49892703" weight="0.32919955" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="bottom" id="Classpath Explorer" order="13" />
       <window_info anchor="bottom" id="Usages" order="14" />
-      <window_info anchor="bottom" id="Node Explorer" order="15" weight="0.32972974" />
+      <window_info anchor="bottom" id="Node Explorer" order="15" sideWeight="0.49892703" weight="0.32919955" />
       <window_info anchor="bottom" id="Module Dependencies" order="16" />
-      <window_info anchor="bottom" id="Version Control" order="17" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="17" sideWeight="0.49731758" visible="true" weight="0.32919955" />
       <window_info anchor="bottom" id="Generation Tracer" order="18" />
       <window_info anchor="bottom" id="Cell Explorer" order="19" />
-      <window_info anchor="bottom" id="Messages" order="20" sideWeight="0.6244635" visible="true" weight="0.33044422" />
+      <window_info anchor="bottom" id="Messages" order="20" sideWeight="0.61641634" weight="0.40698984" />
       <window_info anchor="bottom" id="Console" order="21" />
-      <window_info anchor="bottom" id="RefactoringView" order="22" sideWeight="0.49892703" weight="0.32936078" />
-      <window_info anchor="bottom" id="Inspector" order="23" sideWeight="0.37553647" side_tool="true" visible="true" weight="0.33044422" />
+      <window_info anchor="bottom" id="RefactoringView" order="22" sideWeight="0.49570817" weight="0.32919955" />
+      <window_info anchor="bottom" id="Inspector" order="23" sideWeight="0.5026824" side_tool="true" visible="true" weight="0.32919955" />
       <window_info anchor="bottom" id="Dependencies Viewer" order="24" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -734,473 +737,49 @@
       <options category_option="false" module_option="true" model_option="true" root_option="true" path_option="false" count_option="true" info_option="true" view_searched_nodes_option="true" group_searched_nodes_option="true" autoscroll_option="false" />
     </default_view_options>
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="editorHistoryManager">
     <entry file="mps://node://VSCE/VSCE.constraints/null" />
     <entry file="mps://node://VSCE#01/main@generator/main" />
-    <entry file="mps://node://VSCE/VSCE.structure/&lt;no name&gt;[ConceptDeclaration]" />
-    <entry file="mps://node://VSCE/VSCE.structure/Element">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="225" />
-                <property name="caretXRelative" value="0" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_conceptShortDescription">
-                  <node node_reference="r:b52b1c3e-522c-4fa5-a07d-0c84fb53ae83(VSCE.structure)/2839105273339211981" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:f2b40cea-54a9-4809-a863-a9a89f06e540(VSCE.editor)/1998513532176208776" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints />
-          </inspectorMemento>
-          <node node_ref="r:b52b1c3e-522c-4fa5-a07d-0c84fb53ae83(VSCE.structure)/2839105273339211981" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://VSCE/VSCE.structure/Map">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="125" />
-                <property name="caretXRelative" value="90" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Constant_ueqr71_o1c0">
-                  <node node_reference="r:b52b1c3e-522c-4fa5-a07d-0c84fb53ae83(VSCE.structure)/1998513532176276739" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:f2b40cea-54a9-4809-a863-a9a89f06e540(VSCE.editor)/1998513532176208776" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints />
-          </inspectorMemento>
-          <node node_ref="r:b52b1c3e-522c-4fa5-a07d-0c84fb53ae83(VSCE.structure)/1998513532176276739" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://VSCE.sandbox/VSCE.sandbox/&lt;no name&gt;[World]">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://VSCE.sandbox/VSCE.sandbox/&lt;no name&gt;[World]">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers>
-              <errorMarker text="" propertyCell="true" cellId="property_id">
-                <node node_reference="r:fb24075f-fe05-4fab-b0d2-7e357a66f8e6(VSCE.sandbox)/1607845034246606776" />
-              </errorMarker>
-              <errorMarker text="" propertyCell="true" cellId="property_uri">
-                <node node_reference="r:fb24075f-fe05-4fab-b0d2-7e357a66f8e6(VSCE.sandbox)/1607845034246606776" />
-              </errorMarker>
-              <errorMarker text="" propertyCell="false" cellId="Error">
-                <node node_reference="r:fb24075f-fe05-4fab-b0d2-7e357a66f8e6(VSCE.sandbox)/1607845034246606777" />
-              </errorMarker>
-            </errorMarkers>
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://VSCE.sandbox/VSCE.sandbox/&lt;no name&gt;[World]">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers>
-              <errorMarker text="" propertyCell="true" cellId="property_id">
-                <node node_reference="r:fb24075f-fe05-4fab-b0d2-7e357a66f8e6(VSCE.sandbox)/1607845034246606776" />
-              </errorMarker>
-              <errorMarker text="" propertyCell="true" cellId="property_uri">
-                <node node_reference="r:fb24075f-fe05-4fab-b0d2-7e357a66f8e6(VSCE.sandbox)/1607845034246606776" />
-              </errorMarker>
-              <errorMarker text="" propertyCell="false" cellId="Error">
-                <node node_reference="r:fb24075f-fe05-4fab-b0d2-7e357a66f8e6(VSCE.sandbox)/1607845034246606777" />
-              </errorMarker>
-            </errorMarkers>
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://VSCE.sandbox/VSCE.sandbox/&lt;no name&gt;[World]">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="23" />
-                <property name="caretXRelative" value="8" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Constant_72g5fh_c0">
-                  <node node_reference="r:fb24075f-fe05-4fab-b0d2-7e357a66f8e6(VSCE.sandbox)/1607845034246606775" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:f8d6f752-8147-4d0e-820b-085416018051(main@generator)/2395800094992286030" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_trik0f_b0">
-                  <node node_reference="r:f8d6f752-8147-4d0e-820b-085416018051(main@generator)/2395800094992286031" />
-                </cellIdElement>
-              </collapsedElement>
-            </foldable>
-            <restoreAlways />
-            <enabledHints />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://VSCE.sandbox/VSCE.sandbox/&lt;no name&gt;[World]">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState" editorFocused="true">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="23" />
-                <property name="caretXRelative" value="8" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Constant_72g5fh_c0">
-                  <node node_reference="r:fb24075f-fe05-4fab-b0d2-7e357a66f8e6(VSCE.sandbox)/1607845034246606775" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers>
-              <errorMarker text="" propertyCell="true" cellId="property_color">
-                <node node_reference="r:fb24075f-fe05-4fab-b0d2-7e357a66f8e6(VSCE.sandbox)/1607845034246607426" />
-              </errorMarker>
-            </errorMarkers>
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:fb24075f-fe05-4fab-b0d2-7e357a66f8e6(VSCE.sandbox)/1607845034246606775" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://VSCE.sandbox/VSCE.sandbox/&lt;no name&gt;[World]">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="207" />
-                <property name="caretXRelative" value="24" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_value">
-                  <node node_reference="r:fb24075f-fe05-4fab-b0d2-7e357a66f8e6(VSCE.sandbox)/1607845034246607434" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:fb24075f-fe05-4fab-b0d2-7e357a66f8e6(VSCE.sandbox)/1607845034246607434" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://VSCE.sandbox/VSCE.sandbox/&lt;no name&gt;[World]">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="207" />
-                <property name="caretXRelative" value="24" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_value">
-                  <node node_reference="r:fb24075f-fe05-4fab-b0d2-7e357a66f8e6(VSCE.sandbox)/1607845034246607434" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:fb24075f-fe05-4fab-b0d2-7e357a66f8e6(VSCE.sandbox)/1607845034246607434" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://VSCE.sandbox/VSCE.sandbox/&lt;no name&gt;[World]">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers>
-              <errorMarker text="" propertyCell="true" cellId="property_id">
-                <node node_reference="r:fb24075f-fe05-4fab-b0d2-7e357a66f8e6(VSCE.sandbox)/1607845034246726225" />
-              </errorMarker>
-              <errorMarker text="" propertyCell="true" cellId="property_uri">
-                <node node_reference="r:fb24075f-fe05-4fab-b0d2-7e357a66f8e6(VSCE.sandbox)/1607845034246726225" />
-              </errorMarker>
-              <errorMarker text="" propertyCell="false" cellId="Error">
-                <node node_reference="r:fb24075f-fe05-4fab-b0d2-7e357a66f8e6(VSCE.sandbox)/1607845034246726226" />
-              </errorMarker>
-            </errorMarkers>
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://VSCE.sandbox/VSCE.sandbox/&lt;no name&gt;[World]">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers>
-              <errorMarker text="" propertyCell="true" cellId="property_id">
-                <node node_reference="r:fb24075f-fe05-4fab-b0d2-7e357a66f8e6(VSCE.sandbox)/1607845034246726225" />
-              </errorMarker>
-              <errorMarker text="" propertyCell="true" cellId="property_uri">
-                <node node_reference="r:fb24075f-fe05-4fab-b0d2-7e357a66f8e6(VSCE.sandbox)/1607845034246726225" />
-              </errorMarker>
-              <errorMarker text="" propertyCell="false" cellId="Error">
-                <node node_reference="r:fb24075f-fe05-4fab-b0d2-7e357a66f8e6(VSCE.sandbox)/1607845034246726226" />
-              </errorMarker>
-            </errorMarkers>
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://VSCE.sandbox/VSCE.sandbox/&lt;no name&gt;[World]">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="23" />
-                <property name="caretXRelative" value="8" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Constant_72g5fh_c0">
-                  <node node_reference="r:fb24075f-fe05-4fab-b0d2-7e357a66f8e6(VSCE.sandbox)/1607845034246726224" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:fb24075f-fe05-4fab-b0d2-7e357a66f8e6(VSCE.sandbox)/1607845034246726224" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://VSCE.sandbox/VSCE.sandbox/&lt;no name&gt;[World]">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState" editorFocused="true">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="23" />
-                <property name="caretXRelative" value="8" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Constant_72g5fh_c0">
-                  <node node_reference="r:fb24075f-fe05-4fab-b0d2-7e357a66f8e6(VSCE.sandbox)/1607845034246726224" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:fb24075f-fe05-4fab-b0d2-7e357a66f8e6(VSCE.sandbox)/1607845034246726224" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://VSCE.sandbox/VSCE.sandbox/&lt;no name&gt;[World]">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="23" />
-                <property name="caretXRelative" value="8" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Constant_72g5fh_c0">
-                  <node node_reference="r:fb24075f-fe05-4fab-b0d2-7e357a66f8e6(VSCE.sandbox)/1607845034246726224" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:f8d6f752-8147-4d0e-820b-085416018051(main@generator)/2395800094992261563" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://VSCE.sandbox/VSCE.sandbox/&lt;no name&gt;[World]">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="23" />
-                <property name="caretXRelative" value="8" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Constant_72g5fh_c0">
-                  <node node_reference="r:fb24075f-fe05-4fab-b0d2-7e357a66f8e6(VSCE.sandbox)/1607845034246726224" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:fb24075f-fe05-4fab-b0d2-7e357a66f8e6(VSCE.sandbox)/1607845034246726224" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
     <entry file="mps://node://JDK/java.awt@java_stub/Graphics">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
@@ -1317,17 +896,130 @@
         </state>
       </provider>
     </entry>
-    <entry file="mps://node://VSCE#2395800094991877645/main@generator/&lt;no name&gt;[MappingConfiguration]">
+    <entry file="mps://node://VSCE#2395800094991877645/main@generator/&lt;no name&gt;[MappingConfiguration]" />
+    <entry file="file://$PROJECT_DIR$/languages/VSCE/sandbox/source_gen/VSCE/sandbox/World1.java" />
+    <entry file="file://$PROJECT_DIR$/languages/VSCE/sandbox/source_gen/VSCE/sandbox/World1..java" />
+    <entry file="mps://node://VSCE.sandbox/VSCE.sandbox/World1" />
+    <entry file="mps://node://VSCE.sandbox/VSCE.sandbox/&lt;no name&gt;[World]" />
+    <entry file="mps://node://VSCE/VSCE.structure/Element" />
+    <entry file="mps://node://VSCE/VSCE.structure/&lt;no name&gt;[ConceptDeclaration]" />
+    <entry file="mps://node://VSCE/VSCE.structure/Ego" />
+    <entry file="mps://node://VSCE/VSCE.structure/Local" />
+    <entry file="mps://node://jetbrains.mps.lang.editor/jetbrains.mps.lang.editor.structure/EditorCellModel">
       <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState" editorFocused="true">
           <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
+                <property name="caretX" value="0" />
+                <property name="caretXRelative" value="-15" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="Collection_2ji0fa_a">
+                  <node node_reference="r:00000000-0000-4000-0000-011c8959029b(jetbrains.mps.lang.editor.intentions)/1216916774011" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_trik0f_b0">
+                  <node node_reference="r:00000000-0000-4000-0000-011c8959029b(jetbrains.mps.lang.editor.intentions)/1216916774016" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_trik0f_b0">
+                  <node node_reference="r:00000000-0000-4000-0000-011c8959029b(jetbrains.mps.lang.editor.intentions)/1216916774056" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_trik0f_b0">
+                  <node node_reference="r:00000000-0000-4000-0000-011c8959029b(jetbrains.mps.lang.editor.intentions)/1216916774012" />
+                </cellIdElement>
+              </collapsedElement>
+            </foldable>
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:00000000-0000-4000-0000-011c8959029b(jetbrains.mps.lang.editor.intentions)/1216916774011" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="15" />
+                <property name="caretXRelative" value="0" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="defaultEditor_InspectorCell">
+                  <node node_reference="r:00000000-0000-4000-0000-011c8959029b(jetbrains.mps.lang.editor.intentions)/1216916774011" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints />
+          </inspectorMemento>
+          <node node_ref="r:00000000-0000-4000-0000-011c8959029b(jetbrains.mps.lang.editor.intentions)/1216916774011" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://VSCE/VSCE.structure/World">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="230" />
+                <property name="caretXRelative" value="0" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_openBrace">
+                  <node node_reference="r:f2b40cea-54a9-4809-a863-a9a89f06e540(VSCE.editor)/3598919491714717684" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
             <errorMarkers />
             <transactionalProperties />
             <foldable />
             <restoreAlways />
           </memento>
-          <inspectorMemento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:e089d824-caf7-4756-801f-8ce3c3fbbd61(VSCE.build)/2698554890240106365" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints />
+          </inspectorMemento>
+          <node node_ref="r:f2b40cea-54a9-4809-a863-a9a89f06e540(VSCE.editor)/1998513532176207603" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://VSCE.sandbox/VSCE.sandbox/World">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="515" />
+                <property name="caretXRelative" value="40" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_value">
+                  <node node_reference="r:fb24075f-fe05-4fab-b0d2-7e357a66f8e6(VSCE.sandbox)/3837924719050797440" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints>
+              <enabledHintsElement enabledHintsAttribute="jetbrains.mps.baseLanguage.editor.BLHints.VisibleExpressionBoundaries" />
+              <enabledHintsElement enabledHintsAttribute="jetbrains.mps.lang.core.editor.SuppressedHints.ShowSuppressedErrors" />
+              <enabledHintsElement enabledHintsAttribute="jetbrains.mps.samples.componentDependencies.editor.views.diagram" />
+            </enabledHints>
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:e089d824-caf7-4756-801f-8ce3c3fbbd61(VSCE.build)/2698554890240106377" saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />
@@ -1338,84 +1030,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/languages/VSCE/sandbox/source_gen/VSCE/sandbox/World1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="19" column="23" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://VSCE.sandbox/VSCE.sandbox/&lt;no name&gt;[World]">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers>
-              <errorMarker text="" propertyCell="true" cellId="property_id">
-                <node node_reference="r:fb24075f-fe05-4fab-b0d2-7e357a66f8e6(VSCE.sandbox)/1607845034247895954" />
-              </errorMarker>
-              <errorMarker text="" propertyCell="true" cellId="property_uri">
-                <node node_reference="r:fb24075f-fe05-4fab-b0d2-7e357a66f8e6(VSCE.sandbox)/1607845034247895954" />
-              </errorMarker>
-              <errorMarker text="" propertyCell="false" cellId="Error">
-                <node node_reference="r:fb24075f-fe05-4fab-b0d2-7e357a66f8e6(VSCE.sandbox)/1607845034247895955" />
-              </errorMarker>
-            </errorMarkers>
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://VSCE.sandbox/VSCE.sandbox/&lt;no name&gt;[World]">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers>
-              <errorMarker text="" propertyCell="true" cellId="property_id">
-                <node node_reference="r:fb24075f-fe05-4fab-b0d2-7e357a66f8e6(VSCE.sandbox)/1607845034247895954" />
-              </errorMarker>
-              <errorMarker text="" propertyCell="true" cellId="property_uri">
-                <node node_reference="r:fb24075f-fe05-4fab-b0d2-7e357a66f8e6(VSCE.sandbox)/1607845034247895954" />
-              </errorMarker>
-              <errorMarker text="" propertyCell="false" cellId="Error">
-                <node node_reference="r:fb24075f-fe05-4fab-b0d2-7e357a66f8e6(VSCE.sandbox)/1607845034247895955" />
-              </errorMarker>
-            </errorMarkers>
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
     <entry file="mps://node://VSCE#2395800094991877645/main@generator/main">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="141">
             <selectionStack>
               <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                 <property name="hasNonTrivialSelection" value="false" />
                 <property name="caretX" value="35" />
                 <property name="caretXRelative" value="0" />
                 <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="empty_mappingLabel">
+                <cellInfo cellId="empty_createRootRule">
                   <node node_reference="r:f8d6f752-8147-4d0e-820b-085416018051(main@generator)/2395800094991877646" />
                 </cellInfo>
               </stackElement>
@@ -1431,7 +1056,7 @@
             </foldable>
             <restoreAlways />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:c3af0207-1a1f-43d5-ac20-1983480a0336(VSCE.textGen)/1607845034248121771" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:e089d824-caf7-4756-801f-8ce3c3fbbd61(VSCE.build)/2698554890240106377" saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />
@@ -1442,114 +1067,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="mps://node://VSCE.sandbox/VSCE.sandbox/&lt;no name&gt;[World]">
+    <entry file="mps://node://VSCE/VSCE.structure/Map">
       <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers>
-              <errorMarker text="" propertyCell="true" cellId="property_id">
-                <node node_reference="r:fb24075f-fe05-4fab-b0d2-7e357a66f8e6(VSCE.sandbox)/1607845034248140882" />
-              </errorMarker>
-              <errorMarker text="" propertyCell="true" cellId="property_uri">
-                <node node_reference="r:fb24075f-fe05-4fab-b0d2-7e357a66f8e6(VSCE.sandbox)/1607845034248140882" />
-              </errorMarker>
-              <errorMarker text="" propertyCell="true" cellId="property_color">
-                <node node_reference="r:fb24075f-fe05-4fab-b0d2-7e357a66f8e6(VSCE.sandbox)/1607845034248140883" />
-              </errorMarker>
-              <errorMarker text="" propertyCell="true" cellId="property_value">
-                <node node_reference="r:fb24075f-fe05-4fab-b0d2-7e357a66f8e6(VSCE.sandbox)/1607845034248140884" />
-              </errorMarker>
-              <errorMarker text="" propertyCell="true" cellId="property_value">
-                <node node_reference="r:fb24075f-fe05-4fab-b0d2-7e357a66f8e6(VSCE.sandbox)/1607845034248140885" />
-              </errorMarker>
-              <errorMarker text="" propertyCell="true" cellId="property_value">
-                <node node_reference="r:fb24075f-fe05-4fab-b0d2-7e357a66f8e6(VSCE.sandbox)/1607845034248140886" />
-              </errorMarker>
-              <errorMarker text="" propertyCell="true" cellId="property_value">
-                <node node_reference="r:fb24075f-fe05-4fab-b0d2-7e357a66f8e6(VSCE.sandbox)/1607845034248140887" />
-              </errorMarker>
-              <errorMarker text="" propertyCell="true" cellId="property_value">
-                <node node_reference="r:fb24075f-fe05-4fab-b0d2-7e357a66f8e6(VSCE.sandbox)/1607845034248140888" />
-              </errorMarker>
-              <errorMarker text="" propertyCell="true" cellId="property_value">
-                <node node_reference="r:fb24075f-fe05-4fab-b0d2-7e357a66f8e6(VSCE.sandbox)/1607845034248140889" />
-              </errorMarker>
-            </errorMarkers>
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://VSCE.sandbox/VSCE.sandbox/&lt;no name&gt;[World]">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers>
-              <errorMarker text="" propertyCell="true" cellId="property_id">
-                <node node_reference="r:fb24075f-fe05-4fab-b0d2-7e357a66f8e6(VSCE.sandbox)/1607845034248140882" />
-              </errorMarker>
-              <errorMarker text="" propertyCell="true" cellId="property_uri">
-                <node node_reference="r:fb24075f-fe05-4fab-b0d2-7e357a66f8e6(VSCE.sandbox)/1607845034248140882" />
-              </errorMarker>
-              <errorMarker text="" propertyCell="true" cellId="property_color">
-                <node node_reference="r:fb24075f-fe05-4fab-b0d2-7e357a66f8e6(VSCE.sandbox)/1607845034248140883" />
-              </errorMarker>
-              <errorMarker text="" propertyCell="true" cellId="property_value">
-                <node node_reference="r:fb24075f-fe05-4fab-b0d2-7e357a66f8e6(VSCE.sandbox)/1607845034248140884" />
-              </errorMarker>
-              <errorMarker text="" propertyCell="true" cellId="property_value">
-                <node node_reference="r:fb24075f-fe05-4fab-b0d2-7e357a66f8e6(VSCE.sandbox)/1607845034248140885" />
-              </errorMarker>
-              <errorMarker text="" propertyCell="true" cellId="property_value">
-                <node node_reference="r:fb24075f-fe05-4fab-b0d2-7e357a66f8e6(VSCE.sandbox)/1607845034248140886" />
-              </errorMarker>
-              <errorMarker text="" propertyCell="true" cellId="property_value">
-                <node node_reference="r:fb24075f-fe05-4fab-b0d2-7e357a66f8e6(VSCE.sandbox)/1607845034248140887" />
-              </errorMarker>
-              <errorMarker text="" propertyCell="true" cellId="property_value">
-                <node node_reference="r:fb24075f-fe05-4fab-b0d2-7e357a66f8e6(VSCE.sandbox)/1607845034248140888" />
-              </errorMarker>
-              <errorMarker text="" propertyCell="true" cellId="property_value">
-                <node node_reference="r:fb24075f-fe05-4fab-b0d2-7e357a66f8e6(VSCE.sandbox)/1607845034248140889" />
-              </errorMarker>
-            </errorMarkers>
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://VSCE.sandbox/VSCE.sandbox/&lt;no name&gt;[World]">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
           <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack>
               <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                 <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="55" />
-                <property name="caretXRelative" value="0" />
+                <property name="caretX" value="85" />
+                <property name="caretXRelative" value="70" />
                 <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="constant_6">
-                  <node node_reference="r:fb24075f-fe05-4fab-b0d2-7e357a66f8e6(VSCE.sandbox)/1607845034248140882" />
+                <cellInfo cellId="Constant_ueqr71_c0a">
+                  <node node_reference="r:b52b1c3e-522c-4fa5-a07d-0c84fb53ae83(VSCE.structure)/1998513532176276739" />
                 </cellInfo>
               </stackElement>
             </selectionStack>
@@ -1558,7 +1087,7 @@
             <foldable />
             <restoreAlways />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:fb24075f-fe05-4fab-b0d2-7e357a66f8e6(VSCE.sandbox)/1607845034248140882" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:e089d824-caf7-4756-801f-8ce3c3fbbd61(VSCE.build)/2698554890240106377" saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />
@@ -1566,266 +1095,7 @@
             <restoreAlways />
             <enabledHints />
           </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/languages/VSCE/sandbox/source_gen/VSCE/sandbox/World1..java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="mps://node://VSCE.sandbox/VSCE.sandbox/World1">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://VSCE.sandbox/VSCE.sandbox/&lt;no name&gt;[World]">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers>
-              <errorMarker text="" propertyCell="true" cellId="property_id">
-                <node node_reference="r:fb24075f-fe05-4fab-b0d2-7e357a66f8e6(VSCE.sandbox)/1607845034248186849" />
-              </errorMarker>
-              <errorMarker text="" propertyCell="true" cellId="property_uri">
-                <node node_reference="r:fb24075f-fe05-4fab-b0d2-7e357a66f8e6(VSCE.sandbox)/1607845034248186849" />
-              </errorMarker>
-              <errorMarker text="" propertyCell="true" cellId="property_color">
-                <node node_reference="r:fb24075f-fe05-4fab-b0d2-7e357a66f8e6(VSCE.sandbox)/1607845034248186850" />
-              </errorMarker>
-              <errorMarker text="" propertyCell="true" cellId="property_value">
-                <node node_reference="r:fb24075f-fe05-4fab-b0d2-7e357a66f8e6(VSCE.sandbox)/1607845034248186851" />
-              </errorMarker>
-              <errorMarker text="" propertyCell="true" cellId="property_value">
-                <node node_reference="r:fb24075f-fe05-4fab-b0d2-7e357a66f8e6(VSCE.sandbox)/1607845034248186852" />
-              </errorMarker>
-              <errorMarker text="" propertyCell="true" cellId="property_value">
-                <node node_reference="r:fb24075f-fe05-4fab-b0d2-7e357a66f8e6(VSCE.sandbox)/1607845034248186853" />
-              </errorMarker>
-              <errorMarker text="" propertyCell="true" cellId="property_value">
-                <node node_reference="r:fb24075f-fe05-4fab-b0d2-7e357a66f8e6(VSCE.sandbox)/1607845034248186854" />
-              </errorMarker>
-              <errorMarker text="" propertyCell="true" cellId="property_value">
-                <node node_reference="r:fb24075f-fe05-4fab-b0d2-7e357a66f8e6(VSCE.sandbox)/1607845034248186855" />
-              </errorMarker>
-              <errorMarker text="" propertyCell="true" cellId="property_value">
-                <node node_reference="r:fb24075f-fe05-4fab-b0d2-7e357a66f8e6(VSCE.sandbox)/1607845034248186856" />
-              </errorMarker>
-            </errorMarkers>
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://VSCE.sandbox/VSCE.sandbox/&lt;no name&gt;[World]">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers>
-              <errorMarker text="" propertyCell="true" cellId="property_id">
-                <node node_reference="r:fb24075f-fe05-4fab-b0d2-7e357a66f8e6(VSCE.sandbox)/1607845034248186849" />
-              </errorMarker>
-              <errorMarker text="" propertyCell="true" cellId="property_uri">
-                <node node_reference="r:fb24075f-fe05-4fab-b0d2-7e357a66f8e6(VSCE.sandbox)/1607845034248186849" />
-              </errorMarker>
-              <errorMarker text="" propertyCell="true" cellId="property_color">
-                <node node_reference="r:fb24075f-fe05-4fab-b0d2-7e357a66f8e6(VSCE.sandbox)/1607845034248186850" />
-              </errorMarker>
-              <errorMarker text="" propertyCell="true" cellId="property_value">
-                <node node_reference="r:fb24075f-fe05-4fab-b0d2-7e357a66f8e6(VSCE.sandbox)/1607845034248186851" />
-              </errorMarker>
-              <errorMarker text="" propertyCell="true" cellId="property_value">
-                <node node_reference="r:fb24075f-fe05-4fab-b0d2-7e357a66f8e6(VSCE.sandbox)/1607845034248186852" />
-              </errorMarker>
-              <errorMarker text="" propertyCell="true" cellId="property_value">
-                <node node_reference="r:fb24075f-fe05-4fab-b0d2-7e357a66f8e6(VSCE.sandbox)/1607845034248186853" />
-              </errorMarker>
-              <errorMarker text="" propertyCell="true" cellId="property_value">
-                <node node_reference="r:fb24075f-fe05-4fab-b0d2-7e357a66f8e6(VSCE.sandbox)/1607845034248186854" />
-              </errorMarker>
-              <errorMarker text="" propertyCell="true" cellId="property_value">
-                <node node_reference="r:fb24075f-fe05-4fab-b0d2-7e357a66f8e6(VSCE.sandbox)/1607845034248186855" />
-              </errorMarker>
-              <errorMarker text="" propertyCell="true" cellId="property_value">
-                <node node_reference="r:fb24075f-fe05-4fab-b0d2-7e357a66f8e6(VSCE.sandbox)/1607845034248186856" />
-              </errorMarker>
-            </errorMarkers>
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://VSCE.sandbox/VSCE.sandbox/&lt;no name&gt;[World]">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="selectionStart" value="0" />
-                <property name="hasNonTrivialSelection" value="true" />
-                <property name="caretX" value="285" />
-                <property name="selectionEnd" value="3" />
-                <property name="caretXRelative" value="30" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_value">
-                  <node node_reference="r:fb24075f-fe05-4fab-b0d2-7e357a66f8e6(VSCE.sandbox)/1607845034248186855" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers>
-              <errorMarker text="" propertyCell="true" cellId="property_value">
-                <node node_reference="r:fb24075f-fe05-4fab-b0d2-7e357a66f8e6(VSCE.sandbox)/1607845034248186856" />
-              </errorMarker>
-            </errorMarkers>
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:c3af0207-1a1f-43d5-ac20-1983480a0336(VSCE.textGen)/1607845034248121771" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://VSCE.sandbox/VSCE.sandbox/&lt;no name&gt;[World]">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="selectionStart" value="0" />
-                <property name="hasNonTrivialSelection" value="true" />
-                <property name="caretX" value="285" />
-                <property name="selectionEnd" value="3" />
-                <property name="caretXRelative" value="30" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_value">
-                  <node node_reference="r:fb24075f-fe05-4fab-b0d2-7e357a66f8e6(VSCE.sandbox)/1607845034248186855" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers>
-              <errorMarker text="" propertyCell="true" cellId="property_value">
-                <node node_reference="r:fb24075f-fe05-4fab-b0d2-7e357a66f8e6(VSCE.sandbox)/1607845034248186856" />
-              </errorMarker>
-            </errorMarkers>
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:fb24075f-fe05-4fab-b0d2-7e357a66f8e6(VSCE.sandbox)/1607845034248186855" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://VSCE.sandbox/VSCE.sandbox/&lt;no name&gt;[World]">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="selectionStart" value="0" />
-                <property name="hasNonTrivialSelection" value="true" />
-                <property name="caretX" value="295" />
-                <property name="selectionEnd" value="3" />
-                <property name="caretXRelative" value="30" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_value">
-                  <node node_reference="r:fb24075f-fe05-4fab-b0d2-7e357a66f8e6(VSCE.sandbox)/1607845034248186856" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:c3af0207-1a1f-43d5-ac20-1983480a0336(VSCE.textGen)/1607845034248121771" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://VSCE.sandbox/VSCE.sandbox/&lt;no name&gt;[World]">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="selectionStart" value="0" />
-                <property name="hasNonTrivialSelection" value="true" />
-                <property name="caretX" value="295" />
-                <property name="selectionEnd" value="3" />
-                <property name="caretXRelative" value="30" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_value">
-                  <node node_reference="r:fb24075f-fe05-4fab-b0d2-7e357a66f8e6(VSCE.sandbox)/1607845034248186856" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:fb24075f-fe05-4fab-b0d2-7e357a66f8e6(VSCE.sandbox)/1607845034248186856" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints />
-          </inspectorMemento>
+          <node node_ref="r:b52b1c3e-522c-4fa5-a07d-0c84fb53ae83(VSCE.structure)/1998513532176276739" />
         </state>
       </provider>
     </entry>
@@ -1836,11 +1106,11 @@
             <selectionStack>
               <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                 <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="135" />
-                <property name="caretXRelative" value="0" />
+                <property name="caretX" value="25" />
+                <property name="caretXRelative" value="10" />
                 <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_value">
-                  <node node_reference="r:c3af0207-1a1f-43d5-ac20-1983480a0336(VSCE.textGen)/1607845034247826045" />
+                <cellInfo cellId="Constant_9mcqjq_j0">
+                  <node node_reference="r:c3af0207-1a1f-43d5-ac20-1983480a0336(VSCE.textGen)/1607845034247782887" />
                 </cellInfo>
               </stackElement>
             </selectionStack>
@@ -1853,15 +1123,9 @@
                 </cellIdElement>
               </collapsedElement>
             </foldable>
-            <restoreAlways>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_trik0f_b0">
-                  <node node_reference="r:c3af0207-1a1f-43d5-ac20-1983480a0336(VSCE.textGen)/1607845034247782888" />
-                </cellIdElement>
-              </collapsedElement>
-            </restoreAlways>
+            <restoreAlways />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:c3af0207-1a1f-43d5-ac20-1983480a0336(VSCE.textGen)/1607845034248121771" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:e089d824-caf7-4756-801f-8ce3c3fbbd61(VSCE.build)/2698554890240106377" saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />
@@ -1873,18 +1137,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="mps://node://VSCE.sandbox/VSCE.sandbox/World">
+    <entry file="mps://node://VSCE/VSCE.structure/Object">
       <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
           <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack>
               <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                 <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="45" />
-                <property name="caretXRelative" value="10" />
+                <property name="caretX" value="325" />
+                <property name="caretXRelative" value="140" />
                 <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="constant_7">
-                  <node node_reference="r:fb24075f-fe05-4fab-b0d2-7e357a66f8e6(VSCE.sandbox)/1607845034248186849" />
+                <cellInfo cellId="property_name">
+                  <node node_reference="r:f2b40cea-54a9-4809-a863-a9a89f06e540(VSCE.editor)/3598919491714709351" />
                 </cellInfo>
               </stackElement>
             </selectionStack>
@@ -1893,7 +1157,7 @@
             <foldable />
             <restoreAlways />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:c3af0207-1a1f-43d5-ac20-1983480a0336(VSCE.textGen)/1607845034248121771" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:e089d824-caf7-4756-801f-8ce3c3fbbd61(VSCE.build)/2698554890240106377" saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />
@@ -1901,21 +1165,118 @@
             <restoreAlways />
             <enabledHints />
           </inspectorMemento>
+          <node node_ref="r:f2b40cea-54a9-4809-a863-a9a89f06e540(VSCE.editor)/3598919491714709351" />
         </state>
       </provider>
     </entry>
-    <entry file="mps://node://VSCE/VSCE.structure/World">
+    <entry file="mps://node://VSCE/VSCE.structure/Pedestrian">
       <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState" editorFocused="true">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
           <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack>
               <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                 <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="65" />
-                <property name="caretXRelative" value="20" />
+                <property name="caretX" value="260" />
+                <property name="caretXRelative" value="40" />
                 <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_value">
-                  <node node_reference="r:c3af0207-1a1f-43d5-ac20-1983480a0336(VSCE.textGen)/1607845034248121771" />
+                <cellInfo cellId="property_name">
+                  <node node_reference="r:f2b40cea-54a9-4809-a863-a9a89f06e540(VSCE.editor)/3598919491714782025" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:e089d824-caf7-4756-801f-8ce3c3fbbd61(VSCE.build)/2698554890240106377" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints />
+          </inspectorMemento>
+          <node node_ref="r:f2b40cea-54a9-4809-a863-a9a89f06e540(VSCE.editor)/3598919491714717400" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://VSCE/VSCE.structure/Vehicle">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="90" />
+                <property name="caretXRelative" value="0" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="ReadOnlyModelAccessor_mtiojs_a">
+                  <node node_reference="r:f2b40cea-54a9-4809-a863-a9a89f06e540(VSCE.editor)/3598919491714799721" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:e089d824-caf7-4756-801f-8ce3c3fbbd61(VSCE.build)/2698554890240106377" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints />
+          </inspectorMemento>
+          <node node_ref="r:f2b40cea-54a9-4809-a863-a9a89f06e540(VSCE.editor)/3598919491714717623" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://VSCE/VSCE.structure/Location">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="85" />
+                <property name="caretXRelative" value="70" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="Constant_ueqr71_c0a">
+                  <node node_reference="r:b52b1c3e-522c-4fa5-a07d-0c84fb53ae83(VSCE.structure)/3598919491714688357" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:e089d824-caf7-4756-801f-8ce3c3fbbd61(VSCE.build)/2698554890240106377" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints />
+          </inspectorMemento>
+          <node node_ref="r:b52b1c3e-522c-4fa5-a07d-0c84fb53ae83(VSCE.structure)/3598919491714688357" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://VSCE.build/VSCE.build/VSCE">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="165" />
+                <property name="caretXRelative" value="30" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_text3">
+                  <node node_reference="r:e089d824-caf7-4756-801f-8ce3c3fbbd61(VSCE.build)/2698554890240106377" />
                 </cellInfo>
               </stackElement>
             </selectionStack>
@@ -1923,30 +1284,14 @@
             <transactionalProperties />
             <foldable>
               <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_trik0f_b0">
-                  <node node_reference="r:c3af0207-1a1f-43d5-ac20-1983480a0336(VSCE.textGen)/1607845034248120891" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_trik0f_b0">
-                  <node node_reference="r:c3af0207-1a1f-43d5-ac20-1983480a0336(VSCE.textGen)/1607845034248187297" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_trik0f_b0">
-                  <node node_reference="r:c3af0207-1a1f-43d5-ac20-1983480a0336(VSCE.textGen)/1607845034247712439" />
+                <cellIdElement cellId="Collection_pilq2t_c0">
+                  <node node_reference="r:e089d824-caf7-4756-801f-8ce3c3fbbd61(VSCE.build)/2698554890240106372" />
                 </cellIdElement>
               </collapsedElement>
             </foldable>
-            <restoreAlways>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_trik0f_b0">
-                  <node node_reference="r:c3af0207-1a1f-43d5-ac20-1983480a0336(VSCE.textGen)/1607845034248120891" />
-                </cellIdElement>
-              </collapsedElement>
-            </restoreAlways>
+            <restoreAlways />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:c3af0207-1a1f-43d5-ac20-1983480a0336(VSCE.textGen)/1607845034248121771" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:e089d824-caf7-4756-801f-8ce3c3fbbd61(VSCE.build)/2698554890240106377" saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />
@@ -1954,7 +1299,6 @@
             <restoreAlways />
             <enabledHints />
           </inspectorMemento>
-          <node node_ref="r:c3af0207-1a1f-43d5-ac20-1983480a0336(VSCE.textGen)/1607845034247711296" />
         </state>
       </provider>
     </entry>
