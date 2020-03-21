@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MPSProject">
+    <projectModules>
+      <modulePath path="$PROJECT_DIR$/languages/ADSML/ADSML.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/ADSML/runtime/ADSML.runtime.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/ADSML/sandbox/ADSML.sandbox.msd" folder="" />
+    </projectModules>
+  </component>
+</project>
