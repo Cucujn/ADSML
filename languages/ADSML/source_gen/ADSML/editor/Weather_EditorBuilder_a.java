@@ -8,16 +8,18 @@ import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.openapi.editor.EditorContext;
 import jetbrains.mps.openapi.editor.cells.EditorCell;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Collection;
-import jetbrains.mps.nodeEditor.cellLayout.CellLayout_Vertical;
 import jetbrains.mps.nodeEditor.cellLayout.CellLayout_Horizontal;
 import jetbrains.mps.openapi.editor.style.Style;
 import jetbrains.mps.editor.runtime.style.StyleImpl;
 import jetbrains.mps.editor.runtime.style.StyleAttributes;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
+import jetbrains.mps.editor.runtime.EditorCell_Empty;
+import jetbrains.mps.openapi.editor.cells.CellActionType;
+import jetbrains.mps.nodeEditor.cellActions.CellAction_DeleteNode;
+import jetbrains.mps.nodeEditor.cellLayout.CellLayout_Vertical;
 import jetbrains.mps.lang.editor.cellProviders.SingleRoleCellProvider;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
-import jetbrains.mps.openapi.editor.cells.CellActionType;
 import jetbrains.mps.editor.runtime.impl.cellActions.CellAction_DeleteSmart;
 import jetbrains.mps.openapi.editor.cells.DefaultSubstituteInfo;
 import jetbrains.mps.nodeEditor.cellMenu.SEmptyContainmentSubstituteInfo;
@@ -44,39 +46,52 @@ import jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation;
   }
 
   private EditorCell createCollection_0() {
-    EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Vertical());
+    EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Horizontal());
     editorCell.setCellId("Collection_chgoq4_a");
     editorCell.setBig(true);
     setCellContext(editorCell);
-    editorCell.addEditorCell(createCollection_1());
-    return editorCell;
-  }
-  private EditorCell createCollection_1() {
-    EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Horizontal());
-    editorCell.setCellId("Collection_chgoq4_a0");
     Style style = new StyleImpl();
     style.set(StyleAttributes.SELECTABLE, false);
     editorCell.getStyle().putAll(style);
     editorCell.addEditorCell(createConstant_0());
-    editorCell.addEditorCell(createConstant_1());
-    editorCell.addEditorCell(createCollection_2());
+    editorCell.addEditorCell(createEmpty_0());
+    editorCell.addEditorCell(createCollection_1());
+    editorCell.addEditorCell(createEmpty_1());
     return editorCell;
   }
   private EditorCell createConstant_0() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "weather");
-    editorCell.setCellId("Constant_chgoq4_a0a");
+    editorCell.setCellId("Constant_chgoq4_a0");
     editorCell.setDefaultText("");
     return editorCell;
   }
+  private EditorCell createEmpty_0() {
+    EditorCell_Empty editorCell = new EditorCell_Empty(getEditorContext(), myNode);
+    editorCell.setAction(CellActionType.DELETE, new CellAction_DeleteNode(editorCell.getSNode(), CellAction_DeleteNode.DeleteDirection.FORWARD));
+    editorCell.setAction(CellActionType.BACKSPACE, new CellAction_DeleteNode(editorCell.getSNode(), CellAction_DeleteNode.DeleteDirection.BACKWARD));
+    editorCell.setCellId("Empty_chgoq4_b0");
+    return editorCell;
+  }
+  private EditorCell createCollection_1() {
+    EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Vertical());
+    editorCell.setCellId("Collection_chgoq4_c0");
+    Style style = new StyleImpl();
+    style.set(StyleAttributes.SELECTABLE, false);
+    style.set(StyleAttributes.DRAW_BRACKETS, true);
+    editorCell.getStyle().putAll(style);
+    editorCell.addEditorCell(createConstant_1());
+    editorCell.addEditorCell(createCollection_2());
+    return editorCell;
+  }
   private EditorCell createConstant_1() {
-    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "->");
-    editorCell.setCellId("Constant_chgoq4_b0a");
-    editorCell.setDefaultText("");
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "");
+    editorCell.setCellId("Constant_chgoq4_a2a");
+    editorCell.setDefaultText("properties");
     return editorCell;
   }
   private EditorCell createCollection_2() {
     EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Vertical());
-    editorCell.setCellId("Collection_chgoq4_c0a");
+    editorCell.setCellId("Collection_chgoq4_b2a");
     Style style = new StyleImpl();
     style.set(StyleAttributes.SELECTABLE, false);
     editorCell.getStyle().putAll(style);
@@ -91,7 +106,7 @@ import jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation;
   }
   private EditorCell createCollection_3() {
     EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Horizontal());
-    editorCell.setCellId("Collection_chgoq4_a2a0");
+    editorCell.setCellId("Collection_chgoq4_a1c0");
     Style style = new StyleImpl();
     style.set(StyleAttributes.SELECTABLE, false);
     editorCell.getStyle().putAll(style);
@@ -101,19 +116,19 @@ import jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation;
   }
   private EditorCell createConstant_2() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "cloudiness:");
-    editorCell.setCellId("Constant_chgoq4_a0c0a");
+    editorCell.setCellId("Constant_chgoq4_a0b2a");
     editorCell.setDefaultText("");
     return editorCell;
   }
   private EditorCell createRefNode_0() {
-    SingleRoleCellProvider provider = new Weather_EditorBuilder_a.cloudinessSingleRoleHandler_chgoq4_b0c0a(myNode, MetaAdapterFactory.getContainmentLink(0x703f16c8997b4d66L, 0x9edc3367cac7e880L, 0x1d7a144c8e374ff3L, 0x5307d53206fe8e70L, "cloudiness"), getEditorContext());
+    SingleRoleCellProvider provider = new Weather_EditorBuilder_a.cloudinessSingleRoleHandler_chgoq4_b0b2a(myNode, MetaAdapterFactory.getContainmentLink(0x703f16c8997b4d66L, 0x9edc3367cac7e880L, 0x1d7a144c8e374ff3L, 0x5307d53206fe8e70L, "cloudiness"), getEditorContext());
     return provider.createCell();
   }
-  private static class cloudinessSingleRoleHandler_chgoq4_b0c0a extends SingleRoleCellProvider {
+  private static class cloudinessSingleRoleHandler_chgoq4_b0b2a extends SingleRoleCellProvider {
     @NotNull
     private SNode myNode;
 
-    public cloudinessSingleRoleHandler_chgoq4_b0c0a(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
+    public cloudinessSingleRoleHandler_chgoq4_b0b2a(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
       super(containmentLink, context);
       myNode = ownerNode;
     }
@@ -162,7 +177,7 @@ import jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation;
   }
   private EditorCell createCollection_4() {
     EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Horizontal());
-    editorCell.setCellId("Collection_chgoq4_b2a0");
+    editorCell.setCellId("Collection_chgoq4_b1c0");
     Style style = new StyleImpl();
     style.set(StyleAttributes.SELECTABLE, false);
     editorCell.getStyle().putAll(style);
@@ -172,19 +187,19 @@ import jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation;
   }
   private EditorCell createConstant_3() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "precipitation:");
-    editorCell.setCellId("Constant_chgoq4_a1c0a");
+    editorCell.setCellId("Constant_chgoq4_a1b2a");
     editorCell.setDefaultText("");
     return editorCell;
   }
   private EditorCell createRefNode_1() {
-    SingleRoleCellProvider provider = new Weather_EditorBuilder_a.precipitationSingleRoleHandler_chgoq4_b1c0a(myNode, MetaAdapterFactory.getContainmentLink(0x703f16c8997b4d66L, 0x9edc3367cac7e880L, 0x1d7a144c8e374ff3L, 0x5307d53206fe8e73L, "precipitation"), getEditorContext());
+    SingleRoleCellProvider provider = new Weather_EditorBuilder_a.precipitationSingleRoleHandler_chgoq4_b1b2a(myNode, MetaAdapterFactory.getContainmentLink(0x703f16c8997b4d66L, 0x9edc3367cac7e880L, 0x1d7a144c8e374ff3L, 0x5307d53206fe8e73L, "precipitation"), getEditorContext());
     return provider.createCell();
   }
-  private static class precipitationSingleRoleHandler_chgoq4_b1c0a extends SingleRoleCellProvider {
+  private static class precipitationSingleRoleHandler_chgoq4_b1b2a extends SingleRoleCellProvider {
     @NotNull
     private SNode myNode;
 
-    public precipitationSingleRoleHandler_chgoq4_b1c0a(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
+    public precipitationSingleRoleHandler_chgoq4_b1b2a(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
       super(containmentLink, context);
       myNode = ownerNode;
     }
@@ -233,7 +248,7 @@ import jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation;
   }
   private EditorCell createCollection_5() {
     EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Horizontal());
-    editorCell.setCellId("Collection_chgoq4_c2a0");
+    editorCell.setCellId("Collection_chgoq4_c1c0");
     Style style = new StyleImpl();
     style.set(StyleAttributes.SELECTABLE, false);
     editorCell.getStyle().putAll(style);
@@ -243,19 +258,19 @@ import jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation;
   }
   private EditorCell createConstant_4() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "precipitationDeposits:");
-    editorCell.setCellId("Constant_chgoq4_a2c0a");
+    editorCell.setCellId("Constant_chgoq4_a2b2a");
     editorCell.setDefaultText("");
     return editorCell;
   }
   private EditorCell createRefNode_2() {
-    SingleRoleCellProvider provider = new Weather_EditorBuilder_a.precipitationDepositsSingleRoleHandler_chgoq4_b2c0a(myNode, MetaAdapterFactory.getContainmentLink(0x703f16c8997b4d66L, 0x9edc3367cac7e880L, 0x1d7a144c8e374ff3L, 0x5307d53206fe8e85L, "precipitationDeposits"), getEditorContext());
+    SingleRoleCellProvider provider = new Weather_EditorBuilder_a.precipitationDepositsSingleRoleHandler_chgoq4_b2b2a(myNode, MetaAdapterFactory.getContainmentLink(0x703f16c8997b4d66L, 0x9edc3367cac7e880L, 0x1d7a144c8e374ff3L, 0x5307d53206fe8e85L, "precipitationDeposits"), getEditorContext());
     return provider.createCell();
   }
-  private static class precipitationDepositsSingleRoleHandler_chgoq4_b2c0a extends SingleRoleCellProvider {
+  private static class precipitationDepositsSingleRoleHandler_chgoq4_b2b2a extends SingleRoleCellProvider {
     @NotNull
     private SNode myNode;
 
-    public precipitationDepositsSingleRoleHandler_chgoq4_b2c0a(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
+    public precipitationDepositsSingleRoleHandler_chgoq4_b2b2a(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
       super(containmentLink, context);
       myNode = ownerNode;
     }
@@ -304,7 +319,7 @@ import jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation;
   }
   private EditorCell createCollection_6() {
     EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Horizontal());
-    editorCell.setCellId("Collection_chgoq4_d2a0");
+    editorCell.setCellId("Collection_chgoq4_d1c0");
     Style style = new StyleImpl();
     style.set(StyleAttributes.SELECTABLE, false);
     editorCell.getStyle().putAll(style);
@@ -314,19 +329,19 @@ import jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation;
   }
   private EditorCell createConstant_5() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "sunAltitudeAngle:");
-    editorCell.setCellId("Constant_chgoq4_a3c0a");
+    editorCell.setCellId("Constant_chgoq4_a3b2a");
     editorCell.setDefaultText("");
     return editorCell;
   }
   private EditorCell createRefNode_3() {
-    SingleRoleCellProvider provider = new Weather_EditorBuilder_a.sunAltitudeAngleSingleRoleHandler_chgoq4_b3c0a(myNode, MetaAdapterFactory.getContainmentLink(0x703f16c8997b4d66L, 0x9edc3367cac7e880L, 0x1d7a144c8e374ff3L, 0x5307d53206fe8ea0L, "sunAltitudeAngle"), getEditorContext());
+    SingleRoleCellProvider provider = new Weather_EditorBuilder_a.sunAltitudeAngleSingleRoleHandler_chgoq4_b3b2a(myNode, MetaAdapterFactory.getContainmentLink(0x703f16c8997b4d66L, 0x9edc3367cac7e880L, 0x1d7a144c8e374ff3L, 0x5307d53206fe8ea0L, "sunAltitudeAngle"), getEditorContext());
     return provider.createCell();
   }
-  private static class sunAltitudeAngleSingleRoleHandler_chgoq4_b3c0a extends SingleRoleCellProvider {
+  private static class sunAltitudeAngleSingleRoleHandler_chgoq4_b3b2a extends SingleRoleCellProvider {
     @NotNull
     private SNode myNode;
 
-    public sunAltitudeAngleSingleRoleHandler_chgoq4_b3c0a(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
+    public sunAltitudeAngleSingleRoleHandler_chgoq4_b3b2a(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
       super(containmentLink, context);
       myNode = ownerNode;
     }
@@ -375,7 +390,7 @@ import jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation;
   }
   private EditorCell createCollection_7() {
     EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Horizontal());
-    editorCell.setCellId("Collection_chgoq4_e2a0");
+    editorCell.setCellId("Collection_chgoq4_e1c0");
     Style style = new StyleImpl();
     style.set(StyleAttributes.SELECTABLE, false);
     editorCell.getStyle().putAll(style);
@@ -385,19 +400,19 @@ import jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation;
   }
   private EditorCell createConstant_6() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "sunAzimuthAngle:");
-    editorCell.setCellId("Constant_chgoq4_a4c0a");
+    editorCell.setCellId("Constant_chgoq4_a4b2a");
     editorCell.setDefaultText("");
     return editorCell;
   }
   private EditorCell createRefNode_4() {
-    SingleRoleCellProvider provider = new Weather_EditorBuilder_a.sunAzimuthAngleSingleRoleHandler_chgoq4_b4c0a(myNode, MetaAdapterFactory.getContainmentLink(0x703f16c8997b4d66L, 0x9edc3367cac7e880L, 0x1d7a144c8e374ff3L, 0x5307d53206fe8e95L, "sunAzimuthAngle"), getEditorContext());
+    SingleRoleCellProvider provider = new Weather_EditorBuilder_a.sunAzimuthAngleSingleRoleHandler_chgoq4_b4b2a(myNode, MetaAdapterFactory.getContainmentLink(0x703f16c8997b4d66L, 0x9edc3367cac7e880L, 0x1d7a144c8e374ff3L, 0x5307d53206fe8e95L, "sunAzimuthAngle"), getEditorContext());
     return provider.createCell();
   }
-  private static class sunAzimuthAngleSingleRoleHandler_chgoq4_b4c0a extends SingleRoleCellProvider {
+  private static class sunAzimuthAngleSingleRoleHandler_chgoq4_b4b2a extends SingleRoleCellProvider {
     @NotNull
     private SNode myNode;
 
-    public sunAzimuthAngleSingleRoleHandler_chgoq4_b4c0a(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
+    public sunAzimuthAngleSingleRoleHandler_chgoq4_b4b2a(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
       super(containmentLink, context);
       myNode = ownerNode;
     }
@@ -446,7 +461,7 @@ import jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation;
   }
   private EditorCell createCollection_8() {
     EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Horizontal());
-    editorCell.setCellId("Collection_chgoq4_f2a0");
+    editorCell.setCellId("Collection_chgoq4_f1c0");
     Style style = new StyleImpl();
     style.set(StyleAttributes.SELECTABLE, false);
     editorCell.getStyle().putAll(style);
@@ -456,19 +471,19 @@ import jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation;
   }
   private EditorCell createConstant_7() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "windIntensity:");
-    editorCell.setCellId("Constant_chgoq4_a5c0a");
+    editorCell.setCellId("Constant_chgoq4_a5b2a");
     editorCell.setDefaultText("");
     return editorCell;
   }
   private EditorCell createRefNode_5() {
-    SingleRoleCellProvider provider = new Weather_EditorBuilder_a.windIntensitySingleRoleHandler_chgoq4_b5c0a(myNode, MetaAdapterFactory.getContainmentLink(0x703f16c8997b4d66L, 0x9edc3367cac7e880L, 0x1d7a144c8e374ff3L, 0x5307d53206fe8e8cL, "windIntensity"), getEditorContext());
+    SingleRoleCellProvider provider = new Weather_EditorBuilder_a.windIntensitySingleRoleHandler_chgoq4_b5b2a(myNode, MetaAdapterFactory.getContainmentLink(0x703f16c8997b4d66L, 0x9edc3367cac7e880L, 0x1d7a144c8e374ff3L, 0x5307d53206fe8e8cL, "windIntensity"), getEditorContext());
     return provider.createCell();
   }
-  private static class windIntensitySingleRoleHandler_chgoq4_b5c0a extends SingleRoleCellProvider {
+  private static class windIntensitySingleRoleHandler_chgoq4_b5b2a extends SingleRoleCellProvider {
     @NotNull
     private SNode myNode;
 
-    public windIntensitySingleRoleHandler_chgoq4_b5c0a(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
+    public windIntensitySingleRoleHandler_chgoq4_b5b2a(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
       super(containmentLink, context);
       myNode = ownerNode;
     }
@@ -514,5 +529,12 @@ import jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation;
     protected String getNoTargetText() {
       return "<no windIntensity>";
     }
+  }
+  private EditorCell createEmpty_1() {
+    EditorCell_Empty editorCell = new EditorCell_Empty(getEditorContext(), myNode);
+    editorCell.setAction(CellActionType.DELETE, new CellAction_DeleteNode(editorCell.getSNode(), CellAction_DeleteNode.DeleteDirection.FORWARD));
+    editorCell.setAction(CellActionType.BACKSPACE, new CellAction_DeleteNode(editorCell.getSNode(), CellAction_DeleteNode.DeleteDirection.BACKWARD));
+    editorCell.setCellId("Empty_chgoq4_d0");
+    return editorCell;
   }
 }

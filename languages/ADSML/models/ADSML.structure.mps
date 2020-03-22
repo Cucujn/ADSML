@@ -17,9 +17,16 @@
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
+      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ">
+        <child id="1169127546356" name="extends" index="PrDN$" />
+      </concept>
+      <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
+        <reference id="1169127628841" name="intfc" index="PrY4T" />
+      </concept>
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
         <property id="1096454100552" name="rootable" index="19KtqR" />
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
+        <child id="1169129564478" name="implements" index="PzmwI" />
       </concept>
       <concept id="1071489288299" name="jetbrains.mps.lang.structure.structure.PropertyDeclaration" flags="ig" index="1TJgyi">
         <property id="241647608299431129" name="propertyId" index="IQ2nx" />
@@ -64,12 +71,15 @@
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="1PU54MedOZH" resolve="Entity" />
     </node>
-    <node concept="1TJgyj" id="1PU54MedP06" role="1TKVEi">
-      <property role="IQ2ns" value="2124032493294669830" />
+    <node concept="1TJgyj" id="6R_D1AGVF_o" role="1TKVEi">
+      <property role="IQ2ns" value="7918915949983349080" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="roadNetwork" />
-      <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="1PU54MedOZI" resolve="Road" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6R_D1AGVBFQ" resolve="RoadNetwork" />
+    </node>
+    <node concept="PrWs8" id="6R_D1AGS5pF" role="PzmwI">
+      <ref role="PrY4T" node="6R_D1AGS5oW" resolve="IElement" />
     </node>
   </node>
   <node concept="1TIwiD" id="1PU54MedOZH">
@@ -77,12 +87,25 @@
     <property role="TrG5h" value="Entity" />
     <property role="34LRSv" value="entity" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="6R_D1AGS5pr" role="PzmwI">
+      <ref role="PrY4T" node="6R_D1AGS5oW" resolve="IElement" />
+    </node>
   </node>
   <node concept="1TIwiD" id="1PU54MedOZI">
     <property role="EcuMT" value="2124032493294669806" />
     <property role="TrG5h" value="Road" />
     <property role="34LRSv" value="road" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="6R_D1AGS5pz" role="PzmwI">
+      <ref role="PrY4T" node="6R_D1AGS5oW" resolve="IElement" />
+    </node>
+    <node concept="1TJgyj" id="6R_D1AGVwYL" role="1TKVEi">
+      <property role="IQ2ns" value="7918915949983305649" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="roadPoints" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="515orENKMXm" resolve="RoadPoint" />
+    </node>
   </node>
   <node concept="1TIwiD" id="1PU54MedOZJ">
     <property role="EcuMT" value="2124032493294669807" />
@@ -157,6 +180,9 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="tpee:gbb6qgO" resolve="FloatingPointConstant" />
     </node>
+    <node concept="PrWs8" id="6R_D1AGS5pJ" role="PzmwI">
+      <ref role="PrY4T" node="6R_D1AGS5oW" resolve="IElement" />
+    </node>
   </node>
   <node concept="1TIwiD" id="1PU54MedP0E">
     <property role="EcuMT" value="2124032493294669866" />
@@ -177,6 +203,9 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="tpee:gbb6qgO" resolve="FloatingPointConstant" />
     </node>
+    <node concept="PrWs8" id="6R_D1AGS5pv" role="PzmwI">
+      <ref role="PrY4T" node="6R_D1AGS5oW" resolve="IElement" />
+    </node>
   </node>
   <node concept="1TIwiD" id="515orENKMXm">
     <property role="EcuMT" value="5784136750934994774" />
@@ -189,6 +218,61 @@
       <property role="20kJfa" value="width" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="tpee:gbb6qgO" resolve="FloatingPointConstant" />
+    </node>
+    <node concept="PrWs8" id="6R_D1AGS5pB" role="PzmwI">
+      <ref role="PrY4T" node="6R_D1AGS5oW" resolve="IElement" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6R_D1AGS5od">
+    <property role="EcuMT" value="7918915949982406157" />
+    <property role="TrG5h" value="Attribute" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="6R_D1AGS5oe" role="1TKVEl">
+      <property role="IQ2nx" value="7918915949982406158" />
+      <property role="TrG5h" value="name" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyj" id="6R_D1AGS5oJ" role="1TKVEi">
+      <property role="IQ2ns" value="7918915949982406191" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="value" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="6R_D1AGS5oW">
+    <property role="EcuMT" value="7918915949982406204" />
+    <property role="TrG5h" value="IElement" />
+    <node concept="PrWs8" id="6R_D1AGS5oX" role="PrDN$">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1TJgyj" id="6R_D1AGS5p9" role="1TKVEi">
+      <property role="IQ2ns" value="7918915949982406217" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="value" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    </node>
+    <node concept="1TJgyi" id="6R_D1AGS5pd" role="1TKVEl">
+      <property role="IQ2nx" value="7918915949982406221" />
+      <property role="TrG5h" value="key" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6R_D1AGVBFQ">
+    <property role="EcuMT" value="7918915949983333110" />
+    <property role="TrG5h" value="RoadNetwork" />
+    <property role="34LRSv" value="roadNetwork" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="6R_D1AGVBFR" role="PzmwI">
+      <ref role="PrY4T" node="6R_D1AGS5oW" resolve="IElement" />
+    </node>
+    <node concept="1TJgyj" id="6R_D1AGVBFX" role="1TKVEi">
+      <property role="IQ2ns" value="7918915949983333117" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="roads" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="1PU54MedOZI" resolve="Road" />
     </node>
   </node>
 </model>
