@@ -15,9 +15,11 @@
       <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi" />
       <concept id="1140524381322" name="jetbrains.mps.lang.editor.structure.CellModel_ListWithRole" flags="ng" index="2czfm3">
         <child id="1140524464360" name="cellLayout" index="2czzBx" />
+        <child id="1233141163694" name="separatorStyle" index="sWeuL" />
       </concept>
       <concept id="1106270549637" name="jetbrains.mps.lang.editor.structure.CellLayout_Horizontal" flags="nn" index="2iRfu4" />
       <concept id="1106270571710" name="jetbrains.mps.lang.editor.structure.CellLayout_Vertical" flags="nn" index="2iRkQZ" />
+      <concept id="1233148810477" name="jetbrains.mps.lang.editor.structure.InlineStyleDeclaration" flags="ng" index="tppnM" />
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
@@ -141,6 +143,10 @@
           <node concept="35HoNQ" id="6R_D1AGVWCx" role="3EZMnx" />
           <node concept="3F1sOY" id="6R_D1AGVILa" role="3EZMnx">
             <ref role="1NtTu8" to="bn7n:6R_D1AGVF_o" resolve="roadNetwork" />
+          </node>
+          <node concept="35HoNQ" id="6R_D1AGXCT5" role="3EZMnx" />
+          <node concept="PMmxH" id="6R_D1AGXCTq" role="3EZMnx">
+            <ref role="PMmxG" node="6R_D1AGX_pP" resolve="EntitiesComponentEditor" />
           </node>
           <node concept="2iRkQZ" id="6R_D1AGSJsY" role="2iSdaV" />
         </node>
@@ -311,6 +317,7 @@
       <node concept="3F0ifn" id="6R_D1AGVG5L" role="3EZMnx">
         <property role="3F0ifm" value="road network" />
       </node>
+      <node concept="35HoNQ" id="6R_D1AGXv3e" role="3EZMnx" />
       <node concept="3EZMnI" id="6R_D1AGVG5U" role="3EZMnx">
         <node concept="VPM3Z" id="6R_D1AGVG5W" role="3F10Kt" />
         <node concept="3vyZuw" id="6R_D1AGVG6f" role="3F10Kt">
@@ -322,6 +329,7 @@
         </node>
         <node concept="2iRkQZ" id="6R_D1AGVG5Z" role="2iSdaV" />
       </node>
+      <node concept="35HoNQ" id="6R_D1AGXv3N" role="3EZMnx" />
       <node concept="2iRfu4" id="6R_D1AGVG5A" role="2iSdaV" />
     </node>
   </node>
@@ -347,6 +355,7 @@
         </node>
         <node concept="2iRkQZ" id="6R_D1AGW5sd" role="2iSdaV" />
         <node concept="3EZMnI" id="6R_D1AGVZsU" role="3EZMnx">
+          <property role="S$Qs1" value="true" />
           <node concept="3F0ifn" id="6R_D1AGW5u1" role="3EZMnx">
             <property role="ilYzB" value="road points" />
           </node>
@@ -357,9 +366,150 @@
           </node>
           <node concept="2iRkQZ" id="6R_D1AGVZsZ" role="2iSdaV" />
         </node>
-        <node concept="3F0ifn" id="6R_D1AGW5sq" role="3EZMnx" />
       </node>
       <node concept="2iRfu4" id="6R_D1AGVOgI" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="PKFIW" id="6R_D1AGX_pP">
+    <property role="TrG5h" value="EntitiesComponentEditor" />
+    <ref role="1XX52x" to="bn7n:1PU54MedOZG" resolve="Scenario" />
+    <node concept="3EZMnI" id="6R_D1AGX_pR" role="2wV5jI">
+      <node concept="3F0ifn" id="6R_D1AGX_q1" role="3EZMnx">
+        <property role="3F0ifm" value="entities" />
+        <property role="ilYzB" value="vehicles and pedestrains" />
+      </node>
+      <node concept="35HoNQ" id="6R_D1AGX_qa" role="3EZMnx" />
+      <node concept="3EZMnI" id="6R_D1AGX_qE" role="3EZMnx">
+        <node concept="VPM3Z" id="6R_D1AGX_qG" role="3F10Kt" />
+        <node concept="3vyZuw" id="6R_D1AGXGgP" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="2iRkQZ" id="6R_D1AGX_qJ" role="2iSdaV" />
+        <node concept="3F2HdR" id="6R_D1AGXX2B" role="3EZMnx">
+          <ref role="1NtTu8" to="bn7n:1PU54MedP01" resolve="entities" />
+          <node concept="2iRkQZ" id="6R_D1AGXX2D" role="2czzBx" />
+          <node concept="tppnM" id="6R_D1AGYuZ9" role="sWeuL" />
+        </node>
+      </node>
+      <node concept="35HoNQ" id="6R_D1AGX_qw" role="3EZMnx" />
+      <node concept="2iRfu4" id="6R_D1AGX_pU" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="PKFIW" id="6R_D1AGXTeU">
+    <property role="TrG5h" value="EntityComponentEditor" />
+    <ref role="1XX52x" to="bn7n:1PU54MedOZH" resolve="Entity" />
+    <node concept="3EZMnI" id="6R_D1AGXTgh" role="2wV5jI">
+      <node concept="3EZMnI" id="6R_D1AGXTgN" role="3EZMnx">
+        <node concept="VPM3Z" id="6R_D1AGXTgP" role="3F10Kt" />
+        <node concept="3F0ifn" id="6R_D1AGXTh5" role="3EZMnx">
+          <property role="3F0ifm" value="speed:" />
+        </node>
+        <node concept="3F1sOY" id="6R_D1AGXThe" role="3EZMnx">
+          <ref role="1NtTu8" to="bn7n:6R_D1AGXTep" resolve="speed" />
+        </node>
+        <node concept="2iRfu4" id="6R_D1AGXTgS" role="2iSdaV" />
+      </node>
+      <node concept="3EZMnI" id="6R_D1AGXThx" role="3EZMnx">
+        <node concept="VPM3Z" id="6R_D1AGXThz" role="3F10Kt" />
+        <node concept="3F0ifn" id="6R_D1AGXTh_" role="3EZMnx">
+          <property role="3F0ifm" value="rotation:" />
+        </node>
+        <node concept="3F1sOY" id="6R_D1AGXThY" role="3EZMnx">
+          <ref role="1NtTu8" to="bn7n:6R_D1AGXTes" resolve="rotation" />
+        </node>
+        <node concept="2iRfu4" id="6R_D1AGXThA" role="2iSdaV" />
+      </node>
+      <node concept="3EZMnI" id="6R_D1AGY9m3" role="3EZMnx">
+        <node concept="VPM3Z" id="6R_D1AGY9m5" role="3F10Kt" />
+        <node concept="3F0ifn" id="6R_D1AGY9m7" role="3EZMnx">
+          <property role="3F0ifm" value="location:" />
+        </node>
+        <node concept="3F1sOY" id="6R_D1AGY5$A" role="3EZMnx">
+          <ref role="1NtTu8" to="bn7n:6R_D1AGY5$8" resolve="location" />
+        </node>
+        <node concept="2iRfu4" id="6R_D1AGY9m8" role="2iSdaV" />
+      </node>
+      <node concept="2iRkQZ" id="6R_D1AGXTgk" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="6R_D1AGXTi4">
+    <ref role="1XX52x" to="bn7n:1PU54MedOZJ" resolve="Vehicle" />
+    <node concept="3EZMnI" id="6R_D1AGXTi6" role="2wV5jI">
+      <node concept="3F0ifn" id="6R_D1AGXTig" role="3EZMnx">
+        <property role="3F0ifm" value="vehicle" />
+      </node>
+      <node concept="35HoNQ" id="6R_D1AGY5_d" role="3EZMnx" />
+      <node concept="3EZMnI" id="6R_D1AGXTip" role="3EZMnx">
+        <node concept="3EZMnI" id="6R_D1AGYlIg" role="3EZMnx">
+          <node concept="VPM3Z" id="6R_D1AGYlIi" role="3F10Kt" />
+          <node concept="3F0ifn" id="6R_D1AGYlIk" role="3EZMnx">
+            <property role="ilYzB" value="name" />
+          </node>
+          <node concept="3F0A7n" id="6R_D1AGYlJ1" role="3EZMnx">
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+          <node concept="2iRfu4" id="6R_D1AGYlIl" role="2iSdaV" />
+        </node>
+        <node concept="3F0ifn" id="6R_D1AGYqb$" role="3EZMnx" />
+        <node concept="3F0ifn" id="6R_D1AGYhyS" role="3EZMnx">
+          <property role="ilYzB" value="properties" />
+        </node>
+        <node concept="3EZMnI" id="6R_D1AGYd4c" role="3EZMnx">
+          <node concept="VPM3Z" id="6R_D1AGYd4e" role="3F10Kt" />
+          <node concept="3F0ifn" id="6R_D1AGYd4s" role="3EZMnx">
+            <property role="3F0ifm" value="type:" />
+          </node>
+          <node concept="3F0A7n" id="6R_D1AGYd4P" role="3EZMnx">
+            <ref role="1NtTu8" to="bn7n:6R_D1AGYd4H" resolve="type" />
+          </node>
+          <node concept="2iRfu4" id="6R_D1AGYd4h" role="2iSdaV" />
+        </node>
+        <node concept="VPM3Z" id="6R_D1AGXTir" role="3F10Kt" />
+        <node concept="3vyZuw" id="6R_D1AGXTjj" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="PMmxH" id="6R_D1AGXTiD" role="3EZMnx">
+          <ref role="PMmxG" node="6R_D1AGXTeU" resolve="EntityComponentEditor" />
+        </node>
+        <node concept="2iRkQZ" id="6R_D1AGXTiu" role="2iSdaV" />
+      </node>
+      <node concept="35HoNQ" id="6R_D1AGY5_I" role="3EZMnx" />
+      <node concept="2iRfu4" id="6R_D1AGXTi9" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="6R_D1AGXTiG">
+    <ref role="1XX52x" to="bn7n:1PU54MedOZK" resolve="Pedestrian" />
+    <node concept="3EZMnI" id="6R_D1AGXTiI" role="2wV5jI">
+      <node concept="3F0ifn" id="6R_D1AGXTiJ" role="3EZMnx">
+        <property role="3F0ifm" value="pedestrain" />
+      </node>
+      <node concept="35HoNQ" id="6R_D1AGY5Bk" role="3EZMnx" />
+      <node concept="3EZMnI" id="6R_D1AGXTiK" role="3EZMnx">
+        <node concept="3EZMnI" id="6R_D1AGYqcm" role="3EZMnx">
+          <node concept="VPM3Z" id="6R_D1AGYqcn" role="3F10Kt" />
+          <node concept="3F0ifn" id="6R_D1AGYqco" role="3EZMnx">
+            <property role="ilYzB" value="name" />
+          </node>
+          <node concept="3F0A7n" id="6R_D1AGYqcp" role="3EZMnx">
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+          <node concept="2iRfu4" id="6R_D1AGYqcq" role="2iSdaV" />
+        </node>
+        <node concept="3F0ifn" id="6R_D1AGYqcf" role="3EZMnx" />
+        <node concept="3F0ifn" id="6R_D1AGYhz7" role="3EZMnx">
+          <property role="ilYzB" value="properties" />
+        </node>
+        <node concept="VPM3Z" id="6R_D1AGXTiL" role="3F10Kt" />
+        <node concept="3vyZuw" id="6R_D1AGXTj8" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="PMmxH" id="6R_D1AGXTiM" role="3EZMnx">
+          <ref role="PMmxG" node="6R_D1AGXTeU" resolve="EntityComponentEditor" />
+        </node>
+        <node concept="2iRkQZ" id="6R_D1AGXTiN" role="2iSdaV" />
+      </node>
+      <node concept="35HoNQ" id="6R_D1AGY5Dg" role="3EZMnx" />
+      <node concept="2iRfu4" id="6R_D1AGXTiO" role="2iSdaV" />
     </node>
   </node>
 </model>

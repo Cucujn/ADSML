@@ -11,8 +11,17 @@
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="1082978164219" name="jetbrains.mps.lang.structure.structure.EnumerationDataTypeDeclaration" flags="ng" index="AxPO7">
+        <reference id="1083171729157" name="memberDataType" index="M4eZT" />
+        <child id="1083172003582" name="member" index="M5hS2" />
+      </concept>
+      <concept id="1083171877298" name="jetbrains.mps.lang.structure.structure.EnumerationMemberDeclaration" flags="ig" index="M4N5e">
+        <property id="1083923523172" name="externalValue" index="1uS6qo" />
+        <property id="1083923523171" name="internalValue" index="1uS6qv" />
+      </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
+        <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
@@ -86,9 +95,31 @@
     <property role="EcuMT" value="2124032493294669805" />
     <property role="TrG5h" value="Entity" />
     <property role="34LRSv" value="entity" />
+    <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="6R_D1AGS5pr" role="PzmwI">
       <ref role="PrY4T" node="6R_D1AGS5oW" resolve="IElement" />
+    </node>
+    <node concept="1TJgyj" id="6R_D1AGXTep" role="1TKVEi">
+      <property role="IQ2ns" value="7918915949983929241" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="speed" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpee:gbb6qgO" resolve="FloatingPointConstant" />
+    </node>
+    <node concept="1TJgyj" id="6R_D1AGXTes" role="1TKVEi">
+      <property role="IQ2ns" value="7918915949983929244" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="rotation" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpee:gbb6qgO" resolve="FloatingPointConstant" />
+    </node>
+    <node concept="1TJgyj" id="6R_D1AGY5$8" role="1TKVEi">
+      <property role="IQ2ns" value="7918915949983979784" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="location" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="1PU54MedP0E" resolve="Point" />
     </node>
   </node>
   <node concept="1TIwiD" id="1PU54MedOZI">
@@ -112,6 +143,11 @@
     <property role="TrG5h" value="Vehicle" />
     <property role="34LRSv" value="vehicle" />
     <ref role="1TJDcQ" node="1PU54MedOZH" resolve="Entity" />
+    <node concept="1TJgyi" id="6R_D1AGYd4H" role="1TKVEl">
+      <property role="IQ2nx" value="7918915949984010541" />
+      <property role="TrG5h" value="type" />
+      <ref role="AX2Wp" node="6R_D1AGYd1Z" resolve="VehicleType" />
+    </node>
   </node>
   <node concept="1TIwiD" id="1PU54MedOZK">
     <property role="EcuMT" value="2124032493294669808" />
@@ -273,6 +309,22 @@
       <property role="20kJfa" value="roads" />
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="1PU54MedOZI" resolve="Road" />
+    </node>
+  </node>
+  <node concept="AxPO7" id="6R_D1AGYd1Z">
+    <property role="TrG5h" value="VehicleType" />
+    <ref role="M4eZT" to="tpck:fKAOsGN" resolve="string" />
+    <node concept="M4N5e" id="6R_D1AGYd20" role="M5hS2">
+      <property role="1uS6qo" value="Car" />
+      <property role="1uS6qv" value="CAR" />
+    </node>
+    <node concept="M4N5e" id="6R_D1AGYd21" role="M5hS2">
+      <property role="1uS6qv" value="BIKE" />
+      <property role="1uS6qo" value="Bike" />
+    </node>
+    <node concept="M4N5e" id="6R_D1AGYd2W" role="M5hS2">
+      <property role="1uS6qv" value="MOTORBIKE" />
+      <property role="1uS6qo" value="Motorbike" />
     </node>
   </node>
 </model>

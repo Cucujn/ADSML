@@ -71,7 +71,7 @@ import jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation;
     editorCell.addEditorCell(createConstant_0());
     editorCell.addEditorCell(createEmpty_0());
     editorCell.addEditorCell(createCollection_1());
-    editorCell.addEditorCell(createEmpty_3());
+    editorCell.addEditorCell(createEmpty_4());
     return editorCell;
   }
   private EditorCell createConstant_0() {
@@ -193,6 +193,8 @@ import jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation;
     editorCell.addEditorCell(createRefNode_0());
     editorCell.addEditorCell(createEmpty_2());
     editorCell.addEditorCell(createRefNode_1());
+    editorCell.addEditorCell(createEmpty_3());
+    editorCell.addEditorCell(createComponent_0());
     return editorCell;
   }
   private EditorCell createRefNode_0() {
@@ -313,6 +315,17 @@ import jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation;
     }
   }
   private EditorCell createEmpty_3() {
+    EditorCell_Empty editorCell = new EditorCell_Empty(getEditorContext(), myNode);
+    editorCell.setAction(CellActionType.DELETE, new CellAction_DeleteNode(editorCell.getSNode(), CellAction_DeleteNode.DeleteDirection.FORWARD));
+    editorCell.setAction(CellActionType.BACKSPACE, new CellAction_DeleteNode(editorCell.getSNode(), CellAction_DeleteNode.DeleteDirection.BACKWARD));
+    editorCell.setCellId("Empty_1xat1a_d4c0");
+    return editorCell;
+  }
+  private EditorCell createComponent_0() {
+    EditorCell editorCell = getCellFactory().createEditorComponentCell(myNode, "ADSML.editor.EntitiesComponentEditor");
+    return editorCell;
+  }
+  private EditorCell createEmpty_4() {
     EditorCell_Empty editorCell = new EditorCell_Empty(getEditorContext(), myNode);
     editorCell.setAction(CellActionType.DELETE, new CellAction_DeleteNode(editorCell.getSNode(), CellAction_DeleteNode.DeleteDirection.FORWARD));
     editorCell.setAction(CellActionType.BACKSPACE, new CellAction_DeleteNode(editorCell.getSNode(), CellAction_DeleteNode.DeleteDirection.BACKWARD));
