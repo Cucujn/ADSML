@@ -7,6 +7,7 @@
   <imports />
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
       <concept id="1111509017652" name="jetbrains.mps.baseLanguage.structure.FloatingPointConstant" flags="nn" index="3b6qkQ">
         <property id="1113006610751" name="value" index="$nhwW" />
       </concept>
@@ -45,6 +46,17 @@
         <child id="5982985040827420293" name="precipitationDeposits" index="1lYlIR" />
         <child id="5982985040827420300" name="windIntensity" index="1lYlIY" />
       </concept>
+      <concept id="4995188496503571848" name="ADSML.structure.ScenarioWithContract" flags="ng" index="2lpfNK">
+        <child id="4995188496503571849" name="scenario" index="2lpfNL" />
+        <child id="4995188496503571851" name="contractList" index="2lpfNN" />
+      </concept>
+      <concept id="4995188496503571854" name="ADSML.structure.ContractList" flags="ng" index="2lpfNQ">
+        <child id="4995188496503571855" name="contracts" index="2lpfNR" />
+      </concept>
+      <concept id="4995188496503571843" name="ADSML.structure.Contract" flags="ng" index="2lpfNV">
+        <reference id="4995188496503571846" name="attachTo" index="2lpfNY" />
+        <child id="4995188496503740767" name="rules" index="2lqQ0B" />
+      </concept>
       <concept id="7918915949983333110" name="ADSML.structure.RoadNetwork" flags="ng" index="312XVJ">
         <child id="7918915949983333117" name="roads" index="312XV$" />
       </concept>
@@ -59,7 +71,7 @@
     </language>
   </registry>
   <node concept="2jjlIw" id="5c7Pj86Zgro">
-    <property role="2jjlIX" value="None" />
+    <property role="2jjlIX" value="Default" />
     <property role="TrG5h" value="scenario" />
     <node concept="2jjlIz" id="6R_D1AGY1Hz" role="2jjkhd">
       <property role="317nkO" value="CAR" />
@@ -252,6 +264,79 @@
       </node>
       <node concept="3b6qkQ" id="6R_D1AGYzJS" role="1lYlIi">
         <property role="$nhwW" value="1.0" />
+      </node>
+    </node>
+  </node>
+  <node concept="2lpfNK" id="4liunzgdOWS">
+    <node concept="2jjlIw" id="4liunzgdOWT" role="2lpfNL">
+      <property role="2jjlIX" value="Default" />
+      <node concept="2jjlIz" id="4liunzgdW7f" role="2jjkhd">
+        <property role="TrG5h" value="car1" />
+        <node concept="3b6qkQ" id="4liunzgdW7m" role="314zu0" />
+        <node concept="3b6qkQ" id="4liunzgdW7t" role="314zu5" />
+        <node concept="2jjkhA" id="4liunzgdW7$" role="317vOh">
+          <node concept="3b6qkQ" id="4liunzgdW7F" role="3zx$Yk" />
+          <node concept="3b6qkQ" id="4liunzgdW7M" role="3zx$Vx" />
+        </node>
+      </node>
+      <node concept="2jjlIz" id="4liunzgdW8h" role="2jjkhd">
+        <property role="TrG5h" value="car2" />
+        <node concept="3b6qkQ" id="4liunzgdW8o" role="314zu0" />
+        <node concept="3b6qkQ" id="4liunzgdW8v" role="314zu5" />
+        <node concept="2jjkhA" id="4liunzgdW8A" role="317vOh">
+          <node concept="3b6qkQ" id="4liunzgdW8H" role="3zx$Yk" />
+          <node concept="3b6qkQ" id="4liunzgdW8O" role="3zx$Vx" />
+        </node>
+      </node>
+      <node concept="2jjlIW" id="4liunzgdW9v" role="2jjkhd">
+        <property role="TrG5h" value="person1" />
+        <node concept="3b6qkQ" id="4liunzgdW9A" role="3zx$VL" />
+        <node concept="3b6qkQ" id="4liunzgdW9H" role="3zx$VP" />
+        <node concept="3b6qkQ" id="4liunzgdW9O" role="314zu0" />
+        <node concept="3b6qkQ" id="4liunzgdW9V" role="314zu5" />
+        <node concept="2jjkhA" id="4liunzgdWa2" role="317vOh">
+          <node concept="3b6qkQ" id="4liunzgdWa9" role="3zx$Yk" />
+          <node concept="3b6qkQ" id="4liunzgdWag" role="3zx$Vx" />
+        </node>
+      </node>
+      <node concept="2jjlIW" id="4liunzgdWbb" role="2jjkhd">
+        <property role="TrG5h" value="person2" />
+        <node concept="3b6qkQ" id="4liunzgdWbi" role="3zx$VL" />
+        <node concept="3b6qkQ" id="4liunzgdWbp" role="3zx$VP" />
+        <node concept="3b6qkQ" id="4liunzgdWbw" role="314zu0" />
+        <node concept="3b6qkQ" id="4liunzgdWbB" role="314zu5" />
+        <node concept="2jjkhA" id="4liunzgdWbI" role="317vOh">
+          <node concept="3b6qkQ" id="4liunzgdWbP" role="3zx$Yk" />
+          <node concept="3b6qkQ" id="4liunzgdWbW" role="3zx$Vx" />
+        </node>
+      </node>
+      <node concept="2jjlIZ" id="4liunzgdOWU" role="2jjlIM">
+        <node concept="3b6qkQ" id="4liunzgdOWV" role="1lYlH2" />
+        <node concept="3b6qkQ" id="4liunzgdOWW" role="1lYlH1" />
+        <node concept="3b6qkQ" id="4liunzgdOWX" role="1lYlIR" />
+        <node concept="3b6qkQ" id="4liunzgdOWY" role="1lYlIY" />
+        <node concept="3b6qkQ" id="4liunzgdOWZ" role="1lYlIB" />
+        <node concept="3b6qkQ" id="4liunzgdOX0" role="1lYlIi" />
+      </node>
+      <node concept="312XVJ" id="4liunzgdOX1" role="312LP1">
+        <node concept="2jjlIy" id="4liunzgdW6Y" role="312XV$">
+          <property role="TrG5h" value="straightRoad1" />
+        </node>
+        <node concept="2jjlIy" id="4liunzgdW70" role="312XV$">
+          <property role="TrG5h" value="straightRoad2" />
+        </node>
+      </node>
+    </node>
+    <node concept="2lpfNQ" id="4liunzgdOX2" role="2lpfNN">
+      <node concept="2lpfNV" id="4liunzge3ku" role="2lpfNR">
+        <ref role="2lpfNY" node="6R_D1AGY1Hz" resolve="car1" />
+        <node concept="17QB3L" id="4liunzgeWSj" role="2lqQ0B" />
+        <node concept="17QB3L" id="4liunzgeWSl" role="2lqQ0B" />
+      </node>
+      <node concept="2lpfNV" id="4liunzgeWSo" role="2lpfNR">
+        <ref role="2lpfNY" node="4liunzgdW8h" resolve="car2" />
+        <node concept="17QB3L" id="4liunzgeWSt" role="2lqQ0B" />
+        <node concept="17QB3L" id="4liunzgeWSv" role="2lqQ0B" />
       </node>
     </node>
   </node>

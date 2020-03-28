@@ -327,5 +327,61 @@
       <property role="1uS6qo" value="Motorbike" />
     </node>
   </node>
+  <node concept="1TIwiD" id="4liunzgdCm3">
+    <property role="EcuMT" value="4995188496503571843" />
+    <property role="TrG5h" value="Contract" />
+    <property role="34LRSv" value="contract" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="4liunzgdCm4" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1TJgyj" id="4liunzgdCm6" role="1TKVEi">
+      <property role="IQ2ns" value="4995188496503571846" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="attachTo" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="1PU54MedOZH" resolve="Entity" />
+    </node>
+    <node concept="1TJgyj" id="4liunzgeh_v" role="1TKVEi">
+      <property role="IQ2ns" value="4995188496503740767" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="rules" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" to="tpee:hP7QB7G" resolve="StringType" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4liunzgdCm8">
+    <property role="EcuMT" value="4995188496503571848" />
+    <property role="TrG5h" value="ScenarioWithContract" />
+    <property role="34LRSv" value="swc" />
+    <property role="19KtqR" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="4liunzgdCm9" role="1TKVEi">
+      <property role="IQ2ns" value="4995188496503571849" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="scenario" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="1PU54MedOZG" resolve="Scenario" />
+    </node>
+    <node concept="1TJgyj" id="4liunzgdCmb" role="1TKVEi">
+      <property role="IQ2ns" value="4995188496503571851" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="contractList" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="4liunzgdCme" resolve="ContractList" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4liunzgdCme">
+    <property role="EcuMT" value="4995188496503571854" />
+    <property role="TrG5h" value="ContractList" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="4liunzgdCmf" role="1TKVEi">
+      <property role="IQ2ns" value="4995188496503571855" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="contracts" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="4liunzgdCm3" resolve="Contract" />
+    </node>
+  </node>
 </model>
 

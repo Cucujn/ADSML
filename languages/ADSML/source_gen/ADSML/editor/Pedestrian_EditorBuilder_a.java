@@ -80,19 +80,25 @@ import jetbrains.mps.openapi.editor.update.AttributeKind;
   private EditorCell createCollection_1() {
     EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Vertical());
     editorCell.setCellId("Collection_gqyet4_c0");
+    editorCell.addEditorCell(createCollection_2());
+    editorCell.addEditorCell(createConstant_3());
+    return editorCell;
+  }
+  private EditorCell createCollection_2() {
+    EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Vertical());
+    editorCell.setCellId("Collection_gqyet4_a2a");
     Style style = new StyleImpl();
     style.set(StyleAttributes.SELECTABLE, false);
     style.set(StyleAttributes.DRAW_BRACKETS, true);
     editorCell.getStyle().putAll(style);
-    editorCell.addEditorCell(createCollection_2());
+    editorCell.addEditorCell(createCollection_3());
     editorCell.addEditorCell(createConstant_2());
-    editorCell.addEditorCell(createConstant_3());
-    editorCell.addEditorCell(createComponent_0());
+    editorCell.addEditorCell(createCollection_4());
     return editorCell;
   }
-  private EditorCell createCollection_2() {
+  private EditorCell createCollection_3() {
     EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Horizontal());
-    editorCell.setCellId("Collection_gqyet4_a2a");
+    editorCell.setCellId("Collection_gqyet4_a0c0");
     Style style = new StyleImpl();
     style.set(StyleAttributes.SELECTABLE, false);
     editorCell.getStyle().putAll(style);
@@ -102,7 +108,7 @@ import jetbrains.mps.openapi.editor.update.AttributeKind;
   }
   private EditorCell createConstant_1() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "");
-    editorCell.setCellId("Constant_gqyet4_a0c0");
+    editorCell.setCellId("Constant_gqyet4_a0a2a");
     editorCell.setDefaultText("name");
     return editorCell;
   }
@@ -135,18 +141,25 @@ import jetbrains.mps.openapi.editor.update.AttributeKind;
   }
   private EditorCell createConstant_2() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "");
-    editorCell.setCellId("Constant_gqyet4_b2a");
-    editorCell.setDefaultText("");
+    editorCell.setCellId("Constant_gqyet4_b0c0");
+    editorCell.setDefaultText("properties");
     return editorCell;
   }
-  private EditorCell createConstant_3() {
-    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "");
-    editorCell.setCellId("Constant_gqyet4_c2a");
-    editorCell.setDefaultText("properties");
+  private EditorCell createCollection_4() {
+    EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Vertical());
+    editorCell.setCellId("Collection_gqyet4_c0c0");
+    editorCell.setFoldable(true);
+    editorCell.addEditorCell(createComponent_0());
     return editorCell;
   }
   private EditorCell createComponent_0() {
     EditorCell editorCell = getCellFactory().createEditorComponentCell(myNode, "ADSML.editor.EntityComponentEditor");
+    return editorCell;
+  }
+  private EditorCell createConstant_3() {
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "");
+    editorCell.setCellId("Constant_gqyet4_b2a");
+    editorCell.setDefaultText("");
     return editorCell;
   }
   private EditorCell createEmpty_1() {
