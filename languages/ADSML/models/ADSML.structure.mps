@@ -133,9 +133,16 @@
     <node concept="1TJgyj" id="6R_D1AGVwYL" role="1TKVEi">
       <property role="IQ2ns" value="7918915949983305649" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="roadPoints" />
-      <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="515orENKMXm" resolve="RoadPoint" />
+      <property role="20kJfa" value="leftBoundary" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" node="1PU54MedP0E" resolve="Point" />
+    </node>
+    <node concept="1TJgyj" id="6CQS9pI_I6d" role="1TKVEi">
+      <property role="IQ2ns" value="7653551553467834765" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="rightBoundary" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" node="1PU54MedP0E" resolve="Point" />
     </node>
   </node>
   <node concept="1TIwiD" id="1PU54MedOZJ">
@@ -240,22 +247,6 @@
       <ref role="20lvS9" to="tpee:gbb6qgO" resolve="FloatingPointConstant" />
     </node>
     <node concept="PrWs8" id="6R_D1AGS5pv" role="PzmwI">
-      <ref role="PrY4T" node="6R_D1AGS5oW" resolve="IElement" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="515orENKMXm">
-    <property role="EcuMT" value="5784136750934994774" />
-    <property role="TrG5h" value="RoadPoint" />
-    <property role="34LRSv" value="roadPoint" />
-    <ref role="1TJDcQ" node="1PU54MedP0E" resolve="Point" />
-    <node concept="1TJgyj" id="515orENKMXn" role="1TKVEi">
-      <property role="IQ2ns" value="5784136750934994775" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="width" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="tpee:gbb6qgO" resolve="FloatingPointConstant" />
-    </node>
-    <node concept="PrWs8" id="6R_D1AGS5pB" role="PzmwI">
       <ref role="PrY4T" node="6R_D1AGS5oW" resolve="IElement" />
     </node>
   </node>
