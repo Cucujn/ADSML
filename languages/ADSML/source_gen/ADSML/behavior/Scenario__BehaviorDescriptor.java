@@ -5,8 +5,6 @@ package ADSML.behavior;
 import jetbrains.mps.core.aspects.behaviour.BaseBHDescriptor;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
-import jetbrains.mps.core.aspects.behaviour.api.BehaviorRegistry;
-import jetbrains.mps.smodel.language.ConceptRegistry;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
 import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
@@ -24,9 +22,8 @@ import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
 public final class Scenario__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x703f16c8997b4d66L, 0x9edc3367cac7e880L, 0x1d7a144c8e374fecL, "ADSML.structure.Scenario");
-  private static final BehaviorRegistry REGISTRY = ConceptRegistry.getInstance().getBehaviorRegistry();
 
-  public static final SMethod<Void> generateView_id3WQzMjiGvZR = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("generateView").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("3WQzMjiGvZR").registry(REGISTRY).build();
+  public static final SMethod<Void> generateView_id3WQzMjiGvZR = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("generateView").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("3WQzMjiGvZR").build();
 
   private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(generateView_id3WQzMjiGvZR);
 
@@ -41,7 +38,6 @@ public final class Scenario__BehaviorDescriptor extends BaseBHDescriptor {
   }
 
   /*package*/ Scenario__BehaviorDescriptor() {
-    super(REGISTRY);
   }
 
   @Override

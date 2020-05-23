@@ -13,7 +13,13 @@ import jetbrains.mps.smodel.adapter.ids.MetaIdFactory;
 
 public final class BehaviorAspectDescriptor extends BaseBehaviorAspectDescriptor {
   private final BHDescriptor myScenario__BehaviorDescriptor = new Scenario__BehaviorDescriptor();
+  private final BHDescriptor myEntity__BehaviorDescriptor = new Entity__BehaviorDescriptor();
   private final BHDescriptor myRoad__BehaviorDescriptor = new Road__BehaviorDescriptor();
+  private final BHDescriptor myVehicle__BehaviorDescriptor = new Vehicle__BehaviorDescriptor();
+  private final BHDescriptor myPedestrian__BehaviorDescriptor = new Pedestrian__BehaviorDescriptor();
+  private final BHDescriptor myCar__BehaviorDescriptor = new Car__BehaviorDescriptor();
+  private final BHDescriptor myBike__BehaviorDescriptor = new Bike__BehaviorDescriptor();
+  private final BHDescriptor myMotorBike__BehaviorDescriptor = new MotorBike__BehaviorDescriptor();
 
   public BehaviorAspectDescriptor() {
   }
@@ -23,12 +29,24 @@ public final class BehaviorAspectDescriptor extends BaseBehaviorAspectDescriptor
     SAbstractConcept cncpt = concept;
     switch (conceptIndex.index(cncpt)) {
       case 0:
-        return myRoad__BehaviorDescriptor;
+        return myBike__BehaviorDescriptor;
       case 1:
+        return myCar__BehaviorDescriptor;
+      case 2:
+        return myEntity__BehaviorDescriptor;
+      case 3:
+        return myMotorBike__BehaviorDescriptor;
+      case 4:
+        return myPedestrian__BehaviorDescriptor;
+      case 5:
+        return myRoad__BehaviorDescriptor;
+      case 6:
         return myScenario__BehaviorDescriptor;
+      case 7:
+        return myVehicle__BehaviorDescriptor;
       default:
     }
     return null;
   }
-  private static final ConceptSwitchIndex conceptIndex = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0x703f16c8997b4d66L, 0x9edc3367cac7e880L, 0x1d7a144c8e374feeL), MetaIdFactory.conceptId(0x703f16c8997b4d66L, 0x9edc3367cac7e880L, 0x1d7a144c8e374fecL)).seal();
+  private static final ConceptSwitchIndex conceptIndex = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0x703f16c8997b4d66L, 0x9edc3367cac7e880L, 0x698be8805526ef87L), MetaIdFactory.conceptId(0x703f16c8997b4d66L, 0x9edc3367cac7e880L, 0x698be8805526ef86L), MetaIdFactory.conceptId(0x703f16c8997b4d66L, 0x9edc3367cac7e880L, 0x1d7a144c8e374fedL), MetaIdFactory.conceptId(0x703f16c8997b4d66L, 0x9edc3367cac7e880L, 0x698be8805526ef88L), MetaIdFactory.conceptId(0x703f16c8997b4d66L, 0x9edc3367cac7e880L, 0x1d7a144c8e374ff0L), MetaIdFactory.conceptId(0x703f16c8997b4d66L, 0x9edc3367cac7e880L, 0x1d7a144c8e374feeL), MetaIdFactory.conceptId(0x703f16c8997b4d66L, 0x9edc3367cac7e880L, 0x1d7a144c8e374fecL), MetaIdFactory.conceptId(0x703f16c8997b4d66L, 0x9edc3367cac7e880L, 0x1d7a144c8e374fefL)).seal();
 }

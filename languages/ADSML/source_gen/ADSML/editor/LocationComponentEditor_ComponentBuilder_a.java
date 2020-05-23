@@ -20,11 +20,11 @@ import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
 import jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 
-/*package*/ class PointComponentEditor_ComponentBuilder_a extends AbstractEditorBuilder {
+/*package*/ class LocationComponentEditor_ComponentBuilder_a extends AbstractEditorBuilder {
   @NotNull
   private SNode myNode;
 
-  public PointComponentEditor_ComponentBuilder_a(@NotNull EditorContext context, @NotNull SNode node) {
+  public LocationComponentEditor_ComponentBuilder_a(@NotNull EditorContext context, @NotNull SNode node) {
     super(context);
     myNode = node;
   }
@@ -41,29 +41,36 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 
   private EditorCell createCollection_0() {
     EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Horizontal());
-    editorCell.setCellId("Collection_j3rnh9_a");
+    editorCell.setCellId("Collection_6s6596_a");
     editorCell.addEditorCell(createConstant_0());
-    editorCell.addEditorCell(createRefNode_0());
     editorCell.addEditorCell(createConstant_1());
-    editorCell.addEditorCell(createRefNode_1());
+    editorCell.addEditorCell(createRefNode_0());
     editorCell.addEditorCell(createConstant_2());
+    editorCell.addEditorCell(createRefNode_1());
+    editorCell.addEditorCell(createConstant_3());
     return editorCell;
   }
   private EditorCell createConstant_0() {
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "at");
+    editorCell.setCellId("Constant_6s6596_a0");
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+  private EditorCell createConstant_1() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "(");
-    editorCell.setCellId("Constant_j3rnh9_a0");
+    editorCell.setCellId("Constant_6s6596_b0");
     editorCell.setDefaultText("");
     return editorCell;
   }
   private EditorCell createRefNode_0() {
-    SingleRoleCellProvider provider = new xSingleRoleHandler_j3rnh9_b0(myNode, LINKS.x$T0I, getEditorContext());
+    SingleRoleCellProvider provider = new xSingleRoleHandler_6s6596_c0(myNode, LINKS.x$ANhB, getEditorContext());
     return provider.createCell();
   }
-  private static class xSingleRoleHandler_j3rnh9_b0 extends SingleRoleCellProvider {
+  private static class xSingleRoleHandler_6s6596_c0 extends SingleRoleCellProvider {
     @NotNull
     private SNode myNode;
 
-    public xSingleRoleHandler_j3rnh9_b0(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
+    public xSingleRoleHandler_6s6596_c0(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
       super(containmentLink, context);
       myNode = ownerNode;
     }
@@ -76,8 +83,8 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 
     protected EditorCell createChildCell(SNode child) {
       EditorCell editorCell = getUpdateSession().updateChildNodeCell(child);
-      editorCell.setAction(CellActionType.DELETE, new CellAction_DeleteSmart(getNode(), LINKS.x$T0I, child));
-      editorCell.setAction(CellActionType.BACKSPACE, new CellAction_DeleteSmart(getNode(), LINKS.x$T0I, child));
+      editorCell.setAction(CellActionType.DELETE, new CellAction_DeleteSmart(getNode(), LINKS.x$ANhB, child));
+      editorCell.setAction(CellActionType.BACKSPACE, new CellAction_DeleteSmart(getNode(), LINKS.x$ANhB, child));
       installCellInfo(child, editorCell, false);
       return editorCell;
     }
@@ -89,13 +96,13 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
         editorCell.setSubstituteInfo((isEmpty ? new SEmptyContainmentSubstituteInfo(editorCell) : new SChildSubstituteInfo(editorCell)));
       }
       if (editorCell.getSRole() == null) {
-        editorCell.setSRole(LINKS.x$T0I);
+        editorCell.setSRole(LINKS.x$ANhB);
       }
     }
     @Override
     protected EditorCell createEmptyCell() {
       getCellFactory().pushCellContext();
-      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(getNode(), LINKS.x$T0I));
+      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(getNode(), LINKS.x$ANhB));
       try {
         EditorCell editorCell = super.createEmptyCell();
         editorCell.setCellId("empty_x");
@@ -110,21 +117,21 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
       return "<no x>";
     }
   }
-  private EditorCell createConstant_1() {
+  private EditorCell createConstant_2() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, ",");
-    editorCell.setCellId("Constant_j3rnh9_c0");
+    editorCell.setCellId("Constant_6s6596_d0");
     editorCell.setDefaultText("");
     return editorCell;
   }
   private EditorCell createRefNode_1() {
-    SingleRoleCellProvider provider = new ySingleRoleHandler_j3rnh9_d0(myNode, LINKS.y$1ePE, getEditorContext());
+    SingleRoleCellProvider provider = new ySingleRoleHandler_6s6596_e0(myNode, LINKS.y$ANi_, getEditorContext());
     return provider.createCell();
   }
-  private static class ySingleRoleHandler_j3rnh9_d0 extends SingleRoleCellProvider {
+  private static class ySingleRoleHandler_6s6596_e0 extends SingleRoleCellProvider {
     @NotNull
     private SNode myNode;
 
-    public ySingleRoleHandler_j3rnh9_d0(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
+    public ySingleRoleHandler_6s6596_e0(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
       super(containmentLink, context);
       myNode = ownerNode;
     }
@@ -137,8 +144,8 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 
     protected EditorCell createChildCell(SNode child) {
       EditorCell editorCell = getUpdateSession().updateChildNodeCell(child);
-      editorCell.setAction(CellActionType.DELETE, new CellAction_DeleteSmart(getNode(), LINKS.y$1ePE, child));
-      editorCell.setAction(CellActionType.BACKSPACE, new CellAction_DeleteSmart(getNode(), LINKS.y$1ePE, child));
+      editorCell.setAction(CellActionType.DELETE, new CellAction_DeleteSmart(getNode(), LINKS.y$ANi_, child));
+      editorCell.setAction(CellActionType.BACKSPACE, new CellAction_DeleteSmart(getNode(), LINKS.y$ANi_, child));
       installCellInfo(child, editorCell, false);
       return editorCell;
     }
@@ -150,13 +157,13 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
         editorCell.setSubstituteInfo((isEmpty ? new SEmptyContainmentSubstituteInfo(editorCell) : new SChildSubstituteInfo(editorCell)));
       }
       if (editorCell.getSRole() == null) {
-        editorCell.setSRole(LINKS.y$1ePE);
+        editorCell.setSRole(LINKS.y$ANi_);
       }
     }
     @Override
     protected EditorCell createEmptyCell() {
       getCellFactory().pushCellContext();
-      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(getNode(), LINKS.y$1ePE));
+      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(getNode(), LINKS.y$ANi_));
       try {
         EditorCell editorCell = super.createEmptyCell();
         editorCell.setCellId("empty_y");
@@ -171,15 +178,15 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
       return "<no y>";
     }
   }
-  private EditorCell createConstant_2() {
+  private EditorCell createConstant_3() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, ")");
-    editorCell.setCellId("Constant_j3rnh9_e0");
+    editorCell.setCellId("Constant_6s6596_f0");
     editorCell.setDefaultText("");
     return editorCell;
   }
 
   private static final class LINKS {
-    /*package*/ static final SContainmentLink x$T0I = MetaAdapterFactory.getContainmentLink(0x703f16c8997b4d66L, 0x9edc3367cac7e880L, 0x1d7a144c8e37502aL, 0x504561bab3c32e2eL, "x");
-    /*package*/ static final SContainmentLink y$1ePE = MetaAdapterFactory.getContainmentLink(0x703f16c8997b4d66L, 0x9edc3367cac7e880L, 0x1d7a144c8e37502aL, 0x504561bab3c32f5bL, "y");
+    /*package*/ static final SContainmentLink x$ANhB = MetaAdapterFactory.getContainmentLink(0x703f16c8997b4d66L, 0x9edc3367cac7e880L, 0xe6ed7bbc3f3dddeL, 0xe6ed7bbc3f9f187L, "x");
+    /*package*/ static final SContainmentLink y$ANi_ = MetaAdapterFactory.getContainmentLink(0x703f16c8997b4d66L, 0x9edc3367cac7e880L, 0xe6ed7bbc3f3dddeL, 0xe6ed7bbc3f9f189L, "y");
   }
 }

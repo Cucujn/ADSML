@@ -13,6 +13,7 @@ import jetbrains.mps.openapi.editor.descriptor.ConceptEditor;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import java.util.Collections;
 import jetbrains.mps.openapi.editor.descriptor.ConceptEditorComponent;
+import jetbrains.mps.openapi.editor.descriptor.SubstituteMenu;
 import jetbrains.mps.lang.smodel.ConceptSwitchIndex;
 import jetbrains.mps.lang.smodel.ConceptSwitchIndexBuilder;
 import jetbrains.mps.smodel.adapter.ids.MetaIdFactory;
@@ -24,24 +25,42 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase imple
     SAbstractConcept cncpt = ((SAbstractConcept) concept);
     switch (conceptIndex.index(cncpt)) {
       case 0:
-        return Collections.<ConceptEditor>singletonList(new Contract_Editor());
+        return Collections.<ConceptEditor>singletonList(new AbsoluteLocation_Editor());
       case 1:
-        return Collections.<ConceptEditor>singletonList(new ContractList_Editor());
+        return Collections.<ConceptEditor>singletonList(new Bike_Editor());
       case 2:
-        return Collections.<ConceptEditor>singletonList(new Pedestrian_Editor());
+        return Collections.<ConceptEditor>singletonList(new Car_Editor());
       case 3:
-        return Collections.<ConceptEditor>singletonList(new Point_Editor());
+        return Collections.<ConceptEditor>singletonList(new CenterLine_Editor());
       case 4:
-        return Collections.<ConceptEditor>singletonList(new Road_Editor());
+        return Collections.<ConceptEditor>singletonList(new Contract_Editor());
       case 5:
-        return Collections.<ConceptEditor>singletonList(new RoadNetwork_Editor());
+        return Collections.<ConceptEditor>singletonList(new ContractEvent_Editor());
       case 6:
-        return Arrays.asList(new ConceptEditor[]{new Scenario_Editor(), new Scenario_ScenarioPreview_Editor()});
+        return Collections.<ConceptEditor>singletonList(new ContractList_Editor());
       case 7:
-        return Collections.<ConceptEditor>singletonList(new ScenarioWithContract_Editor());
+        return Collections.<ConceptEditor>singletonList(new MotorBike_Editor());
       case 8:
-        return Collections.<ConceptEditor>singletonList(new Vehicle_Editor());
+        return Collections.<ConceptEditor>singletonList(new Pedestrian_Editor());
       case 9:
+        return Collections.<ConceptEditor>singletonList(new Point_Editor());
+      case 10:
+        return Collections.<ConceptEditor>singletonList(new RelativeLocation_Editor());
+      case 11:
+        return Collections.<ConceptEditor>singletonList(new Road_Editor());
+      case 12:
+        return Collections.<ConceptEditor>singletonList(new RoadNetwork_Editor());
+      case 13:
+        return Collections.<ConceptEditor>singletonList(new Rule_Editor());
+      case 14:
+        return Arrays.asList(new ConceptEditor[]{new Scenario_Editor(), new Scenario_ScenarioPreview_Editor()});
+      case 15:
+        return Collections.<ConceptEditor>singletonList(new ScenarioWithContract_Editor());
+      case 16:
+        return Collections.<ConceptEditor>singletonList(new TrafficLight_Editor());
+      case 17:
+        return Collections.<ConceptEditor>singletonList(new TrafficSign_Editor());
+      case 18:
         return Collections.<ConceptEditor>singletonList(new Weather_Editor());
       default:
     }
@@ -61,12 +80,19 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase imple
         break;
       case 1:
         if (true) {
+          if ("ADSML.editor.LocationComponentEditor".equals(editorComponentId)) {
+            return Collections.<ConceptEditorComponent>singletonList(new LocationComponentEditor());
+          }
+        }
+        break;
+      case 2:
+        if (true) {
           if ("ADSML.editor.PointComponentEditor".equals(editorComponentId)) {
             return Collections.<ConceptEditorComponent>singletonList(new PointComponentEditor());
           }
         }
         break;
-      case 2:
+      case 3:
         if (true) {
           if ("ADSML.editor.EntitiesComponentEditor".equals(editorComponentId)) {
             return Collections.<ConceptEditorComponent>singletonList(new EntitiesComponentEditor());
@@ -81,7 +107,19 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase imple
     return myHints;
   }
 
+  @NotNull
+  @Override
+  public Collection<SubstituteMenu> getDeclaredDefaultSubstituteMenus(SAbstractConcept concept) {
+    SAbstractConcept cncpt = concept;
+    switch (conceptIndex2.index(cncpt)) {
+      case 0:
+        return Collections.<SubstituteMenu>singletonList(new RelativeLocation_SubstituteMenu());
+      default:
+    }
+    return Collections.<SubstituteMenu>emptyList();
+  }
 
-  private static final ConceptSwitchIndex conceptIndex = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0x703f16c8997b4d66L, 0x9edc3367cac7e880L, 0x45527978d0368583L), MetaIdFactory.conceptId(0x703f16c8997b4d66L, 0x9edc3367cac7e880L, 0x45527978d036858eL), MetaIdFactory.conceptId(0x703f16c8997b4d66L, 0x9edc3367cac7e880L, 0x1d7a144c8e374ff0L), MetaIdFactory.conceptId(0x703f16c8997b4d66L, 0x9edc3367cac7e880L, 0x1d7a144c8e37502aL), MetaIdFactory.conceptId(0x703f16c8997b4d66L, 0x9edc3367cac7e880L, 0x1d7a144c8e374feeL), MetaIdFactory.conceptId(0x703f16c8997b4d66L, 0x9edc3367cac7e880L, 0x6de5a419acee7af6L), MetaIdFactory.conceptId(0x703f16c8997b4d66L, 0x9edc3367cac7e880L, 0x1d7a144c8e374fecL), MetaIdFactory.conceptId(0x703f16c8997b4d66L, 0x9edc3367cac7e880L, 0x45527978d0368588L), MetaIdFactory.conceptId(0x703f16c8997b4d66L, 0x9edc3367cac7e880L, 0x1d7a144c8e374fefL), MetaIdFactory.conceptId(0x703f16c8997b4d66L, 0x9edc3367cac7e880L, 0x1d7a144c8e374ff3L)).seal();
-  private static final ConceptSwitchIndex conceptIndex1 = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0x703f16c8997b4d66L, 0x9edc3367cac7e880L, 0x1d7a144c8e374fedL), MetaIdFactory.conceptId(0x703f16c8997b4d66L, 0x9edc3367cac7e880L, 0x1d7a144c8e37502aL), MetaIdFactory.conceptId(0x703f16c8997b4d66L, 0x9edc3367cac7e880L, 0x1d7a144c8e374fecL)).seal();
+  private static final ConceptSwitchIndex conceptIndex = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0x703f16c8997b4d66L, 0x9edc3367cac7e880L, 0xe6ed7bbc3f3dde1L), MetaIdFactory.conceptId(0x703f16c8997b4d66L, 0x9edc3367cac7e880L, 0x698be8805526ef87L), MetaIdFactory.conceptId(0x703f16c8997b4d66L, 0x9edc3367cac7e880L, 0x698be8805526ef86L), MetaIdFactory.conceptId(0x703f16c8997b4d66L, 0x9edc3367cac7e880L, 0x698be8805519065fL), MetaIdFactory.conceptId(0x703f16c8997b4d66L, 0x9edc3367cac7e880L, 0x45527978d0368583L), MetaIdFactory.conceptId(0x703f16c8997b4d66L, 0x9edc3367cac7e880L, 0x1fc6d9aefa88365eL), MetaIdFactory.conceptId(0x703f16c8997b4d66L, 0x9edc3367cac7e880L, 0x45527978d036858eL), MetaIdFactory.conceptId(0x703f16c8997b4d66L, 0x9edc3367cac7e880L, 0x698be8805526ef88L), MetaIdFactory.conceptId(0x703f16c8997b4d66L, 0x9edc3367cac7e880L, 0x1d7a144c8e374ff0L), MetaIdFactory.conceptId(0x703f16c8997b4d66L, 0x9edc3367cac7e880L, 0x1d7a144c8e37502aL), MetaIdFactory.conceptId(0x703f16c8997b4d66L, 0x9edc3367cac7e880L, 0xe6ed7bbc3f1a366L), MetaIdFactory.conceptId(0x703f16c8997b4d66L, 0x9edc3367cac7e880L, 0x1d7a144c8e374feeL), MetaIdFactory.conceptId(0x703f16c8997b4d66L, 0x9edc3367cac7e880L, 0x6de5a419acee7af6L), MetaIdFactory.conceptId(0x703f16c8997b4d66L, 0x9edc3367cac7e880L, 0x1fc6d9aefa8835f6L), MetaIdFactory.conceptId(0x703f16c8997b4d66L, 0x9edc3367cac7e880L, 0x1d7a144c8e374fecL), MetaIdFactory.conceptId(0x703f16c8997b4d66L, 0x9edc3367cac7e880L, 0x45527978d0368588L), MetaIdFactory.conceptId(0x703f16c8997b4d66L, 0x9edc3367cac7e880L, 0x29916b15ca651778L), MetaIdFactory.conceptId(0x703f16c8997b4d66L, 0x9edc3367cac7e880L, 0x29916b15ca651777L), MetaIdFactory.conceptId(0x703f16c8997b4d66L, 0x9edc3367cac7e880L, 0x1d7a144c8e374ff3L)).seal();
+  private static final ConceptSwitchIndex conceptIndex1 = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0x703f16c8997b4d66L, 0x9edc3367cac7e880L, 0x1d7a144c8e374fedL), MetaIdFactory.conceptId(0x703f16c8997b4d66L, 0x9edc3367cac7e880L, 0xe6ed7bbc3f3dddeL), MetaIdFactory.conceptId(0x703f16c8997b4d66L, 0x9edc3367cac7e880L, 0x1d7a144c8e37502aL), MetaIdFactory.conceptId(0x703f16c8997b4d66L, 0x9edc3367cac7e880L, 0x1d7a144c8e374fecL)).seal();
+  private static final ConceptSwitchIndex conceptIndex2 = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0x703f16c8997b4d66L, 0x9edc3367cac7e880L, 0xe6ed7bbc3f1a366L)).seal();
 }

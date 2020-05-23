@@ -7,8 +7,8 @@ import jetbrains.mps.openapi.editor.cells.EditorCell;
 import jetbrains.mps.openapi.editor.EditorContext;
 import org.jetbrains.mps.openapi.model.SNode;
 
-public class Vehicle_Editor extends DefaultNodeEditor {
+public class TrafficSign_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new Vehicle_EditorBuilder_a(editorContext, node).createCell();
+    return new TrafficSign_EditorBuilder_a(editorContext, node).createCell();
   }
 }

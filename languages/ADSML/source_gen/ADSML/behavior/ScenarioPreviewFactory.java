@@ -9,10 +9,11 @@ import java.awt.Color;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.internal.collections.runtime.IVisitor;
 import java.awt.Graphics2D;
 import java.awt.Dimension;
+import org.jetbrains.mps.openapi.language.SContainmentLink;
+import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 
 public class ScenarioPreviewFactory {
   public static JPanel createViewPanel(final SNode scenario) {
@@ -23,9 +24,19 @@ public class ScenarioPreviewFactory {
         setBackground(Color.getHSBColor(100, 100, 100));
         SNodeOperations.getModel(scenario).getRepository().getModelAccess().runReadAction(new Runnable() {
           public void run() {
-            ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(scenario, MetaAdapterFactory.getContainmentLink(0x703f16c8997b4d66L, 0x9edc3367cac7e880L, 0x1d7a144c8e374fecL, 0x6de5a419aceeb958L, "roadNetwork")), MetaAdapterFactory.getContainmentLink(0x703f16c8997b4d66L, 0x9edc3367cac7e880L, 0x6de5a419acee7af6L, 0x6de5a419acee7afdL, "roads"))).visitAll(new IVisitor<SNode>() {
+            ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(scenario, LINKS.roadNetwork$qP1R), LINKS.roads$V7lU)).visitAll(new IVisitor<SNode>() {
               public void visit(SNode it) {
                 Road__BehaviorDescriptor.draw_id3WQzMjiHXxu.invoke(it, (Graphics2D) graphics);
+              }
+            });
+            ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(scenario, LINKS.roadNetwork$qP1R), LINKS.roads$V7lU)).visitAll(new IVisitor<SNode>() {
+              public void visit(SNode it) {
+                Road__BehaviorDescriptor.drawCenterLine_id3WQzMjiOIzg.invoke(it, (Graphics2D) graphics);
+              }
+            });
+            ListSequence.fromList(SLinkOperations.getChildren(scenario, LINKS.entities$DCly)).visitAll(new IVisitor<SNode>() {
+              public void visit(SNode it) {
+                Entity__BehaviorDescriptor.draw_id6AbU81lbYnz.invoke(it, (Graphics2D) graphics);
               }
             });
           }
@@ -37,5 +48,11 @@ public class ScenarioPreviewFactory {
         return new Dimension(800, 600);
       }
     };
+  }
+
+  private static final class LINKS {
+    /*package*/ static final SContainmentLink roadNetwork$qP1R = MetaAdapterFactory.getContainmentLink(0x703f16c8997b4d66L, 0x9edc3367cac7e880L, 0x1d7a144c8e374fecL, 0x6de5a419aceeb958L, "roadNetwork");
+    /*package*/ static final SContainmentLink roads$V7lU = MetaAdapterFactory.getContainmentLink(0x703f16c8997b4d66L, 0x9edc3367cac7e880L, 0x6de5a419acee7af6L, 0x6de5a419acee7afdL, "roads");
+    /*package*/ static final SContainmentLink entities$DCly = MetaAdapterFactory.getContainmentLink(0x703f16c8997b4d66L, 0x9edc3367cac7e880L, 0x1d7a144c8e374fecL, 0x1d7a144c8e375001L, "entities");
   }
 }

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="-ch63e989hnus2z4h7yfkiaemcuxqppp">
+  <files names="BehaviorAspectDescriptor.java:Bike__BehaviorDescriptor.java:Car__BehaviorDescriptor.java:Entity__BehaviorDescriptor.java:MotorBike__BehaviorDescriptor.java:Pedestrian__BehaviorDescriptor.java:Point.java:Road.java:Road__BehaviorDescriptor.java:ScenarioPreviewFactory.java:Scenario__BehaviorDescriptor.java:Vehicle__BehaviorDescriptor.java" />
+</product>
+

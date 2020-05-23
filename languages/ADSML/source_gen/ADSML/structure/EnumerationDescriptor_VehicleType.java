@@ -5,47 +5,60 @@ package ADSML.structure;
 import jetbrains.mps.smodel.runtime.EnumerationDescriptorBase;
 import jetbrains.mps.smodel.adapter.ids.PrimitiveTypeId;
 import jetbrains.mps.smodel.runtime.EnumerationDescriptor;
+import jetbrains.mps.lang.smodel.EnumerationLiteralsIndex;
+import java.util.List;
 import org.jetbrains.annotations.Nullable;
 import org.jetbrains.annotations.NotNull;
-import java.util.Collection;
-import java.util.Arrays;
 
 public class EnumerationDescriptor_VehicleType extends EnumerationDescriptorBase {
 
   public EnumerationDescriptor_VehicleType() {
-    super(0x703f16c8997b4d66L, 0x9edc3367cac7e880L, 0x6de5a419acf8d07fL, "VehicleType", "r:9e49d978-2ed2-4aa6-ba31-2e403be30bdd(ADSML.structure)/7918915949984010367", PrimitiveTypeId.STRING);
+    super(0x703f16c8997b4d66L, 0x9edc3367cac7e880L, 0x6de5a419acf8d07fL, "VehicleType", "r:9e49d978-2ed2-4aa6-ba31-2e403be30bdd(ADSML.structure)/6219467056034821881", PrimitiveTypeId.STRING);
   }
 
-  private final EnumerationDescriptor.MemberDescriptor VALUE_CAR_0 = new EnumerationDescriptor.MemberDescriptor("CAR", "Car", "r:9e49d978-2ed2-4aa6-ba31-2e403be30bdd(ADSML.structure)/7918915949984010368", "Car");
-  private final EnumerationDescriptor.MemberDescriptor VALUE_BIKE_0 = new EnumerationDescriptor.MemberDescriptor("BIKE", "Bike", "r:9e49d978-2ed2-4aa6-ba31-2e403be30bdd(ADSML.structure)/7918915949984010369", "Bike");
-  private final EnumerationDescriptor.MemberDescriptor VALUE_MOTORBIKE_0 = new EnumerationDescriptor.MemberDescriptor("MOTORBIKE", "Motorbike", "r:9e49d978-2ed2-4aa6-ba31-2e403be30bdd(ADSML.structure)/7918915949984010428", "Motorbike");
+  private final EnumerationDescriptor.MemberDescriptor myMember_CAR_0 = new EnumerationDescriptor.MemberDescriptor("CAR", "Car", 0x6de5a419acf8d080L, "r:9e49d978-2ed2-4aa6-ba31-2e403be30bdd(ADSML.structure)/6219467056034821883", "Car", "CAR");
+  private final EnumerationDescriptor.MemberDescriptor myMember_BIKE_0 = new EnumerationDescriptor.MemberDescriptor("BIKE", "Bike", 0x6de5a419acf8d081L, "r:9e49d978-2ed2-4aa6-ba31-2e403be30bdd(ADSML.structure)/6219467056034821884", "Bike", "BIKE");
+  private final EnumerationDescriptor.MemberDescriptor myMember_MOTORBIKE_0 = new EnumerationDescriptor.MemberDescriptor("MOTORBIKE", "Motorbike", 0x6de5a419acf8d0bcL, "r:9e49d978-2ed2-4aa6-ba31-2e403be30bdd(ADSML.structure)/6219467056034821885", "Motorbike", "MOTORBIKE");
+
+  private final EnumerationLiteralsIndex myIndex = EnumerationLiteralsIndex.build(0x703f16c8997b4d66L, 0x9edc3367cac7e880L, 0x6de5a419acf8d07fL, 0x6de5a419acf8d080L, 0x6de5a419acf8d081L, 0x6de5a419acf8d0bcL);
+  private final List<EnumerationDescriptor.MemberDescriptor> myMembers = new EnumerationDescriptorBase.MembersList(myIndex, myMember_CAR_0, myMember_BIKE_0, myMember_MOTORBIKE_0);
 
   @Nullable
   @Override
   public EnumerationDescriptor.MemberDescriptor getDefault() {
-    return VALUE_CAR_0;
+    return myMember_CAR_0;
   }
 
   @NotNull
   @Override
-  public Collection<EnumerationDescriptor.MemberDescriptor> getMembers() {
-    return Arrays.asList(VALUE_CAR_0, VALUE_BIKE_0, VALUE_MOTORBIKE_0);
+  public List<EnumerationDescriptor.MemberDescriptor> getMembers() {
+    return myMembers;
   }
 
   @Nullable
   @Override
-  public EnumerationDescriptor.MemberDescriptor getMember(@Nullable String string) {
-    if (string == null) {
+  public EnumerationDescriptor.MemberDescriptor getMember(@Nullable String memberName) {
+    if (memberName == null) {
       return null;
     }
-    switch (string) {
+    switch (memberName) {
       case "CAR":
-        return VALUE_CAR_0;
+        return myMember_CAR_0;
       case "BIKE":
-        return VALUE_BIKE_0;
+        return myMember_BIKE_0;
       case "MOTORBIKE":
-        return VALUE_MOTORBIKE_0;
+        return myMember_MOTORBIKE_0;
     }
     return null;
+  }
+
+  @Nullable
+  @Override
+  public EnumerationDescriptor.MemberDescriptor getMember(long idValue) {
+    int index = myIndex.index(idValue);
+    if (index == -1) {
+      return null;
+    }
+    return myMembers.get(index);
   }
 }

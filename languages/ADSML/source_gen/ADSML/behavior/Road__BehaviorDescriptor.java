@@ -5,8 +5,6 @@ package ADSML.behavior;
 import jetbrains.mps.core.aspects.behaviour.BaseBHDescriptor;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
-import jetbrains.mps.core.aspects.behaviour.api.BehaviorRegistry;
-import jetbrains.mps.smodel.language.ConceptRegistry;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
 import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
@@ -26,18 +24,23 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import java.awt.RenderingHints;
 import java.awt.Color;
 import java.util.Stack;
+import java.awt.Stroke;
+import java.awt.BasicStroke;
 import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
+import org.jetbrains.mps.openapi.language.SContainmentLink;
+import org.jetbrains.mps.openapi.language.SProperty;
 
 public final class Road__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x703f16c8997b4d66L, 0x9edc3367cac7e880L, 0x1d7a144c8e374feeL, "ADSML.structure.Road");
-  private static final BehaviorRegistry REGISTRY = ConceptRegistry.getInstance().getBehaviorRegistry();
 
-  public static final SMethod<Void> draw_id3WQzMjiHXxu = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("draw").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("3WQzMjiHXxu").registry(REGISTRY).build(SMethodBuilder.createJavaParameter(Graphics2D.class, ""));
-  /*package*/ static final SMethod<GeneralPath> draw_id3WQzMjiJH0M = new SMethodBuilder<GeneralPath>(new SJavaCompoundTypeImpl(GeneralPath.class)).name("draw").modifiers(SModifiersImpl.create(0, AccessPrivileges.PRIVATE)).concept(CONCEPT).id("3WQzMjiJH0M").registry(REGISTRY).build(SMethodBuilder.createJavaParameter(Graphics2D.class, ""), SMethodBuilder.createJavaParameter(Road.class, ""));
+  public static final SMethod<Void> draw_id3WQzMjiHXxu = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("draw").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("3WQzMjiHXxu").build(SMethodBuilder.createJavaParameter(Graphics2D.class, ""));
+  /*package*/ static final SMethod<GeneralPath> draw_id3WQzMjiJH0M = new SMethodBuilder<GeneralPath>(new SJavaCompoundTypeImpl(GeneralPath.class)).name("draw").modifiers(SModifiersImpl.create(0, AccessPrivileges.PRIVATE)).concept(CONCEPT).id("3WQzMjiJH0M").build(SMethodBuilder.createJavaParameter(Graphics2D.class, ""), SMethodBuilder.createJavaParameter(Road.class, ""));
+  public static final SMethod<Void> drawCenterLine_id3WQzMjiOIzg = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("drawCenterLine").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("3WQzMjiOIzg").build(SMethodBuilder.createJavaParameter(Graphics2D.class, ""));
+  public static final SMethod<Void> drawCenterLine_id3WQzMjiNSPV = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("drawCenterLine").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("3WQzMjiNSPV").build(SMethodBuilder.createJavaParameter(Graphics2D.class, ""), SMethodBuilder.createJavaParameter(List.class, ""));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(draw_id3WQzMjiHXxu, draw_id3WQzMjiJH0M);
+  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(draw_id3WQzMjiHXxu, draw_id3WQzMjiJH0M, drawCenterLine_id3WQzMjiOIzg, drawCenterLine_id3WQzMjiNSPV);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
   }
@@ -45,21 +48,21 @@ public final class Road__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ static void draw_id3WQzMjiHXxu(@NotNull SNode __thisNode__, Graphics2D g2d) {
     final List<Point> leftBoundary = new ArrayList<Point>();
     final List<Point> rightBoundary = new ArrayList<Point>();
-    ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, MetaAdapterFactory.getContainmentLink(0x703f16c8997b4d66L, 0x9edc3367cac7e880L, 0x1d7a144c8e374feeL, 0x6de5a419acee0fb1L, "leftBoundary"))).visitAll(new IVisitor<SNode>() {
+    ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, LINKS.leftBoundary$ozL6)).visitAll(new IVisitor<SNode>() {
       public void visit(SNode it) {
         {
-          float x = Float.parseFloat(SPropertyOperations.getString(SLinkOperations.getTarget(it, MetaAdapterFactory.getContainmentLink(0x703f16c8997b4d66L, 0x9edc3367cac7e880L, 0x1d7a144c8e37502aL, 0x504561bab3c32e2eL, "x")), MetaAdapterFactory.getProperty(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x102cb19a434L, 0x103245d193fL, "value")));
-          float y = Float.parseFloat(SPropertyOperations.getString(SLinkOperations.getTarget(it, MetaAdapterFactory.getContainmentLink(0x703f16c8997b4d66L, 0x9edc3367cac7e880L, 0x1d7a144c8e37502aL, 0x504561bab3c32f5bL, "y")), MetaAdapterFactory.getProperty(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x102cb19a434L, 0x103245d193fL, "value")));
+          float x = Float.parseFloat(SPropertyOperations.getString(SLinkOperations.getTarget(it, LINKS.x$T0I), PROPS.value$oKYE));
+          float y = Float.parseFloat(SPropertyOperations.getString(SLinkOperations.getTarget(it, LINKS.y$1ePE), PROPS.value$oKYE));
           leftBoundary.add(new Point(x, y));
         }
       }
     });
 
-    ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, MetaAdapterFactory.getContainmentLink(0x703f16c8997b4d66L, 0x9edc3367cac7e880L, 0x1d7a144c8e374feeL, 0x6a36e0966e96e18dL, "rightBoundary"))).visitAll(new IVisitor<SNode>() {
+    ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, LINKS.rightBoundary$rAl0)).visitAll(new IVisitor<SNode>() {
       public void visit(SNode it) {
         {
-          float x = Float.parseFloat(SPropertyOperations.getString(SLinkOperations.getTarget(it, MetaAdapterFactory.getContainmentLink(0x703f16c8997b4d66L, 0x9edc3367cac7e880L, 0x1d7a144c8e37502aL, 0x504561bab3c32e2eL, "x")), MetaAdapterFactory.getProperty(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x102cb19a434L, 0x103245d193fL, "value")));
-          float y = Float.parseFloat(SPropertyOperations.getString(SLinkOperations.getTarget(it, MetaAdapterFactory.getContainmentLink(0x703f16c8997b4d66L, 0x9edc3367cac7e880L, 0x1d7a144c8e37502aL, 0x504561bab3c32f5bL, "y")), MetaAdapterFactory.getProperty(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x102cb19a434L, 0x103245d193fL, "value")));
+          float x = Float.parseFloat(SPropertyOperations.getString(SLinkOperations.getTarget(it, LINKS.x$T0I), PROPS.value$oKYE));
+          float y = Float.parseFloat(SPropertyOperations.getString(SLinkOperations.getTarget(it, LINKS.y$1ePE), PROPS.value$oKYE));
           rightBoundary.add(new Point(x, y));
         }
       }
@@ -77,18 +80,18 @@ public final class Road__BehaviorDescriptor extends BaseBHDescriptor {
     g2d.setColor(Color.GRAY);
     Stack<Point> stack = new Stack();
     Point startPoint = road.getLeftBoundary().get(0);
-    path.moveTo(startPoint.getX(), startPoint.getY());
-    stack.push(new Point(startPoint.getX(), startPoint.getY()));
+    path.moveTo(startPoint.getX() * 10, startPoint.getY() * 10);
+    stack.push(new Point(startPoint.getX() * 10, startPoint.getY() * 10));
 
     List<Point> leftBoundary = road.getLeftBoundary();
     List<Point> rightBoundary = road.getRightBoundary();
     for (int i = 1; i < leftBoundary.size(); i++) {
       Point point = leftBoundary.get(i);
-      path.lineTo(point.getX(), point.getY());
+      path.lineTo(point.getX() * 10, point.getY() * 10);
     }
     for (int i = rightBoundary.size() - 1; i >= 0; i--) {
       Point point = rightBoundary.get(i);
-      path.lineTo(point.getX(), point.getY());
+      path.lineTo(point.getX() * 10, point.getY() * 10);
     }
 
     path.closePath();
@@ -96,9 +99,39 @@ public final class Road__BehaviorDescriptor extends BaseBHDescriptor {
 
     return path;
   }
+  /*package*/ static void drawCenterLine_id3WQzMjiOIzg(@NotNull final SNode __thisNode__, final Graphics2D g2d) {
+    ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, LINKS.centerLines$Tggl)).visitAll(new IVisitor<SNode>() {
+      public void visit(SNode it) {
+        {
+          final List<Point> linePoints = new ArrayList<Point>();
+          ListSequence.fromList(SLinkOperations.getChildren(it, LINKS.linePoints$sQyu)).visitAll(new IVisitor<SNode>() {
+            public void visit(SNode it) {
+              {
+                float x = Float.parseFloat(SPropertyOperations.getString(SLinkOperations.getTarget(it, LINKS.x$T0I), PROPS.value$oKYE));
+                float y = Float.parseFloat(SPropertyOperations.getString(SLinkOperations.getTarget(it, LINKS.y$1ePE), PROPS.value$oKYE));
+                linePoints.add(new Point(x, y));
+              }
+            }
+          });
+          Road__BehaviorDescriptor.drawCenterLine_id3WQzMjiNSPV.invoke(__thisNode__, g2d, linePoints);
+        }
+      }
+    });
+
+  }
+  /*package*/ static void drawCenterLine_id3WQzMjiNSPV(@NotNull SNode __thisNode__, Graphics2D g2d, List<Point> linePoints) {
+    Stroke stroke = new BasicStroke(2, BasicStroke.CAP_BUTT, BasicStroke.JOIN_BEVEL, 0, new float[]{20, 20}, 1);
+    g2d.setStroke(stroke);
+    g2d.setColor(Color.WHITE);
+
+    for (int i = 0; i < linePoints.size() - 1; i++) {
+      Point currentPoint = linePoints.get(i);
+      Point nextPoint = linePoints.get(i + 1);
+      g2d.drawLine((int) currentPoint.getX() * 10, (int) currentPoint.getY() * 10, (int) nextPoint.getX() * 10, (int) nextPoint.getY() * 10);
+    }
+  }
 
   /*package*/ Road__BehaviorDescriptor() {
-    super(REGISTRY);
   }
 
   @Override
@@ -118,6 +151,12 @@ public final class Road__BehaviorDescriptor extends BaseBHDescriptor {
         return null;
       case 1:
         return (T) ((GeneralPath) draw_id3WQzMjiJH0M(node, (Graphics2D) parameters[0], (Road) parameters[1]));
+      case 2:
+        drawCenterLine_id3WQzMjiOIzg(node, (Graphics2D) parameters[0]);
+        return null;
+      case 3:
+        drawCenterLine_id3WQzMjiNSPV(node, (Graphics2D) parameters[0], (List<Point>) parameters[1]);
+        return null;
       default:
         throw new BHMethodNotFoundException(this, method);
     }
@@ -145,5 +184,18 @@ public final class Road__BehaviorDescriptor extends BaseBHDescriptor {
   @Override
   public SAbstractConcept getConcept() {
     return CONCEPT;
+  }
+
+  private static final class LINKS {
+    /*package*/ static final SContainmentLink leftBoundary$ozL6 = MetaAdapterFactory.getContainmentLink(0x703f16c8997b4d66L, 0x9edc3367cac7e880L, 0x1d7a144c8e374feeL, 0x6de5a419acee0fb1L, "leftBoundary");
+    /*package*/ static final SContainmentLink x$T0I = MetaAdapterFactory.getContainmentLink(0x703f16c8997b4d66L, 0x9edc3367cac7e880L, 0x1d7a144c8e37502aL, 0x504561bab3c32e2eL, "x");
+    /*package*/ static final SContainmentLink y$1ePE = MetaAdapterFactory.getContainmentLink(0x703f16c8997b4d66L, 0x9edc3367cac7e880L, 0x1d7a144c8e37502aL, 0x504561bab3c32f5bL, "y");
+    /*package*/ static final SContainmentLink rightBoundary$rAl0 = MetaAdapterFactory.getContainmentLink(0x703f16c8997b4d66L, 0x9edc3367cac7e880L, 0x1d7a144c8e374feeL, 0x6a36e0966e96e18dL, "rightBoundary");
+    /*package*/ static final SContainmentLink centerLines$Tggl = MetaAdapterFactory.getContainmentLink(0x703f16c8997b4d66L, 0x9edc3367cac7e880L, 0x1d7a144c8e374feeL, 0x698be88055190664L, "centerLines");
+    /*package*/ static final SContainmentLink linePoints$sQyu = MetaAdapterFactory.getContainmentLink(0x703f16c8997b4d66L, 0x9edc3367cac7e880L, 0x698be8805519065fL, 0x698be88055190662L, "linePoints");
+  }
+
+  private static final class PROPS {
+    /*package*/ static final SProperty value$oKYE = MetaAdapterFactory.getProperty(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x102cb19a434L, 0x103245d193fL, "value");
   }
 }
