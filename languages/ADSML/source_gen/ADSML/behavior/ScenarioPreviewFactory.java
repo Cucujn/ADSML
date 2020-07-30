@@ -12,8 +12,11 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.internal.collections.runtime.IVisitor;
 import java.awt.Graphics2D;
 import java.awt.Dimension;
+import jetbrains.mps.baseLanguage.closures.runtime.Wrappers;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
+import org.jetbrains.mps.openapi.language.SProperty;
 
 public class ScenarioPreviewFactory {
   public static JPanel createViewPanel(final SNode scenario) {
@@ -45,7 +48,20 @@ public class ScenarioPreviewFactory {
 
       @Override
       public Dimension getPreferredSize() {
-        return new Dimension(800, 600);
+        final Wrappers._int width = new Wrappers._int(80);
+        final Wrappers._int height = new Wrappers._int(60);
+        SNodeOperations.getModel(scenario).getRepository().getModelAccess().runReadAction(new Runnable() {
+          public void run() {
+            if (SPropertyOperations.getInteger(SLinkOperations.getTarget(scenario, LINKS.map$9$$Z), PROPS.height$QnM$) != 0) {
+              width.value = SPropertyOperations.getInteger(SLinkOperations.getTarget(scenario, LINKS.map$9$$Z), PROPS.width$QiDF);
+            }
+            if (SPropertyOperations.getInteger(SLinkOperations.getTarget(scenario, LINKS.map$9$$Z), PROPS.width$QiDF) != 0) {
+              height.value = SPropertyOperations.getInteger(SLinkOperations.getTarget(scenario, LINKS.map$9$$Z), PROPS.height$QnM$);
+            }
+          }
+        });
+
+        return new Dimension(width.value * 10, height.value * 10);
       }
     };
   }
@@ -54,5 +70,11 @@ public class ScenarioPreviewFactory {
     /*package*/ static final SContainmentLink roadNetwork$qP1R = MetaAdapterFactory.getContainmentLink(0x703f16c8997b4d66L, 0x9edc3367cac7e880L, 0x1d7a144c8e374fecL, 0x6de5a419aceeb958L, "roadNetwork");
     /*package*/ static final SContainmentLink roads$V7lU = MetaAdapterFactory.getContainmentLink(0x703f16c8997b4d66L, 0x9edc3367cac7e880L, 0x6de5a419acee7af6L, 0x6de5a419acee7afdL, "roads");
     /*package*/ static final SContainmentLink entities$DCly = MetaAdapterFactory.getContainmentLink(0x703f16c8997b4d66L, 0x9edc3367cac7e880L, 0x1d7a144c8e374fecL, 0x1d7a144c8e375001L, "entities");
+    /*package*/ static final SContainmentLink map$9$$Z = MetaAdapterFactory.getContainmentLink(0x703f16c8997b4d66L, 0x9edc3367cac7e880L, 0x1d7a144c8e374fecL, 0x5e282050ec3bb55cL, "map");
+  }
+
+  private static final class PROPS {
+    /*package*/ static final SProperty height$QnM$ = MetaAdapterFactory.getProperty(0x703f16c8997b4d66L, 0x9edc3367cac7e880L, 0x5e282050ec3bb548L, 0x19a19743bb3cf059L, "height");
+    /*package*/ static final SProperty width$QiDF = MetaAdapterFactory.getProperty(0x703f16c8997b4d66L, 0x9edc3367cac7e880L, 0x5e282050ec3bb548L, 0x19a19743bb3cf052L, "width");
   }
 }

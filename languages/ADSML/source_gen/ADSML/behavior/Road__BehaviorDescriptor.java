@@ -23,7 +23,6 @@ import jetbrains.mps.internal.collections.runtime.IVisitor;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import java.awt.RenderingHints;
 import java.awt.Color;
-import java.util.Stack;
 import java.awt.Stroke;
 import java.awt.BasicStroke;
 import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
@@ -78,10 +77,8 @@ public final class Road__BehaviorDescriptor extends BaseBHDescriptor {
 
     g2d.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
     g2d.setColor(Color.GRAY);
-    Stack<Point> stack = new Stack();
     Point startPoint = road.getLeftBoundary().get(0);
     path.moveTo(startPoint.getX() * 10, startPoint.getY() * 10);
-    stack.push(new Point(startPoint.getX() * 10, startPoint.getY() * 10));
 
     List<Point> leftBoundary = road.getLeftBoundary();
     List<Point> rightBoundary = road.getRightBoundary();

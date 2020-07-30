@@ -11,6 +11,9 @@ import jetbrains.mps.nodeEditor.cells.EditorCell_Collection;
 import jetbrains.mps.nodeEditor.cellLayout.CellLayout_Horizontal;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Component;
 import javax.swing.JComponent;
+import javax.swing.JPanel;
+import java.awt.Dimension;
+import javax.swing.JScrollPane;
 import ADSML.behavior.ScenarioPreviewFactory;
 
 /*package*/ class Scenario_ScenarioPreview_EditorBuilder_a extends AbstractEditorBuilder {
@@ -46,6 +49,13 @@ import ADSML.behavior.ScenarioPreviewFactory;
     return editorCell;
   }
   private JComponent _QueryFunction_JComponent_1z79n5_a0a() {
-    return ScenarioPreviewFactory.createViewPanel(myNode);
+    JPanel containerPanel = new JPanel();
+    containerPanel.setLayout(null);
+    containerPanel.setPreferredSize(new Dimension(830, 630));
+
+    JScrollPane sp = new JScrollPane(ScenarioPreviewFactory.createViewPanel(myNode), JScrollPane.VERTICAL_SCROLLBAR_ALWAYS, JScrollPane.HORIZONTAL_SCROLLBAR_ALWAYS);
+    sp.setBounds(10, 10, 811, 611);
+    containerPanel.add(sp);
+    return containerPanel;
   }
 }
