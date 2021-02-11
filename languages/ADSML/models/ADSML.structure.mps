@@ -494,50 +494,6 @@
       <ref role="PrY4T" node="6R_D1AGS5oW" resolve="IElement" />
     </node>
   </node>
-  <node concept="1TIwiD" id="TIPVJ43WNd">
-    <property role="EcuMT" value="1040005765417389261" />
-    <property role="TrG5h" value="State" />
-    <property role="3GE5qa" value="statemachine" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-  </node>
-  <node concept="1TIwiD" id="TIPVJ43WNe">
-    <property role="EcuMT" value="1040005765417389262" />
-    <property role="3GE5qa" value="statemachine" />
-    <property role="TrG5h" value="StateChart" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-  </node>
-  <node concept="1TIwiD" id="TIPVJ43WNf">
-    <property role="EcuMT" value="1040005765417389263" />
-    <property role="3GE5qa" value="statemachine" />
-    <property role="TrG5h" value="Event" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-  </node>
-  <node concept="1TIwiD" id="TIPVJ43WNg">
-    <property role="EcuMT" value="1040005765417389264" />
-    <property role="3GE5qa" value="statemachine" />
-    <property role="TrG5h" value="Transition" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-  </node>
-  <node concept="1TIwiD" id="TIPVJ43WNh">
-    <property role="EcuMT" value="1040005765417389265" />
-    <property role="3GE5qa" value="statemachine" />
-    <property role="TrG5h" value="Stateful" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-  </node>
-  <node concept="1TIwiD" id="2AhqLnaphtR">
-    <property role="EcuMT" value="2995292968512198519" />
-    <property role="3GE5qa" value="entity" />
-    <property role="TrG5h" value="TrafficSign" />
-    <property role="34LRSv" value="traffic sign" />
-    <ref role="1TJDcQ" node="1PU54MedOZH" resolve="Entity" />
-  </node>
-  <node concept="1TIwiD" id="2AhqLnaphtS">
-    <property role="EcuMT" value="2995292968512198520" />
-    <property role="3GE5qa" value="entity" />
-    <property role="TrG5h" value="TrafficLight" />
-    <property role="34LRSv" value="traffic light" />
-    <ref role="1TJDcQ" node="1PU54MedOZH" resolve="Entity" />
-  </node>
   <node concept="1TIwiD" id="1Z6QqVUy3nQ">
     <property role="EcuMT" value="2289756806115243510" />
     <property role="3GE5qa" value="contract" />
@@ -648,6 +604,20 @@
       <property role="TrG5h" value="content" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="2AhqLnaphtR">
+    <property role="EcuMT" value="2995292968512198519" />
+    <property role="3GE5qa" value="entity" />
+    <property role="TrG5h" value="TrafficSign" />
+    <property role="34LRSv" value="traffic sign" />
+    <ref role="1TJDcQ" node="1PU54MedOZH" resolve="Entity" />
+  </node>
+  <node concept="1TIwiD" id="2AhqLnaphtS">
+    <property role="EcuMT" value="2995292968512198520" />
+    <property role="3GE5qa" value="entity" />
+    <property role="TrG5h" value="TrafficLight" />
+    <property role="34LRSv" value="traffic light" />
+    <ref role="1TJDcQ" node="1PU54MedOZH" resolve="Entity" />
   </node>
 </model>
 

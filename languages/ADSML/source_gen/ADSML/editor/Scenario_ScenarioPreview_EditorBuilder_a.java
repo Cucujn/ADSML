@@ -51,10 +51,10 @@ import ADSML.behavior.ScenarioPreviewFactory;
   private JComponent _QueryFunction_JComponent_1z79n5_a0a() {
     JPanel containerPanel = new JPanel();
     containerPanel.setLayout(null);
-    containerPanel.setPreferredSize(new Dimension(830, 630));
+    containerPanel.setPreferredSize(new Dimension(1200, 630));
 
     JScrollPane sp = new JScrollPane(ScenarioPreviewFactory.createViewPanel(myNode), JScrollPane.VERTICAL_SCROLLBAR_ALWAYS, JScrollPane.HORIZONTAL_SCROLLBAR_ALWAYS);
-    sp.setBounds(10, 10, 811, 611);
+    sp.setBounds(10, 10, 1180, 611);
     containerPanel.add(sp);
     return containerPanel;
   }
